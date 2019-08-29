@@ -1,4 +1,4 @@
 ---
+layout: info-page
+title: The Huntington Family
 ---
-
-# The Huntington Family

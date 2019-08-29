@@ -1,16 +1,13 @@
 ---
 layout: default
 ---
+<header class="page-header pab-t-2 bg-primary">
+  <div class="wrapper gutter pad-t-2 pab-b">
+    <h1>{{ page.title }}</h1>
+  </div>
+</header>
 <div class="content-grid wrapper">
-  <header>
-    <div class="pab-t-2 bg-primary wrapper-extend">
-      <div class="wrapper gutter pad-t-2 pab-b">
-        <h1>{{ page.title }}</h1>
-      </div>
-    </div>
-  </header>
-
-  <nav class="page-nav">
+  <nav class="page-nav island">
     <ol class="list-group">
       {% for link in page.pageNav %}
       <li>
@@ -28,7 +25,7 @@ layout: default
       {% endfor %}
     </ul>
   </nav>
-  <div class="page-content">
+  <div class="page-content island">
     {{content}}
   </div>
 

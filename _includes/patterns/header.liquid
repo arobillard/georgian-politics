@@ -1,1 +1,10 @@
-<!-- header -->
+<header class="masthead">
+  <div class="wrapper gutter">
+    {% if page.url == '/' %}
+    <h1 class="push-0">Georgian Politics</h1>
+    {% else %}
+    <strong class="block exa">Georgian Politics</strong>
+    {% endif %}
+    {% include utilities/nav.liquid %}
+  </div>
+</header>

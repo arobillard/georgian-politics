@@ -5,4 +5,4 @@ sass:
 collections:
   locations:
     output: true
-    permalink: /:path/
+    permalink: /locations/:path/
