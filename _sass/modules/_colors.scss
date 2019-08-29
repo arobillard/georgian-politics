@@ -1,0 +1,32 @@
+$color-list: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  tertiary: $color-tertiary
+);
+
+$target-list: (
+  text: color,
+  bg: background-color
+);
+
+@each $cName, $cValue in $color-list {
+  @each $tName, $tValue in $target-list {
+
+    .#{$tName}-#{$cName} {
+      #{$tValue}: $cValue;
+    }
+
+    .#{$tName}-#{$cName}-dark {
+      #{$tValue}: darken($cValue, 20%);
+    }
+
+    .#{$tName}-#{$cName}-light {
+      #{$tValue}: lighten($cValue, 20%);
+    }
+
+  }
+}
+
+.check {
+  color: blue;
+}

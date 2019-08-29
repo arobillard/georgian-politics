@@ -1,0 +1,59 @@
+@mixin break($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1))
+      and (max-width: nth($args, 2)) {
+      @content;
+    }
+  }
+}
+
+$mqS: 25;
+$mqM: 38;
+$mqL: 60;
+$mqXL: 90;
+
+
+@mixin mq($minmax, $size) {
+  @if $minmax == 'min' {
+
+    @media only screen and (min-width: #{$size}em) {
+
+      @content;
+
+    }
+  } @else {
+    @media only screen and (max-width: #{($size - .001)}em) {
+
+      @content;
+
+    }
+  }
+}
+
+
+@mixin mqv2($minmax, $size...) {
+  @if $minmax == 'min' {
+
+    @media only screen and (min-width: #{$size}em) {
+
+      @content;
+
+    }
+  } @elseif $minmax == 'minmax' {
+    @media only screen and (min-width: #{nth($size, 1)}em) and (max-width: #{(nth($size, 2) - .001)}em) {
+
+      @content;
+
+    }
+  } @else {
+    @media only screen and (max-width: (#{$size} - 1)em) {
+      background: blue;
+      @content;
+
+    }
+  }
+}

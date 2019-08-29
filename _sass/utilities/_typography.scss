@@ -1,0 +1,14 @@
+html {
+  font-family: $font-primary;
+}
+
+// h1, h2, h3, .font-secondary {
+//   font-family: $font-secondary;
+// }
+
+a {
+  transition:
+    color $transition,
+    border-color $transition,
+    background-color $transition;
+}

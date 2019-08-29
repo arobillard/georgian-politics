@@ -1,0 +1,30 @@
+$font-primary: Robot, sans-serif;
+$transition: .25s ease-in-out;
+$color-primary: #34c972;
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-light: lighten($color-primary, 20%);
+$color-secondary: #3472c9;
+$color-secondary-dark: darken($color-secondary, 20%);
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-tertiary: #c93472;
+$color-tertiary-dark: darken($color-tertiary, 20%);
+$color-tertiary-light: lighten($color-tertiary, 20%);
+
+
+// .theme-bright {
+//   --color-primary: #34c972;
+//   --color-primary-dark: #20884b;
+//   --color-secondary: #3472c9;
+//   --color-secondary-dark: #204b88;
+//   --color-tertiary: #c93472;
+//   --color-tertiary-dark: #88204b;
+// }
+//
+// .theme-dark {
+//   --color-primary: #222;
+//   --color-primary-dark: #000;
+//   --color-secondary: #ccc;
+//   --color-secondary-dark: #999;
+//   --color-tertiary: #e39e29;
+//   --color-tertiary-dark: #a77219;
+// }

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Districts:</h1>
+<ol>
+  {% for districts in site.locations %}
+  {% if districts.url contains 'districts' %}
+  <li>
+    <a href="{{ districts.url}}">{{ districts.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ol>
