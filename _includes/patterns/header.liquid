@@ -1,10 +1,12 @@
 <header class="masthead">
   <div class="wrapper gutter-1-2">
+    <a class="inline-block" href="{{site.baseurl}}">
     {% if page.url == '/' %}
-    <h1 class="tera push-0 gutter-1-2">Georgian Politics</h1>
+      <h1 class="tera push-0 gutter-1-2">Georgian Politics</h1>
     {% else %}
-    <strong class="tera block gutter-1-2">Georgian Politics</strong>
+      <strong class="tera block gutter-1-2">Georgian Politics</strong>
     {% endif %}
     {% include utilities/nav.liquid navClass='nav' %}
+    </a>
   </div>
 </header>

@@ -15,4 +15,7 @@ a {
 
 p a {
   color: $color-primary;
+  &:hover, &:focus {
+    color: $color-secondary;
+  }
 }
