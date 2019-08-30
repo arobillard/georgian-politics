@@ -2,15 +2,15 @@
   <!-- <a class="temp-tog" href="#">Open Menu</a> -->
   <ol class="list-group push-0">
     <li>
-      <a href="/locations">Locations</a>
+      <a href="{{site.baseurl}}/locations">Locations</a>
       {% unless include.navClass == 'nav-footer' %}
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           <li>
-            <a href="/locations/port-george">Port George</a>
+            <a href="{{site.baseurl}}/locations/port-george">Port George</a>
             <ol class="list-group push-0 dropdown-block-items level-two">
               <li class="push-1-2">
-                <a class="block" href="/locations/port-george/districts/">Districts</a>
+                <a class="block" href="{{site.baseurl}}/locations/port-george/districts/">Districts</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
                   {% for districts in site.locations %}
                   {% if districts.url contains 'districts' %}
@@ -24,7 +24,7 @@
                 </ol>
               </li>
               <li>
-                <a href="/locations/port-george/families/">Families</a>
+                <a href="{{site.baseurl}}/locations/port-george/families/">Families</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
                   {% for families in site.locations %}
                   {% if families.url contains 'families' %}
@@ -44,14 +44,14 @@
       {% endunless %}
     </li>
     <li>
-      <a href="/events">Events</a>
+      <a href="{{site.baseurl}}/events">Events</a>
       {% unless include.navClass == 'nav-footer' %}
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           {% for events in site.events %}
           {% unless events.title == 'Events' %}
           <li>
-            <a href="{{ events.url }}">{{ events.title }}</a>
+            <a href="{{site.baseurl}}{{ events.url }}">{{ events.title }}</a>
           </li>
           {% endunless %}
           {% endfor %}
@@ -60,14 +60,14 @@
       {% endunless %}
     </li>
     <li>
-      <a href="/factions">Factions</a>
+      <a href="{{site.baseurl}}/factions">Factions</a>
       {% unless include.navClass == 'nav-footer' %}
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           {% for factions in site.factions %}
           {% unless factions.title == 'Factions' %}
           <li>
-            <a href="{{ factions.url }}">{{ factions.title }}</a>
+            <a href="{{site.baseurl}}{{ factions.url }}">{{ factions.title }}</a>
           </li>
           {% endunless %}
           {% endfor %}

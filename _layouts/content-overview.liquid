@@ -40,7 +40,7 @@ layout: default
     {% endif %}
     {% assign previous="" %}
     <li title="print working directory">
-      <a href="/">Home</a>
+      <a href="{{site.baseurl}}/">Home</a>
     </li>
     {% for unused in (1..num_parts) %}
       {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
