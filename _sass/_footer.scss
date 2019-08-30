@@ -1,0 +1,14 @@
+.footer {
+  background-color: $color-grey-dark;
+  color: $color-grey;
+  a {
+    color: $color-grey;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: $color-primary;
+    }
+  }
+  .sub-footer {
+    background-color: darken($color-grey-dark, 10%);
+  }
+}

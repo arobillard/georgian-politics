@@ -1,19 +1,16 @@
 ---
-layout: default
+layout: content-overview
 ---
-<header class="page-header pab-t-2 bg-primary">
-  <div class="wrapper gutter pad-t-2 pab-b">
-    <h1>{{ page.title }}</h1>
-  </div>
-</header>
 <div class="content-grid wrapper">
+  {% if page.pageNav %}
   <nav class="page-nav island">
+    <strong class="block giga push-1-2 text-primary">{{ page.title }}</strong>
     <ol class="list-group">
       {% for link in page.pageNav %}
-      <li>
-        <a href="#{{ link.url }}">{{ link.text }}</a>
+      <li class="content-group push-1-2 pad-b-1-2">
+        <a class="bold" href="#{{ link.url }}">{{ link.text }}</a>
         {% if link.subNav %}
-        <ol class="page-nav-sub list-group">
+        <ol class="page-nav-sub push-0 list-group milli gutter-1-4">
           {% for subLink in link.subNav %}
           <li>
             <a href="#{{ subLink.url }}">{{ subLink.text }}</a>
@@ -23,10 +20,13 @@ layout: default
         {% endif %}
       </li>
       {% endfor %}
+      <li>
+        <a class="milli" href="#main">Back to Top</a>
+      </li>
     </ul>
   </nav>
+  {% endif %}
   <div class="page-content island">
     {{content}}
   </div>
-
 </div>

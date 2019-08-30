@@ -1,4 +1,4 @@
 ---
 layout: content-page
-title: The Huntington Family
+title: Council of the Bruins
 ---

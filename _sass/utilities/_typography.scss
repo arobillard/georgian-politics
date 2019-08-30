@@ -12,3 +12,7 @@ a {
     border-color $transition,
     background-color $transition;
 }
+
+p a {
+  color: $color-primary;
+}

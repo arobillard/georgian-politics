@@ -1,4 +1,4 @@
 ---
-layout: info-page
+layout: content-page
 title:: The Shoreline
 ---

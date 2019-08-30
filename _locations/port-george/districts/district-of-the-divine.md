@@ -1,4 +1,4 @@
 ---
-layout: info-page
+layout: content-page
 title:: District of the Divine
 ---

@@ -5,4 +5,10 @@ sass:
 collections:
   locations:
     output: true
-    permalink: /locations/:path/
+    permalink: /:collection/:path/
+  factions:
+    output: true
+    permalink: /:collection/:path/
+  events:
+    output: true
+    permalink: /:collection/:path/

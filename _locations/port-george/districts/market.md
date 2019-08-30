@@ -1,5 +1,5 @@
 ---
-layout: info-page
+layout: content-page
 title:: The Market
 pageNav:
   - url: 'introduction'
