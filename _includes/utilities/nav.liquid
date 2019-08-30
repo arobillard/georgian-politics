@@ -16,7 +16,7 @@
                   {% if districts.url contains 'districts' %}
                   {% unless districts.title == 'Districts' %}
                   <li>
-                    <a href="{{site.basurl}}/{{ districts.url }}">{{ districts.title }}</a>
+                    <a href="{{site.baseurl}}/{{ districts.url }}">{{ districts.title }}</a>
                   </li>
                   {% endunless %}
                   {% endif %}
@@ -51,7 +51,7 @@
           {% for events in site.events %}
           {% unless events.title == 'Events' %}
           <li>
-            <a href="{{site.baseurl}}{{ events.url }}">{{ events.title }}</a>
+            <a href="{{site.baseurl}}/{{ events.url }}">{{ events.title }}</a>
           </li>
           {% endunless %}
           {% endfor %}
@@ -67,7 +67,7 @@
           {% for factions in site.factions %}
           {% unless factions.title == 'Factions' %}
           <li>
-            <a href="{{site.baseurl}}{{ factions.url }}">{{ factions.title }}</a>
+            <a href="{{site.baseurl}}/{{ factions.url }}">{{ factions.title }}</a>
           </li>
           {% endunless %}
           {% endfor %}
