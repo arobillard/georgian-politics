@@ -7,19 +7,19 @@
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           <li>
-            <a href="{{site.baseurl}}/locations/port-george">Port George</a>
-            <ol class="list-group push-0 dropdown-block-items level-two">
+            <a class="bold city" href="{{site.baseurl}}/locations/port-george">Port George</a>
+            <ol class="list-group milli push-0 dropdown-block-items level-two">
               <li class="push-1-2">
                 <a class="block" href="{{site.baseurl}}/locations/port-george/districts/">Districts</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
                   {% for districts in site.locations %}
-                  {% if districts.url contains 'districts' %}
-                  {% unless districts.title == 'Districts' %}
-                  <li>
-                    <a href="{{site.baseurl}}/{{ districts.url }}">{{ districts.title }}</a>
-                  </li>
-                  {% endunless %}
-                  {% endif %}
+                    {% if districts.url contains 'districts' %}
+                      {% unless districts.title == 'Districts' %}
+                        <li>
+                          <a href="{{site.baseurl}}{{ districts.url }}">{{ districts.title }}</a>
+                        </li>
+                      {% endunless %}
+                    {% endif %}
                   {% endfor %}
                 </ol>
               </li>
@@ -27,13 +27,13 @@
                 <a href="{{site.baseurl}}/locations/port-george/families/">Families</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
                   {% for families in site.locations %}
-                  {% if families.url contains 'families' %}
-                  {% unless families.title == 'Families' %}
-                  <li>
-                    <a href="{{site.baseurl}}/{{ families.url }}">{{ families.title }}</a>
-                  </li>
-                  {% endunless %}
-                  {% endif %}
+                    {% if families.url contains 'families' %}
+                      {% unless families.title == 'Families' %}
+                        <li>
+                          <a href="{{site.baseurl}}{{ families.url }}">{{ families.title }}</a>
+                        </li>
+                      {% endunless %}
+                    {% endif %}
                   {% endfor %}
                 </ol>
               </li>
@@ -49,11 +49,11 @@
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           {% for events in site.events %}
-          {% unless events.title == 'Events' %}
-          <li>
-            <a href="{{site.baseurl}}/{{ events.url }}">{{ events.title }}</a>
-          </li>
-          {% endunless %}
+            {% unless events.title == 'Events' %}
+              <li>
+                <a href="{{site.baseurl}}{{ events.url }}">{{ events.title }}</a>
+              </li>
+            {% endunless %}
           {% endfor %}
         </ol>
       </div>
@@ -65,11 +65,11 @@
       <div class="dropdown-block">
         <ol class="list-group push-0 dropdown-block-items level-one">
           {% for factions in site.factions %}
-          {% unless factions.title == 'Factions' %}
-          <li>
-            <a href="{{site.baseurl}}/{{ factions.url }}">{{ factions.title }}</a>
-          </li>
-          {% endunless %}
+            {% unless factions.title == 'Factions' %}
+              <li>
+                <a href="{{site.baseurl}}{{ factions.url }}">{{ factions.title }}</a>
+              </li>
+            {% endunless %}
           {% endfor %}
         </ol>
       </div>

@@ -4,13 +4,26 @@ title: Districts
 permalink: /:collection/port-george/districts/
 
 ---
-
-<ol>
+<ol class="grid grid-stretch list-group wrapper island-1-2">
   {% for districts in site.locations %}
+  {% unless districts.url == page.url %}
   {% if districts.url contains 'districts' %}
-  <li>
-    <a href="{{ districts.url }}">{{ districts.title }}</a>
+  <li class="unit [ xs-1 m-1-2 ] island-1-2">
+    <a class="card-preview" href="{{ districts.url }}">
+      <div class="card-preview-img" {% if districts.img %}style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{districts.img}}')"{% endif %}>
+        <h3 class="giga push-0">{{ districts.title }}</h3>
+      </div>
+      <div class="card-preview-content">
+        {% if districts.desc %}
+        <p>{{ districts.desc }}</p>
+        {% else %}
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        {% endif %}
+        <span class="link-mimic">Learn more.</span>
+      </div>
+    </a>
   </li>
   {% endif %}
+  {% endunless %}
   {% endfor %}
 </ol>

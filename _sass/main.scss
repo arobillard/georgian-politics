@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap');
 @import 'utilities/variables';
 @import 'utilities/mixins';
 @import 'modules/modules';
 @import 'modules/grid';
 @import 'modules/type';
-@import 'utilities/typography';
 @import 'modules/colors';
+@import 'utilities/typography';
+@import 'patterns/nav';
+@import 'patterns/footer';
+@import 'patterns/card';
 @import 'content-page';
-@import 'nav';
-@import 'footer';
+
+html {
+  background-color: #f6e9dc;
+}

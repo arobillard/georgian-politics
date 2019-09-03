@@ -1,6 +1,8 @@
 ---
 layout: content-page
 title:: City's Crest
+city-ref: 0
+district: 1
 ---
 
 ## Stores

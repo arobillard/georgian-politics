@@ -8,6 +8,17 @@
     }
   }
   @include mq(min, $mqM) {
+    background-color: $color-grey-dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    border-bottom: 2px solid $color-primary;
+    box-shadow: $shadow;
+    a {
+      color: #fff;
+    }
     .wrapper {
       display: flex;
       align-items: center;
@@ -19,10 +30,14 @@
         display: flex;
         > li {
           padding: 0 .65rem;
+          > a {
+            padding: 1.3rem 0;
+            display: inline-block;
+          }
         }
       }
       .dropdown-block {
-        background-color: $color-secondary;
+        background-color: $color-primary;
         display: block;
         position: absolute;
         width: 100vw;
@@ -39,15 +54,18 @@
           text-decoration: none;
           padding: .325rem;
           display: inline-block;
-          &:hover {
-            color: $color-primary;
+          &:hover, &:focus {
+            color: $color-grey;
           }
         }
         .level-one {
           padding: .975rem;
+          .city {
+            border-bottom: 1px solid $color-grey;
+          }
         }
         .level-two, .level-three {
-          border-left: 2px solid $color-tertiary;
+          // border-left: 2px solid $color-grey;
           padding-left: .325rem;
         }
         .level-one > li,
@@ -69,6 +87,10 @@
           }
           .level-two {
             width: 75%;
+            > li:not(:last-child) {
+              border-bottom: 1px solid $color-grey;
+              padding-bottom: .65rem;
+            }
             > li > a {
               width: 33.3333%;
             }

@@ -1,6 +1,13 @@
-$font-primary: Robot, sans-serif;
+// Styles
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Marcellus SC', serif;
 $transition: .25s ease-in-out;
-$color-primary: #34c972;
+$border-radius: 5px;
+$shadow: 0 3px 6px rgba(0, 0, 0, .15);
+$shadow-hover: 0 3px 12px rgba(0, 0, 0, .25);
+
+// Colors
+$color-primary: #b52424;
 $color-primary-dark: darken($color-primary, 20%);
 $color-primary-light: lighten($color-primary, 20%);
 $color-secondary: #3472c9;

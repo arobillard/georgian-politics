@@ -1,0 +1,46 @@
+%card {
+  overflow: hidden;
+  border: 1px solid $color-grey;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  text-decoration: none;
+  transition:
+    box-shadow $transition;
+  &:hover, &:focus {
+    box-shadow: $shadow-hover;
+    .link-mimic {
+      color: $color-secondary;
+    }
+  }
+}
+
+.card-preview {
+  @extend %card;
+  display: flex;
+  flex-direction: column;
+  &-img {
+    padding: .65rem;
+    height: 7.5rem;
+    display: flex;
+    align-items: flex-end;
+    background-color: $color-primary;
+    @include bgBasic();
+    h3 {
+      color: #fff;
+    }
+  }
+  &-content {
+    padding: .65rem;
+    p {
+      // margin: 0;
+      color: $color-grey-dark;
+    }
+  }
+  // min-height: calc(100vw - 2.6rem);
+  // @include mq(min, $mqM) {
+  //   min-height: calc(50vw - 1.95rem);
+  // }
+  // @include mq(min, $mqL) {
+  //   min-height: calc(52em / 3 - 1.7333333333rem);
+  // }
+}

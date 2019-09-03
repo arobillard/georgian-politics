@@ -2,8 +2,9 @@
   grid-area: header;
   display: flex;
   align-items: flex-end;
-  min-height: 15rem;
-  h1 {
+  min-height: 25rem;
+  @include bgBasic();
+  h1, p {
     color: #fff;
   }
 }
@@ -26,6 +27,7 @@
 
 .page-nav {
   a {
+    text-transform: capitalize;
     color: #000;
     text-decoration: none;
     &:hover {
@@ -36,7 +38,6 @@
     @include mq(min, $mqM) {
       position: fixed;
       width: calc(52em / 3);
-      top: 0;
     }
   }
   .content-group {
