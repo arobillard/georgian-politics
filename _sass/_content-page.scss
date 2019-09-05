@@ -41,14 +41,17 @@
     }
   }
   .content-group {
-    border-bottom: 1px solid $color-secondary-light;
+    border-bottom: 1px solid $color-grey;
   }
 }
 
 .page-content {
+  section:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
   h2 {
     border-bottom: 1px solid #ccc;
-    color: $color-secondary;
+    color: $color-primary;
   }
   h3 {
     margin-bottom: 0;
@@ -58,10 +61,30 @@
       padding-top: 0;
     }
   }
-  h4 {
-    color: $color-tertiary;
-    margin-bottom: 0;
-    border-top: 1px solid #ccc;
-    padding-top: 1.3rem;
+  .stores-group {
+    h3 {
+      padding-top: 1.3rem;
+    }
+  }
+  h2 + .stores-group {
+    h3 {
+      padding-top: 0;
+    }
+  }
+  .stores-info {
+    background-color: $color-tertiary-light;
+    padding: 1.3rem;
+    margin: 1.3rem -.65rem;
+    box-shadow: $shadow;
+    border-bottom: 1px solid $color-secondary;
+    h4 {
+      color: $color-secondary;
+      margin-bottom: .65rem;
+      border-bottom: 1px solid $color-grey-dark;
+      // padding-top: 1.3rem;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
   }
 }

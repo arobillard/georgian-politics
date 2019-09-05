@@ -4,7 +4,7 @@
     text-decoration: none;
     transition: color $transition;
     &:hover, &:focus {
-      color: $color-primary;
+      color: $color-grey;
     }
   }
   @include mq(min, $mqM) {
@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     z-index: 10000;
-    border-bottom: 2px solid $color-primary;
+    // border-bottom: 2px solid $color-primary;
     box-shadow: $shadow;
     a {
       color: #fff;
