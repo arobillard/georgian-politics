@@ -1,0 +1,86 @@
+.stat-block {
+  background-color: $color-tertiary-light;
+  border-bottom: 2px solid $color-primary;
+  margin: 0 -1.3rem 1.3rem;
+  box-shadow: $shadow;
+  header {
+    border-bottom: 2px solid $color-primary;
+  }
+  .title {
+    border-bottom: 1px solid $color-grey;
+  }
+  .desc {
+    font-style: italic;
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-bottom: 0;
+  }
+  .combat-stats {
+    padding: .65rem 0;
+    border-bottom: 2px solid $color-primary;
+    dt {
+      float: left;
+      margin-right: .325rem;
+    }
+  }
+  .ability-scores {
+    border-bottom: 2px solid $color-primary;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    dt, dd {
+      width: 33.3333%;
+    }
+    dt.str {
+      order: 1;
+    }
+    dd.str {
+      order: 4;
+      margin-bottom: .65rem;
+    }
+    dt.dex {
+      order: 2;
+    }
+    dd.dex {
+      order: 5;
+      margin-bottom: .65rem;
+    }
+    dt.con {
+      order: 3;
+    }
+    dd.con {
+      order: 6;
+      margin-bottom: .65rem;
+    }
+    dt.int {
+      order: 7;
+    }
+    dd.int {
+      order: 10;
+      margin-bottom: 1.3rem;
+    }
+    dt.wis {
+      order: 8;
+    }
+    dd.wis {
+      order: 11;
+      margin-bottom: 1.3rem;
+    }
+    dt.cha {
+      order: 9;
+    }
+    dd.cha {
+      order: 12;
+      margin-bottom: 1.3rem;
+    }
+  }
+  .non-combat {
+    dt {
+      float: left;
+      margin-right: .325rem;
+    }
+  }
+}

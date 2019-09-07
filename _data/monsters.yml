@@ -1,0 +1,54 @@
+- title: Anarchist
+  monster: 0
+  mm-pg: 123
+  desc: A low level member of the Anarchist Faction
+  ac: 13
+  hp: 10
+  speed: 30ft
+  str: 4
+  dex: 5
+  con: 6
+  int: 7
+  wis: 8
+  cha: 9
+  skills: 'Deception +2'
+  senses: 'passive Perception +2'
+  languages: Common
+  cr: 1/8 (25xp)
+  abilities:
+    - title: Pack Tactics
+      desc: When an ally within 5ft, gets advantage on attacks.
+  actions:
+    - title: Scimitar
+      type: Melee weapon attack
+      desc: "+3 to hit, reach 5ft., one creature. Hit: 4 (1d6 +1) slashing damage."
+    - title: Molitov Cocktail
+      type: Ranged area of effect
+      desc: "range 30ft., 5ft radius, Dexterity ST. Hit: 4 (1d6 +2) fire damage and target catches on fire."
+- title: Port George City Guard
+  monster: 1
+  mm-pg: 123
+  desc: A guard employed by the Port George.
+  ac: 12
+  hp: 10
+  speed: 30ft
+  str: 10
+  dex: 11
+  con: 12
+  int: 16
+  wis: 17
+  cha: 18
+  skills: 'Deception +2'
+  senses: 'passive Perception +2'
+  languages: Common
+  cr: 1/8 (25xp)
+  abilities:
+    - title: Pack Tactics
+      desc: When an ally within 5ft, gets advantage on attacks.
+  actions:
+    - title: Scimitar
+      type: Melee weapon attack
+      desc: "+3 to hit, reach 5ft., one creature. Hit: 4 (1d6 +1) slashing damage."
+    - title: Molitov Cocktail
+      type: Ranged area of effect
+      desc: "range 30ft., 5ft radius, Dexterity ST. Hit: 4 (1d6 +2) fire damage and target catches on fire."

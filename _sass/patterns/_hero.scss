@@ -1,0 +1,13 @@
+.hero {
+  background-color: $color-grey-dark;
+  @include bgBasic();
+  .wrapper {
+    min-height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  &-content {
+    color: #fff;
+  }
+}

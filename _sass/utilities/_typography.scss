@@ -22,3 +22,14 @@ p a, .link-mimic {
     color: $color-secondary;
   }
 }
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  color: $color-primary;
+}
+
+.review,
+mark {
+  color: red;
+  background-color: yellow;
+}

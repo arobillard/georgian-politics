@@ -3,3 +3,44 @@ layout: content-overview
 title: Events
 permalink: /:collection/
 ---
+{% assign districtLink = site.baseurl | append: "/locations/port-george/districts" %}
+<div class="wrapper">
+  <section id="introduction" class="gutter">
+    <h2>Introduction</h2>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+  </section>
+  <section id="outline" class="gutter">
+    <h2>Outline</h2>
+    <div class="event-group">
+      <h3>Market Attack</h3>
+
+    </div>
+
+  </section>
+  <section id="events-list">
+    <div class="gutter"><h2>Events</h2></div>
+    <ol class="grid grid-stretch list-group island-1-2">
+      {% for events in site.events %}
+      {% unless events.url == page.url %}
+      {% if events.url contains 'events' %}
+      <li class="unit [ xs-1 m-1-2 ] island-1-2">
+        <a class="card-preview" href="{{ events.url }}">
+          <div class="card-preview-img" {% if events.img %}style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{events.img}}')"{% endif %}>
+            <h3 class="giga push-0">{{ events.title }}</h3>
+          </div>
+          <div class="card-preview-content">
+            {% if events.desc %}
+            <p>{{ events.desc }}</p>
+            {% else %}
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            {% endif %}
+            <span class="link-mimic">Learn more.</span>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+      {% endunless %}
+      {% endfor %}
+    </ol>
+  </section>
+</div>
