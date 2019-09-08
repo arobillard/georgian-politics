@@ -57,13 +57,19 @@ layout: content-overview
           {% if content.reference %}
           <p>See: <a class="" href="{{ content.reference.url }}">{{ content.reference.text }}</a></p>
           {% endif %}
-          {% unless site.data.view-controls.player-view == true %}{{ content.content | markdownify }}{% endunless %}
-          {% if sections.discovered or sections.title == 'Introduction' %}{{ sections.content | markdownify }}{% endif %}
+          {% if site.data.view-controls.player-view == false %}
+            {{ content.content | markdownify }}
+          {% elsif content.discovered or sections.title == 'Introduction' %}
+            {{ content.content | markdownify }}
+          {% endif %}
         </div>
         {% endfor %}
       {% else %}
-        {% unless site.data.view-controls.player-view == true %}{{ sections.content | markdownify }}{% endunless %}
-        {% if sections.discovered or sections.title == 'Introduction' %}{{ sections.content | markdownify }}{% endif %}
+        {% if site.data.view-controls.player-view == false %}
+          {{ sections.content | markdownify }}
+        {% elsif sections.discovered or sections.title == 'Introduction' %}
+          {{ sections.content | markdownify }}
+        {% endif %}
       {% endif %}
     </section>
     {% endfor %}
