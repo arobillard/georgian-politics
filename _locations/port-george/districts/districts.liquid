@@ -21,7 +21,7 @@ permalink: /:collection/port-george/districts/
     {% unless districts.url == page.url %}
     {% if districts.url contains 'districts' %}
     <li class="unit [ xs-1 m-1-2 ] island-1-2">
-      <a class="card-preview" href="{{site.baseurl}}/{{ districts.url }}">
+      <a class="card-preview" href="{{site.baseurl}}{{ districts.url }}">
         <div class="card-preview-img" {% if districts.img %}style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{districts.img}}')"{% endif %}>
           <h3 class="giga push-0">{{ districts.title }}</h3>
         </div>
