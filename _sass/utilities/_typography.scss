@@ -3,7 +3,7 @@ html {
 }
 
 @if ($font-secondary) {
-  h1, h2, h3, h4, .font-secondary {
+  h1, h2, h3, h4, .font-secondary, thead th {
     font-family: $font-secondary;
   }
 }
