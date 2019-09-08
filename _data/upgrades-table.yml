@@ -1,0 +1,21 @@
+- title: Potion of Healing (2)
+  points: 1
+  desc: Two standard Potions of Healing (2d4 + 2).
+- title: Feat
+  points: 2
+  desc: Select an extra Feat for your character (does not count as your Ability Score Improvement/Feat selected at level 4).
+- title: Ability Score Improvement
+  points: 3
+  desc: Increase one of your stats by 2, or two of your stats by 1 to a maximum of 20 (does not count as your Ability Score Improvement/Feat selected at level 4).
+- title: Weapon +1
+  points: 1
+  desc: A magical weapon of your choice with +1 to hit & damage.
+- title: Armor +1
+  points: 2
+  desc: A set of magical armor of your choice with +1 to AC.
+- title: Bag of Holding
+  points: 2
+  desc: A This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet.  The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
+- title: Magic Item (uncommon)
+  points: 2
+  desc: Select a magic item of uncommom rarity or lower. Must be DM approved.

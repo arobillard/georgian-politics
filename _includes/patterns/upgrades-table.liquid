@@ -1,0 +1,20 @@
+<div class="upgrades-table-wrap">
+  <table class="upgrades-table">
+    <thead class="mega text-primary">
+      <tr>
+        <th class="title">Item/Upgrade</th>
+        <th class="points">Points</th>
+        <th class="desc">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for upgrades in site.data.upgrades-table %}
+      <tr>
+        <th>{{ upgrades.title }}</th>
+        <td>{{ upgrades.points }}</td>
+        <td>{{ upgrades.desc }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

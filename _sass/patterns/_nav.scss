@@ -1,29 +1,27 @@
 .masthead {
+  background-color: $color-grey-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  // border-bottom: 2px solid $color-primary;
+  box-shadow: $shadow;
   a {
-    color: #000;
+    color: $color-tertiary;
     text-decoration: none;
     transition: color $transition;
     &:hover, &:focus {
       color: $color-grey;
     }
   }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   @include mq(min, $mqM) {
-    background-color: $color-grey-dark;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10000;
-    // border-bottom: 2px solid $color-primary;
-    box-shadow: $shadow;
-    a {
-      color: #fff;
-    }
-    .wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+
     .nav {
       display: flex;
       > ol {
@@ -60,9 +58,9 @@
         }
         .level-one {
           padding: .975rem;
-          .city {
-            border-bottom: 1px solid $color-grey;
-          }
+          // .city {
+          //   border-bottom: 1px solid $color-grey;
+          // }
         }
         .level-two, .level-three {
           // border-left: 2px solid $color-grey;
@@ -106,6 +104,87 @@
         }
       }
     }
+  }
+  @include mq(max, $mqM) {
+    .wrapper {
+      padding: .65rem;
+    }
+    .nav {
+      position: fixed;
+      transform: translateX(-100%);
+      transition:
+        transform $transition-quick;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      background-color: $color-primary;
+      padding: 1.3rem;
+      a {
+        margin-bottom: .65rem;
+        display: block;
+      }
+      > ol > li > a {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .dropdown-block {
+        ol {
+          padding: 0 .65rem;
+        }
+        .level-one > li > a {
+          font-size: 1.25rem;
+        }
+        .level-two {
+          > li > a {
+            font-size: 1.125rem;
+            padding-bottom: .325rem;
+            border-bottom: 1px solid $color-tertiary;
+          }
+        }
+        @include mq(min, $mqS) {
+          .level-three {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .menu-tog {
+      outline: 0;
+      order: -1;
+      width: 1.75rem;
+      height: 18px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: flex-end;
+      margin-left: .65rem;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $color-tertiary;
+        position: relative;
+        transition:
+          transform $transition-quick,
+          top $transition-quick,
+          bottom $transition-quick;
+      }
+      .tog-top {
+        top: 0;
+      }
+      .tog-bottom {
+        width: 66.6666%;
+        bottom: 0;
+      }
+    }
+    // &.open {
+    // }
   }
 }
 

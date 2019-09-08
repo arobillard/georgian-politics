@@ -23,6 +23,7 @@
                   {% endfor %}
                 </ol>
               </li>
+              {% unless site.data.view-controls.player-view == true %}
               <li>
                 <a href="{{site.baseurl}}/locations/port-george/families/">Families</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
@@ -37,12 +38,14 @@
                   {% endfor %}
                 </ol>
               </li>
+              {% endunless %}
             </ol>
           </li>
         </ol>
       </div>
       {% endunless %}
     </li>
+    {% unless site.data.view-controls.player-view == true %}
     <li>
       <a href="{{site.baseurl}}/events">Events</a>
       {% unless include.navClass == 'nav-footer' %}
@@ -75,5 +78,6 @@
       </div>
       {% endunless %}
     </li>
+    {% endunless %}
   </ol>
 </nav>

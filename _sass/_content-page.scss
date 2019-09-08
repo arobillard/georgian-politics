@@ -7,6 +7,9 @@
   h1, p {
     color: #fff;
   }
+  &.no-image {
+    min-height: 10rem;
+  }
 }
 
 .content-grid {

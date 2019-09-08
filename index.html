@@ -1,4 +1,27 @@
 ---
 layout: default
 ---
-{% include patterns/hero.liquid img="/images/banner.jpg" title="A Sweet D&D Campaign" byline="Fun for the whole family!" btnURL="#" btnStyle="btn-ghost" btnText="Start the campaign" %}
+{% include patterns/hero.liquid img="/images/banner-home.jpg" title="Welcome to Port George" byline="A city-state at the height of its prosperity and infuence. Opportunity is waiting for those who wish to seek it!" btnText="Explore the city" btnURL="locations/port-george/" %}
+
+<section id="introduction" class="pad-t-2 pad-b-2">
+  <div class="wrapper gutter">
+    <h2>Campaign Introduction</h2>
+    <p>The coastal city-state of Port George is in a period of great wealth and prosperity. Its booming agriculture combined with its vast shipping network have made it a leader in both wealth and influence within the continent of Creag Mhòr. Its citizens are well fed, employed, and living comfortably. King George VII, the city-state's current ruler, is considered one of the most popular kings in Port George history.</p>
+    <p>However, beneath the surface tension is growing. Anonymous factions struggle to maintain or upset the current balance of the city in hopes of gaining power and wealth. The fight has remained secret and the citizens unaware to the potential danger it posses. Until now.</p>
+    {% include patterns/btn.liquid btnText="Join the campaign" btnURL="https://ddb.ac/campaigns/join/6307252420372077" external=true %}
+  </div>
+</section>
+<section id="character-creation" class="pad-t-2 pad-b-2">
+  <div class="wrapper gutter">
+    <h2>Character Creation</h2>
+    <p>For this campaign, PCs will be starting at <strong>level 5</strong>. As we are assuming the PCs have some prior adventuring experience, they will be allowed to start with extra upgrades and equipment beyond the standard starting equipment for level 1. When creating your PC, use the standard PC build and add the following:</p>
+    <ul class="gutter push">
+      <li>Up to <strong class="text-primary">500gp</strong> worth of <strong>non-magical</strong> equipment upgrades<span class="text-primary">*</span></li>
+      <li>Up to <strong class="text-primary">3 points</strong> of upgrades from the <a class="link-mimic" href="#upgrades-table">Upgrades Table</a></li>
+    </ul>
+    <small class="block push">*PCs may keep a maximum of 100gp of leftover gold after making upgrades.</small>
+    <p class="mega bold push-2">Don't forget to add your character to the <a href="https://ddb.ac/campaigns/join/6307252420372077" target="_blank">DnD Beyond campaign</a>!</p>
+    <h3 id="upgrades-table">Upgrades Table</h3>
+    {% include patterns/upgrades-table.liquid %}
+  </div>
+</section>

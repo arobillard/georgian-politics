@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header class="page-header pab-t-2 bg-primary"{% if page.img %} style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{page.img}}')"{% endif %}>
+<header class="page-header {% unless page.img %}no-image {% endunless %}pab-t-2 bg-primary"{% if page.img %} style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{page.img}}')"{% endif %}>
   <div class="wrapper gutter pad-t-2 pab-b">
     <h1 class="push-0">{{ page.title | escape }}</h1>
     {% if page.desc %}
@@ -9,6 +9,7 @@ layout: default
     {% endif %}
   </div>
 </header>
+{% if site.data.view-controls.breadcrumbs == true %}
 <div class="wrapper">
   <ol class="breadcrumbs island push-0 list-group-inline" class="no-print">
     {% capture url_parts %}{{ page.url | replace:'/'," " }}{% endcapture %}
@@ -33,5 +34,5 @@ layout: default
     <li class="text-primary bold">{{ page.title | escape }}</li>
   </ol>
 </div>
-
+{% endif %}
 {{ content }}

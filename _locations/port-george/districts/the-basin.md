@@ -7,6 +7,7 @@ city-ref: 0
 district: 6
 sections:
   - title: Demographics
+    discovered: true
     content: The poorest and most dangerous area of Port George. In recent years has stabilized, however there is still a fair amount of petty crime and muggings. It is not wise to walk alone at night. Inhabitants include petty criminals, low level servants of the upper class, young sailors, farm hands new immigrants and refugees of other lands,
 ---
 

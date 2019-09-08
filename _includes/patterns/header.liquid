@@ -1,6 +1,6 @@
 <header class="masthead">
   <div class="wrapper gutter-1-2">
-    <a class="inline-block" href="{{site.baseurl}}/">
+    <a class="inline-block logo-wrap" href="{{site.baseurl}}/">
     {% if page.url == '/' %}
       <h1 class="tera push-0 gutter-1-2">Georgian Politics</h1>
     {% else %}
@@ -8,5 +8,10 @@
     {% endif %}
     </a>
     {% include utilities/nav.liquid navClass='nav' %}
+    <a class="menu-tog m-0" href="#">
+      <span class="tog-top"></span>
+      <span class="tog-middle"></span>
+      <span class="tog-bottom"></span>
+    </a>
   </div>
 </header>

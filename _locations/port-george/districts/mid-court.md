@@ -18,6 +18,7 @@ sections:
 
           The stadium holds a number of tournaments throughout the year. Generally coinciding with different festivals and celebrations. Tournaments feature competitions such as jousting, sword fighting, beast slaying, and more. They feature both towns guard and adventurers alike.
   - title: Demographics
+    discovered: true
     content: >-
       The majority of Mid Court are middle class citizens who live comfortable, modest lives. The residents generally include skilled tradespeople, families of towns guards, mid-level merchants, successful sailors, etc. it is considered a relatively safe area.
 ---

@@ -4,10 +4,11 @@ title:: The Pastures
 city-ref: 0
 district: 7
 sections:
-  - title: CoB Council Member
-    content: >-
-      [The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntington Estate. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
+#  - title: CoB Council Member
+#    content: >-
+#      [The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntington Estate. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
   - title: Demographics
+    discovered: true
     content: >-
       The pastures surround the outside of the city walls for miles. Hundreds of farms produce the massive amount of food needed to sustain the hunger of the city and its trade ventures. A few simple blacksmiths and wood crafters combine to make small gathering points and communities known as Farmunes within the pastures. A system of watch towers scattered throughout The Pastures keeps watch over the farmland and provides the city with advance warning of any trouble (though it is rarely put to use).
   - title: Crop Yield

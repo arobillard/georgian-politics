@@ -1028,7 +1028,7 @@ button,
   display: inline-block;
   margin: 0;
   overflow: visible;
-  padding: .375em .75em .42em;
+  padding: .375em 1em .42em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1038,6 +1038,15 @@ button,
   color: #fff;
   text-decoration: none;
   text-transform: none;
+  font-family: $font-secondary;
+  transition:
+    color $transition,
+    background-color $transition,
+    border-color $transition,
+    box-shadow $transition;
+  &:not(.btn-ghost) {
+    box-shadow: $shadow;
+  }
 }
 
 button::-moz-focus-inner {
@@ -1054,6 +1063,9 @@ button:hover,
   background-color: $color-primary-dark;
   border-color: $color-primary-dark;
   color: #fff;
+  &:not(.btn-ghost) {
+    box-shadow: $shadow-hover;
+  }
 }
 
 button[disabled] {

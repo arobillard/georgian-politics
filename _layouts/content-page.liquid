@@ -57,11 +57,13 @@ layout: content-overview
           {% if content.reference %}
           <p>See: <a class="" href="{{ content.reference.url }}">{{ content.reference.text }}</a></p>
           {% endif %}
-          {{ content.content | markdownify }}
+          {% unless site.data.view-controls.player-view == true %}{{ content.content | markdownify }}{% endunless %}
+          {% if sections.discovered or sections.title == 'Introduction' %}{{ sections.content | markdownify }}{% endif %}
         </div>
         {% endfor %}
       {% else %}
-        {{ sections.content | markdownify }}
+        {% unless site.data.view-controls.player-view == true %}{{ sections.content | markdownify }}{% endunless %}
+        {% if sections.discovered or sections.title == 'Introduction' %}{{ sections.content | markdownify }}{% endif %}
       {% endif %}
     </section>
     {% endfor %}
@@ -81,7 +83,7 @@ layout: content-overview
                 <div id="{{ storeLink }}" class="stores-info">
                   <h4>{{ stores.title }}</h4>
                   <p><span class="bold">Owner:</span> {{ stores.owner }}</p>
-                  {{ stores.content | markdownify }}
+                  {% unless site.data.view-controls.player-view == true %}{{ stores.content | markdownify }}{% endunless %}
                 </div>
             {% assign loopNumber = loopNumber | plus: 1 %}
           {% endif %}
