@@ -65,7 +65,7 @@
         }
         .level-two, .level-three {
           // border-left: 2px solid $color-grey;
-          padding-left: .325rem;
+          // padding-left: .325rem;
         }
         .level-one > li,
         .level-two > li {
@@ -86,15 +86,21 @@
           }
           .level-two {
             width: 75%;
+            li {
+              flex-wrap: wrap;
+            }
             > li:not(:last-child) {
-              border-bottom: 1px solid $color-grey;
+              // border-bottom: 1px solid $color-grey;
               padding-bottom: .65rem;
             }
             > li > a {
-              width: 33.3333%;
+              width: 100%;
+              font-weight: bold;
+              font-size: 1rem;
+              border-bottom: 1px solid $color-grey;
             }
             .level-three {
-              width: 66.6666%;
+              width: 100%;
             }
           }
         }
