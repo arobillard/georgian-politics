@@ -1,4 +1,4 @@
-%card {
+.card {
   overflow: hidden;
   border: 1px solid $color-grey;
   border-radius: $border-radius;
@@ -16,7 +16,7 @@
 }
 
 .card-preview {
-  @extend %card;
+  @extend .card;
   display: flex;
   flex-direction: column;
   &-img {

@@ -1,0 +1,8 @@
+---
+layout: content-page
+title: Captain Lionel Deep
+faction: 2
+district-ref: 4
+city-ref: 0
+npc: 0
+---

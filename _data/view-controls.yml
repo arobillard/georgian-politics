@@ -1,2 +1,2 @@
-player-view: true
-breadcrumbs: false
+player-view: false
+breadcrumbs: true

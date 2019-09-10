@@ -3,6 +3,8 @@ layout: content-overview
 ---
 {% comment %} Variable Checking {% endcomment %}
 
+{% for qCheck in site.data.side-quests %}{% if qCheck.city-ref == page.city-ref and qCheck.district-ref == page.district %}{% assign quests = qCheck.title %}{% break %}{% endif %}{% endfor %}
+
 <div class="content-grid wrapper">
   <nav class="page-nav island">
     <strong class="block giga push-1-2 text-primary font-secondary">{{ page.title | escape }}</strong>
@@ -39,6 +41,13 @@ layout: content-overview
             {% endfor %}
           {% endfor %}
         </ol>
+      </li>
+      {% endif %}
+      {% if quests %}
+      {{quests}}
+      {{page.url}}
+      <li class="content-group push-1-2 pad-b-1-2">
+        <a class="bold" href="#side-quests">Side Quests</a>
       </li>
       {% endif %}
       <li>
@@ -101,5 +110,30 @@ layout: content-overview
       {% endfor %}
     </section>
     {% endif %}
+    {% if page.url contains "district" %}
+    <section id="side-quests" class="side-quests">
+      <h2>Side Quests</h2>
+      {% for sQuests in site.data.side-quests %}
+      {% if sQuests.city-ref == page.city-ref and sQuests.district-ref == page.district %}
+        <div class="card island">
+          <h3>{{ sQuests.title }}</h3>
+          <p>Contact:
+            {% for contact in site.data.npcs %}
+              {% if sQuests.contact == contact.npc %}
+              {{ contact.name }}
+              {% endif %}
+            {% endfor %}
+          </p>
+          {{ sQuests.overview | markdownify }}
+          {% if sQuests.notes %}
+          <h4>Notes:</h4>
+          {{ sQuests.notes | markdownify }}
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </section>
+    {% endif %}
+
   </div>
 </div>

@@ -12,3 +12,6 @@ collections:
   events:
     output: true
     permalink: /:collection/:path/
+  npcs:
+    output: true
+    permalink: /:collection/:path/
