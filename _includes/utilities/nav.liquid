@@ -78,6 +78,22 @@
       </div>
       {% endunless %}
     </li>
+    <li>
+      <a href="{{site.baseurl}}/factions">NPCs</a>
+      {% unless include.navClass == 'nav-footer' %}
+      <div class="dropdown-block">
+        <ol class="list-group push-0 dropdown-block-items level-one">
+          {% for npcs in site.npcs %}
+            {% unless npcs.title == 'npcs' %}
+              <li>
+                <a href="{{site.baseurl}}{{ npcs.url }}">{{ npcs.title }}</a>
+              </li>
+            {% endunless %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endunless %}
+    </li>
     {% endunless %}
   </ol>
 </nav>
