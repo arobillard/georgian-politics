@@ -25,6 +25,7 @@ sections:
             - Wesnah (female tiefling) research
             - Nothem (male human) studying abjuration
       - title: Archives of the Deep
+        discovered: true
         content: >-
           A vast library that focuses on collecting knowledge of the ocean. Its focused oceanic knowledge includes information about aquatic animals and beasts, navigation, history, trade, and all manner of legend and lore.
 
