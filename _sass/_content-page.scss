@@ -86,4 +86,23 @@
       margin-bottom: 0;
     }
   }
+  .section-multi-content {
+    padding-bottom: 1.3rem;
+    margin-bottom: 2.6rem;
+    border-bottom: 1px solid $color-grey;
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+  .pc-comment {
+    background-color: $color-tertiary-light;
+    padding: 1.3rem;
+    margin: 1.3rem -.65rem;
+    box-shadow: $shadow;
+    border-bottom: 1px solid $color-secondary;
+    cite {
+      border-top: 1px solid $color-grey;
+      display: block;
+    }
+  }
 }

@@ -2,6 +2,7 @@
 layout: content-page
 title: Pijavka
 faction: 3
+discovered: false
 sections:
   - title: Introduction
     content: The Pijavka are an underworld that seeks to prfoit from taking advantage of others through drug trafficing, humanoid trafficking, extorsion, and other various criminal activities. Their methods have grown more sophisticated in recent years. They currently secretly control the Anarchists to create turmoil within the city, which they seek to profit from.

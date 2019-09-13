@@ -7,6 +7,7 @@ faction: 0
 family: 1
 district-ref: 7
 city-ref: 0
+discovered: false
 content:
   - title: Council Member
     discovered: true

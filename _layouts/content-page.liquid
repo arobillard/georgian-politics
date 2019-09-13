@@ -61,23 +61,23 @@ layout: content-overview
       <h2>{{sections.title}}</h2>
       {% if sections.content[0].title %}
         {% for content in sections.content %}
-        <div>
+        <div class="section-multi-content">
           <h3 id="{{ content.title | downcase | replace: " ", "-" }}">{{ content.title }}</h3>
           {% if content.reference %}
           <p>See: <a class="" href="{{ content.reference.url }}">{{ content.reference.text }}</a></p>
           {% endif %}
-          {% if site.data.view-controls.player-view == false %}
+          {% if content.discovered or sections.title == 'Introduction' or site.data.view-controls.player-view == false %}
             {{ content.content | markdownify }}
-          {% elsif content.discovered or sections.title == 'Introduction' %}
-            {{ content.content | markdownify }}
+          {% else %}
+            <p>PCs have not discovered this information.</p>
           {% endif %}
         </div>
         {% endfor %}
       {% else %}
-        {% if site.data.view-controls.player-view == false %}
+        {% if sections.discovered or sections.title == 'Introduction' or site.data.view-controls.player-view == false %}
           {{ sections.content | markdownify }}
-        {% elsif sections.discovered or sections.title == 'Introduction' %}
-          {{ sections.content | markdownify }}
+        {% else %}
+          <p>PCs have not discovered this information.</p>
         {% endif %}
       {% endif %}
     </section>
@@ -98,7 +98,9 @@ layout: content-overview
                 <div id="{{ storeLink }}" class="stores-info">
                   <h4>{{ stores.title }}</h4>
                   <p><span class="bold">Owner:</span> {{ stores.owner }}</p>
-                  {% unless site.data.view-controls.player-view == true %}{{ stores.content | markdownify }}{% endunless %}
+                  {% if stores.discovered == true or site.data.view-controls.player-view == false %}
+                    {{ stores.content | markdownify }}
+                  {% endif %}
                 </div>
             {% assign loopNumber = loopNumber | plus: 1 %}
           {% endif %}
@@ -134,6 +136,22 @@ layout: content-overview
       {% endfor %}
     </section>
     {% endif %}
-
+    {% if page.player-notes %}
+      <aside id="player-notes" class="player-notes">
+        <h2>PC Notes</h2>
+        {{ page.player-notes.general | markdownify }}
+        <div class="comments">
+          <h3>Comments</h3>
+          {% for pcComments in page.player-notes.individual %}
+          <blockquote class="pc-comment island-1-2">
+            <p class="push-1-2">{{ pcComments.content }}</p>
+            <cite class="pad-t-1-2">
+              <b class="text-primary">{{ pcComments.pc }}</b> - Session {{ pcComments.session }}
+            </cite>
+          </blockquote>
+          {% endfor %}
+        </div>
+      </aside>
+    {% endif %}
   </div>
 </div>

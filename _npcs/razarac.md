@@ -6,4 +6,5 @@ faction: 3
 family: false
 district-ref: 1
 city-ref: 0
+discovered: false
 ---

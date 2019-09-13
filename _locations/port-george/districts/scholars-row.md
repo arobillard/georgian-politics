@@ -11,6 +11,7 @@ sections:
   - title: Notable Landmarks
     content:
       - title: Academia del Umbra Arcana
+        discovered: true
         content: >-
           A large arcane university which takes up a almost half of the district on the northern end of the district. The university trains students looking to excel at the arcane, conducts research, and provides enchanting at a discounted rate (enchantments are created by students so results are mixed and destruction of items a very real possibility).
 
@@ -33,6 +34,7 @@ sections:
             - Professor Arjhan (male silver dragonborn, head of the archives)
             - Scribe Ausina (female half-elf)
       - title: Museum of Georgian History
+        discovered: true
         content: >-
           A museum chronicling the history of Georgian line. Whether everything displayed is truly fact, that remains to be seen.
 

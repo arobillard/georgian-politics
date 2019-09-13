@@ -31,6 +31,7 @@ stores:
     district-ref: 3
     type-ref: 0
     owner: Milfan (Male Halfing)
+    discovered: false
     content: >-
       - Sells items needed for spell components
       - Sells ingredients for potions
@@ -46,6 +47,7 @@ stores:
     district-ref: 3
     type-ref: 1
     owner: Donosi (Female Brass Dragonborn)
+    discovered: false
     content: >-
       - Magic Items
           - [ ] Bag of Holding - 1000gp
@@ -64,6 +66,7 @@ stores:
     district-ref: 3
     type-ref: 2
     owner: Bethany (Female Human)
+    discovered: false
     content: >-
       A standard dive bar, with a poorer clientel. Usually sailers and travellers passing through the city looking for a cheap meal, drink, and bed.
   - title: The Hunter's Trophy
@@ -71,6 +74,7 @@ stores:
     district-ref: 3
     type-ref: 2
     owner: Jay (Male Orc)
+    discovered: false
     content: >-
       A mid level bar, usually frequented by mid-level merchants after dilevering their goods.
   - title: Coals and Clamps
@@ -78,6 +82,7 @@ stores:
     district-ref: 3
     type-ref: 3
     owner: Aldor (male human)
+    discovered: false
     content: >-
       - Low end blacksmith
       - More focused on farming and general use blacksmith
@@ -87,6 +92,7 @@ stores:
     district-ref: 3
     type-ref: 3
     owner: Brundar (male dwarf)
+    discovered: false
     content: >-
       - High end blacksmith
       - Weapon and armour focus
@@ -96,6 +102,7 @@ stores:
     district-ref: 3
     type-ref: 3
     owner: Maureen (female elf)
+    discovered: false
     content: >-
       - Specializes in ranged weapons and leather armours
       - Sells tracking and hunting supplies
@@ -104,18 +111,21 @@ stores:
     district-ref: 3
     type-ref: 4
     owner: Torga (female dwarf)
+    discovered: false
     content: A wide range of fiction and non-fiction books from reputable authors. A general selection, few specific oddities.
   - title: Narratives Abound
     city-ref: 0
     district-ref: 3
     type-ref: 4
     owner: Caleb (Human Male)
+    discovered: false
     content: Carries the standard selection fo books. Also carries a large range of books written by new, local authors (including by Caleb himself), as well as a numer of specialty items.
   - title: Needle in a Haystack
     city-ref: 0
     district-ref: 3
     type-ref: 6
     owner: Neelan (female human)
+    discovered: false
     content: >-
       - Peasant clothing
       - Practical and comfortable but unflatterin
@@ -124,6 +134,7 @@ stores:
     district-ref: 3
     type-ref: 6
     owner: El (female Elf)
+    discovered: false
     content: >-
       - Mid range clothing
   - title: Bill's Little and Small
@@ -131,6 +142,7 @@ stores:
     district-ref: 3
     type-ref: 6
     owner: Bill (Male Halfing)
+    discovered: false
     content: >-
       - Makes quality clothing for small races, Dwarf and under.
   - title: General Goods
@@ -138,6 +150,7 @@ stores:
     district-ref: 3
     type-ref: 8
     owner: Thok (male half-orc)
+    discovered: false
     content: >-
       All your basic needs from rations to rope to tools.
   - title: Caravans and Carriers
@@ -145,6 +158,7 @@ stores:
     district-ref: 3
     type-ref: 10
     owner: Bruk (female half-orc)
+    discovered: false
     content: >-
       - Sells and rents pack animals and other needs for caravans
       - Mules, work horses
@@ -153,6 +167,7 @@ stores:
     district-ref: 3
     type-ref: 10
     owner: Goodman (male human), Fern was his pappy, rest his soul.
+    discovered: false
     content: >-
       - Sells riding horses
   - title: The Gusting Fan Ink Parlour
@@ -160,6 +175,7 @@ stores:
     district-ref: 3
     type-ref: 12
     owner: Greg (female human)
+    discovered: false
     content: >-
       High quality tattoos.
   - title: Diomand Hammer
@@ -167,6 +183,7 @@ stores:
     district-ref: 1
     type-ref: 3
     owner: Yolan (Human Male)
+    discovered: false
     content: >-
       - Specializes in cermonial weapons and armour
       - Has connections with enchanters
@@ -176,6 +193,7 @@ stores:
     district-ref: 1
     type-ref: 6
     owner: Justice (pronounced You-stice) Montgomery (male gnome)
+    discovered: false
     content: >-
       - High Fashion
       - Ceremonial dress for important events
@@ -184,6 +202,7 @@ stores:
     district-ref: 1
     type-ref: 0
     owner: Ulsafia (female high elf)
+    discovered: false
     content: >-
       - Sells items needed for spell components
       - Sells ingredients for potions
@@ -196,6 +215,7 @@ stores:
     district-ref: 1
     type-ref: 1
     owner: Xuleery (female white teifling, glowing blue eyes)
+    discovered: false
     content: >-
       - Magic Items
         - [ ] Items
@@ -205,6 +225,7 @@ stores:
     district-ref: 1
     type-ref: 10
     owner: Maximus (male Aasimar)
+    discovered: false
     content: >-
       - Sells high quality riding horses
   - title: The Wanderer's Narrative
@@ -212,6 +233,7 @@ stores:
     district-ref: 1
     type-ref: 4
     owner: Torga (female dwarf)
+    discovered: false
     content: >-
       - Sells rare, exspensive books.
   - title: The Crystal Chalice
@@ -219,6 +241,7 @@ stores:
     district-ref: 1
     type-ref: 2
     owner: Katya (female tiefling)
+    discovered: false
     content: >-
       A lounge for the rich and powerful.
   - title: Heaven's Caress
@@ -226,6 +249,7 @@ stores:
     district-ref: 1
     type-ref: 5
     owner: Juliana (female aasimar)
+    discovered: false
     content: >-
       A discreet lounge for those looking to be comforted.
   - title: Lover's Warmth
@@ -233,6 +257,7 @@ stores:
     district-ref: 1
     type-ref: 5
     owner: Jusem (male human)
+    discovered: false
     content: >-
       - Actually a red tiefling in disguise
       - Super illegal, workers are all slaves. A fact known and kept secret by powerful elite who enjoy spending time here (although they are unaware of the owners disguise part)
@@ -241,6 +266,7 @@ stores:
     district-ref: 4
     type-ref: 2
     owner: Gene (male Gnome)
+    discovered: false
     content: >-
       - Mid level bar
   - title: The Resolute Watchman
@@ -248,6 +274,7 @@ stores:
     district-ref: 4
     type-ref: 2
     owner: Don (male human, retired towns guard)
+    discovered: false
     content: >-
       - Basically a cop bar
       - Biggest tavern in the city
@@ -256,6 +283,7 @@ stores:
     district-ref: 4
     type-ref: 5
     owner: Mother Sasha (female dwarf)
+    discovered: false
     content: >-
       It is reasonably nice and clean, but efficiency is really more its thing.
   - title: Rising Dragon (Bakery)
@@ -263,6 +291,7 @@ stores:
     district-ref: 4
     type-ref: 7
     owner: Jacob (male dwarf)
+    discovered: false
     content: >-
       - High end baked goods.
   - title: Hunter's Table (Butcher)
@@ -270,6 +299,7 @@ stores:
     district-ref: 4
     type-ref: 7
     owner: Wekma (old female gnome)
+    discovered: false
     content: >-
       - Mid range meats
   - title: The Stick 'Em Stall
@@ -277,6 +307,7 @@ stores:
     district-ref: 6
     type-ref: 11
     owner: Stu (male gnome)
+    discovered: false
     content: >-
       - Various low end weapons, mostly daggers, probably not legal
   - title: Full Moon Butterflies
@@ -284,6 +315,7 @@ stores:
     district-ref: 6
     type-ref: 12
     owner: Jestra (female blue tiefling)
+    discovered: false
     content: >-
       Reasonably well designed and produced tattoos. Although, not without some risk.
   - title: The Bloody Dagger
@@ -291,6 +323,7 @@ stores:
     district-ref: 6
     type-ref: 2
     owner: Craig (male hafling)
+    discovered: false
     content: >-
       The divest of dive bars. Known to be the location of many shady deals over the years.
   - title: The Full Tankard
@@ -298,6 +331,7 @@ stores:
     district-ref: 6
     type-ref: 2
     owner: The Beggar (male half-orc, member of the Council of the Bruins)
+    discovered: false
     content: >-
       The closes you can get to a dive bar being respectable. Has steady business and is popular amongst the locals.
   - title: The Gentleman's Reprieve
@@ -305,6 +339,7 @@ stores:
     district-ref: 6
     type-ref: 5
     owner: Crush (male human, he's a pimp)
+    discovered: false
     content: >-
       A very intense, likely illegal "brothel".
   - title: Motel 6
@@ -312,6 +347,7 @@ stores:
     district-ref: 6
     type-ref: 5
     owner: Kumani (female red dragonborn)
+    discovered: false
     content: >-
       A brothel known for its short term stayss and attempted discretion.
   - title: Quality Mixes
@@ -319,6 +355,7 @@ stores:
     district-ref: 6
     type-ref: 0
     owner: Reula (female blue tiefling)
+    discovered: false
     content: >-
       - Garbage potions, mostly placebos
       - Carries a few psychedelic potions and watered down Shockleaf

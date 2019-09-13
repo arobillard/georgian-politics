@@ -20,9 +20,11 @@ sections:
   - title: Areas of interest
     content:
       - title: Farmunes
+        discovered: true
         content: >-
           Because the Pastures have grown so large, it is hard for workers and resources to travel to the farms and back to the city quickly. Many of the farms require most of a days travel to reach. Because of this small farming communities, referred to as "Farmunes" have popped up across the pastures. These Farmunes usually feature workers barracks (sometimes with a pub attached) where farm hands stay when on a work rotation, blacksmiths, craftsmen, and a general store.
       - title: Watchtowers
+        discovered: true
         content: >-
           Watchtowers are spread out creating a network across the Pastures. They are able to signal each other, the city, and surrounding farms of danger. Most towers are stone structures around 60ft tall, have a rotating crew of 4 guards, basic lodging, and signal flags and fires.
       - title: Findren Winery
@@ -35,6 +37,7 @@ sections:
 
           The Findren Estate has invested a large amount of money into developing lower income areas and generating jobs and is currently in the good graces of most of the Port George residents. Although their intentions seem good and overall they are providing a service to the city, some keen observers might notice that the increase in wages amongst the poor has also means an increase in the sales of Cracked Cliff Wines.
       - title: Huntington Brewers
+        discovered: true
         content: >-
           Owned by the [Huntington Estate](../../families/huntington/), the brewery brews Honeybrew, the most popular mead in Port George. They also brew a range of other popular drinks including Oaksap (whiskey), Golden Apple (cider), and Trailblazer (ale). The brewery and estate is located west of the city south of the Gate Way.
 

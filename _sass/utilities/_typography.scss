@@ -8,14 +8,14 @@ html {
   }
 }
 
-a, .link-mimic {
+a, .link-mimic, .link {
   transition:
     color $transition,
     border-color $transition,
     background-color $transition;
 }
 
-p a, .link-mimic {
+p a, .link-mimic, .link {
   color: $color-primary;
   text-decoration: underline;
   &:hover, &:focus {
