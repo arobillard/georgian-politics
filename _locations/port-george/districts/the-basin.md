@@ -1,11 +1,13 @@
 ---
 layout: content-page
 title:: The Basin
-img: false
+img: http://www.digitalanddice.com/uploads/2/9/1/3/29137401/6d398bf3e8b6a393eec8bd7adc862091_orig.jpg
 desc: Historically the poorest district, in recent years the living conditions have improved. Unfortunately, not all are pleased with this result.
 city-ref: 0
 district: 6
 sections:
+  - title: Introduction
+    content: Historically known as the Basin because it is the lower point in the city, both in terms of social status and physical height. Its residents have struggled a lot over the years, but currently live in a state of relative comfort.
   - title: Demographics
     discovered: true
     content: The poorest and most dangerous area of Port George. In recent years has stabilized, however there is still a fair amount of petty crime and muggings. It is not wise to walk alone at night. Inhabitants include petty criminals, low level servants of the upper class, young sailors, farm hands new immigrants and refugees of other lands,

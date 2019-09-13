@@ -1,12 +1,18 @@
 ---
 layout: content-page
 title:: The Pastures
+desc: Stretching as far as the eye can see are the hundreds of farms, providing food, drink, and more for the city.
+img: /images/the-pastures.jpg
+imgLocal: true
 city-ref: 0
 district: 7
 sections:
+  - title: Introduction
+    content: Surrounding the entirety of the city of Port George, The Pastures are a massive expanse of farmlands. The crops produced by The Pastures are more than enough to feed the city's residents and many of the surrounding cities.
 #  - title: CoB Council Member
-#    content: >-
-#      [The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntington Estate. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
+    #discovered: false
+    #content: >-
+      #[The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntington Estate. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
   - title: Demographics
     discovered: true
     content: >-

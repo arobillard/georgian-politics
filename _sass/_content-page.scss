@@ -46,6 +46,11 @@
   .content-group {
     border-bottom: 1px solid $color-grey;
   }
+  .back-to-top {
+    @include mq(max, $mqM) {
+      display: none;
+    }
+  }
 }
 
 .page-content {

@@ -9,6 +9,10 @@ district: 4
 sections:
   - title: Introduction
     content: Home to the town guard headquarters and much of the middle class, Mid Court is a safe and prosperous district within the city.
+  - title: Demographics
+    discovered: true
+    content: >-
+      The majority of Mid Court are middle class citizens who live comfortable, modest lives. The residents generally include skilled tradespeople, families of towns guards, mid-level merchants, successful sailors, etc. it is considered a relatively safe area.
   - title: Notable Landmarks
     content:
       - title: City Guard Main Barracks
@@ -18,8 +22,4 @@ sections:
           #### Stadium
 
           The stadium holds a number of tournaments throughout the year. Generally coinciding with different festivals and celebrations. Tournaments feature competitions such as jousting, sword fighting, beast slaying, and more. They feature both towns guard and adventurers alike.
-  - title: Demographics
-    discovered: true
-    content: >-
-      The majority of Mid Court are middle class citizens who live comfortable, modest lives. The residents generally include skilled tradespeople, families of towns guards, mid-level merchants, successful sailors, etc. it is considered a relatively safe area.
 ---
