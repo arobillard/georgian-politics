@@ -1,7 +1,8 @@
 ---
 layout: content-page
 title:: Mid Court
-img: false
+img: /images/mid-court.jpg
+imgLocal: true
 desc: Home to the town guard headquarters and much of the middle class, Mid Court is a safe and prosperous district within the city.
 city-ref: 0
 district: 4

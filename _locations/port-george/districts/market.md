@@ -9,6 +9,9 @@ sections:
   - title: Introduction
     content: >-
       The market district marks the centre of town where all the districts meet. The large main roads of the town intersect here creating a road known as *The Circle*. Within The Circle is a large [statue of the Goddess Nocea](#statue-of-nocea) and surrounding the ring there are layers of stalls and tents selling wares and goods. Beyond the tents numerous shops extend further into the market district.
+  - title: Demographics
+    discovered: true
+    content: The Market is a mixture of all of the lifestyles from around the city. Its residents range from poor to rich and the quality of its wares reflect that. Many of its residents only stay for a short time before moving on on the next caravan or trade mission. There are some stores that are long standing institutions, while many only pop up for a short while before disappearing.
   - title: Notable Landmarks
     content:
       - title: Statue of Nocea

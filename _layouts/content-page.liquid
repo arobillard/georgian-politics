@@ -136,6 +136,19 @@ layout: content-overview
       {% endfor %}
     </section>
     {% endif %}
+    {% if page.store and page.url contains 'npcs' %}
+    {% for stores in site.data.stores.stores %}
+      {% if stores.title == page.store %}
+        {% capture storeLink %}{{ stores.title | replace: " ", "-" | remove: "'" | downcase }}{% endcapture %}
+        <div id="{{ storeLink }}" class="stores-info">
+          <h4>{{ stores.title }}</h4>
+          {% if stores.discovered == true or site.data.view-controls.player-view == false %}
+            {{ stores.content | markdownify }}
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% endif %}
     {% if page.player-notes %}
       <aside id="player-notes" class="player-notes">
         <h2>PC Notes</h2>

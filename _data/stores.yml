@@ -215,7 +215,7 @@ stores:
     district-ref: 1
     type-ref: 1
     owner: Xuleery (female white teifling, glowing blue eyes)
-    discovered: false
+    discovered: true
     content: >-
       - Magic Items
         - [ ] Items
@@ -260,6 +260,7 @@ stores:
     discovered: false
     content: >-
       - Actually a red tiefling in disguise
+
       - Super illegal, workers are all slaves. A fact known and kept secret by powerful elite who enjoy spending time here (although they are unaware of the owners disguise part)
   - title: Fox Tail Tavern
     city-ref: 0
@@ -277,6 +278,7 @@ stores:
     discovered: false
     content: >-
       - Basically a cop bar
+
       - Biggest tavern in the city
   - title: The Rested Warrior
     city-ref: 0
@@ -352,10 +354,21 @@ stores:
       A brothel known for its short term stayss and attempted discretion.
   - title: Quality Mixes
     city-ref: 0
-    district-ref: 6
+    district-ref: 3
     type-ref: 0
     owner: Reula (female blue tiefling)
     discovered: false
     content: >-
       - Garbage potions, mostly placebos
+
       - Carries a few psychedelic potions and watered down Shockleaf
+  - title: Todd's Fruit Stand
+    city-ref: 0
+    district-ref: 3
+    type-ref: 7
+    owner: Todd (human male)
+    discovered: true
+    content: >-
+        - Quality fruits grown in The Pastures
+
+        - Prices are quite reasonable.
