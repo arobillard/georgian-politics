@@ -372,3 +372,11 @@ stores:
         - Quality fruits grown in The Pastures
 
         - Prices are quite reasonable.
+  - title: Bulman & Sons
+    city-ref: 0
+    district-ref: 8
+    type-ref: 9
+    owner: John Bulman (human male)
+    discovered: false
+    content: >-
+      Bulman & Sons are the most successful master shipbuilders in Port George. They have designed and built ships for many generations and are known for their quality.

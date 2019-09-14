@@ -1,7 +1,8 @@
 .card {
   overflow: hidden;
   border: 1px solid $color-grey;
-  border-radius: $border-radius;
+  border-bottom: 1px solid $color-secondary;
+  // border-radius: $border-radius;
   box-shadow: $shadow;
   text-decoration: none;
   background-color: #fff;
@@ -33,15 +34,7 @@
   &-content {
     padding: .65rem;
     p {
-      // margin: 0;
       color: $color-grey-dark;
     }
   }
-  // min-height: calc(100vw - 2.6rem);
-  // @include mq(min, $mqM) {
-  //   min-height: calc(50vw - 1.95rem);
-  // }
-  // @include mq(min, $mqL) {
-  //   min-height: calc(52em / 3 - 1.7333333333rem);
-  // }
 }
