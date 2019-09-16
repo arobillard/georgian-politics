@@ -15,3 +15,6 @@ collections:
   npcs:
     output: true
     permalink: /:collection/:path/
+  pcs:
+    output: true
+    permalink: /:collection/:path/

@@ -16,6 +16,7 @@ sections:
   - title: Notable Landmarks
     content:
       - title: City Guard Main Barracks
+        pageLink: city-guard-main-barracks/
         content: >-
           There are smaller barracks and outposts throughout the city, but the main barracks and headquarters of the city guard is stationed along March Line just within the boundaries of the Mid Court district. Runners frequently go in and out of the barracks carrying messages and order to and from other barracks and Castle Caan. The barracks also features a large armory, training ground, and stadium.
 

@@ -51,6 +51,74 @@
       display: none;
     }
   }
+  .page-nav-opener {
+    color: #fff;
+    display: none;
+  }
+  @include mq(max, $mqM) {
+    background-color: $color-primary;
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: $shadow;
+    transition:
+      width $transition,
+      height $transition,
+      bottom $transition,
+      right $transition,
+      transform $transition,
+      border-radius $transition;
+    .page-nav-opener {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // transform: translate(50%, -50%);
+      transition:
+        top $transition,
+        right $transition;
+      &:hover, &:focus {
+        color: #fff;
+        outline: 0;
+      }
+      .closer {
+        display: none;
+      }
+    }
+    > strong, > ol {
+      display: none;
+      opacity: 0;
+      transition: opacity $transition;
+    }
+    &.page-nav-open {
+      width: calc(100vw - 2rem);
+      height: calc(100vh - 2rem - 50px);
+      border-radius: 10px;
+      > strong, > ol {
+        display: block;
+        opacity: 1;
+      }
+      > strong, a {
+        color: #fff;
+      }
+      .page-nav-opener {
+        .opener {
+          display: none;
+        }
+        .closer {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .page-content {

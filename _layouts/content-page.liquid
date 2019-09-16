@@ -6,7 +6,7 @@ layout: content-overview
 {% for qCheck in site.data.side-quests %}{% if qCheck.city-ref == page.city-ref and qCheck.district-ref == page.district %}{% assign quests = qCheck.title %}{% break %}{% endif %}{% endfor %}
 
 <div class="content-grid wrapper">
-  <nav class="page-nav island">
+  <nav id="page-nav" class="page-nav island">
     <strong class="block giga push-1-2 text-primary font-secondary">{{ page.title | escape }}</strong>
     <ol class="list-group">
       {% for sections in page.sections %}
@@ -53,7 +53,21 @@ layout: content-overview
       <li class="back-to-top">
         <a class="milli" href="#main">Back to Top</a>
       </li>
-    </ul>
+    </ol>
+    <a class="page-nav-opener" href="#">
+      <div class="opener">
+        <i class="icon i-1">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#menu-items" /></svg>
+        </i>
+        <span class="icon-label hidden">Open side nav</span>
+      </div>
+      <div class="closer">
+        <i class="icon i-1">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#close" /></svg>
+        </i>
+        <span class="icon-label hidden">Close side nav</span>
+      </div>
+    </a>
   </nav>
   <div class="page-content island">
     {% for sections in page.sections %}
@@ -62,7 +76,7 @@ layout: content-overview
       {% if sections.content[0].title %}
         {% for content in sections.content %}
         <div class="section-multi-content">
-          <h3 id="{{ content.title | downcase | replace: " ", "-" }}">{{ content.title }}</h3>
+          <h3 id="{{ content.title | downcase | replace: " ", "-" }}">{% if content.pageLink %}<a href="{{ content.pageLink }}">{% endif %}{{ content.title }}{% if content.pageLink %}</a>{% endif %}</h3>
           {% if content.reference %}
           <p>See: <a class="" href="{{ content.reference.url }}">{{ content.reference.text }}</a></p>
           {% endif %}

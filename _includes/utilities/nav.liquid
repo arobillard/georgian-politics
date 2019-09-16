@@ -1,5 +1,4 @@
 <nav class="{{ include.navClass }}">
-  <!-- <a class="temp-tog" href="#">Open Menu</a> -->
   <ol class="list-group push-0">
     <li>
       <a href="{{site.baseurl}}/locations">Locations</a>
@@ -13,7 +12,7 @@
                 <a class="block" href="{{site.baseurl}}/locations/port-george/districts/">Districts</a>
                 <ol class="list-group push-0 dropdown-block-items level-three">
                   {% for districts in site.locations %}
-                    {% if districts.url contains 'districts' %}
+                    {% if districts.url contains 'districts' and districts.navExclude != true %}
                       {% unless districts.title == 'Districts' %}
                         <li>
                           <a href="{{site.baseurl}}{{ districts.url }}">{{ districts.title }}</a>
