@@ -122,6 +122,10 @@ minM.addListener(mediaQuery) // Attach listener function on state changes
 
 // Page Nav Opener
 
+$('.page-nav a:not(.page-nav-opener)').on('click', function() {
+  $('.page-nav').removeClass('page-nav-open');
+});
+
 $('.page-nav-opener').on('click', function(q) {
   q.preventDefault();
   $('.page-nav').toggleClass('page-nav-open');
