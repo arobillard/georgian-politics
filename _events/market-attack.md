@@ -23,7 +23,7 @@ district-ref: 3
 sections:
   - title: Introduction
     content: >-
-      It is a beautiful, sunny Domus morning. The Market is extra busy this morning as it is Domus morning, during which time much of the rest of the city is shut down and the locals flock do their personal errands. Today is the first Domus of the month of Flamerule and the first major crop of the season from [The Pastures](/locations/port-george/districts/the-pastures/) are being sold at bargain prices from stalls. The sounds of bartering, bustling crowds, and pack animals fills the air.
+      It is a beautiful, sunny morning in Port George. The last few days have been a mix of grey and stormy weather and the city's residents are excited to be out and about enjoying the beautiful weather. It is eleven in the morning on Domus, the 9th day of the Tenday cycle and [the Market](../../locations/port-george/districts/market) is packed with shoppers looking to procure foods and wares. Today, [the Market](../../locations/port-george/districts/market) is especially busy because it is the first Domus of the month of Flamerule and the first major crop of the season is arriving from [The Pastures](../../locations/port-george/districts/the-pastures/). Many of the city's residents are looking to take advantage of bargain prices and stock up for the Midsummer festival at the end of the month. The crowds are large and busy, but overall spirits are high and people are happy to enjoy a beautiful day in the Market.
   - title: Goal
     content: >-
       First event of the campaign used to introduce the Aghara Faction and help bring PCs together if they are not starting as a group.
@@ -35,6 +35,8 @@ sections:
 
       - Character activities
 
+      - Introduce [Evander Montgomery](../../npcs/evander-montgomery)
+
       - Market attacks
 
       - More guard arrivals including [Captain Lionel Deep](../../npcs/captain-lionel-deep/).
@@ -42,6 +44,8 @@ sections:
       - Escort to the City Guard Headquarters
 
       - PC investigation by Captain Deep
+          - Meet in office
+          - Discuss
 ---
 ### Event Goal:
 First event of the campaign used to introduce the [Aghara Faction](/factions/aghara) and help bring PCs together if they are not starting as a group.
