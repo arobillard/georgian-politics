@@ -14,5 +14,6 @@ sections:
     discovered: true
     content: Mid-forties, average height, powerfully built, receding hairline, large moustache that is greying. Gives off an air of firmness and intensity.
   - title: Personality
+    discovered: true
     content: Firm but fair. Generally a by-the-book man, but will be lenient if he feels a second chance is warranted.
 ---
