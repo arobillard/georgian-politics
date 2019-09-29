@@ -50,17 +50,23 @@ stores:
     discovered: false
     content: >-
       - Magic Items
-          - [ ] Bag of Holding - 1000gp
-          - [ ] Hat of Disguise - 500gp
-          - [ ] Shield of Heroic Memories - 3000gp
+          - [ ] Bag of Holding - 750gp
           - [ ] Cloak of Protection +1 - 1000gp
-          - [ ] Mithral Plate Armor - 2500gp
-          - [ ] Ring of Animal Influence - 750gp
           - [ ] Sending Stones - 500gp
+          - [ ] Skriveno's Magic Sealer
       - Potions
           - [ ] 2 Greater healing potions (4d4 + 4) - 250gp
-          - [ ] Potion of Invisibility - 5000gp
+          - [ ] Potion of Hill Giant Strength - 500gp
           - [ ] Potion of Speed - 3000gp
+    items:
+      - title: Bag of Holding
+        price: 750gp
+        description: A classic Bag of Holding.
+        # purchased: true
+      - title: Cloak of Protection +1
+        price: 1000gp
+        description: This cloack improves AC by 1.
+        # purchased: true
   - title: The Glutton's Gallery
     city-ref: 0
     district-ref: 3

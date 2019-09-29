@@ -9,7 +9,7 @@ layout: content-overview
     <ol class="list-group">
       {% for sections in page.sections %}
         <li class="content-group push-1-2 pad-b-1-2">
-          <a class="bold" href="#{{ sections.title | downcase | replace: " ", "-" }}"> {{sections.title}}
+          <a class="bold" href='#{{ sections.title | downcase | replace: " ", "-" }}'> {{sections.title}}
           {% unless sections.title == "Introduction" %}
             <ol class="page-nav-sub push-0 list-group milli gutter-1-4">
               {% for content in sections.content %}

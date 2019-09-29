@@ -115,6 +115,20 @@ layout: content-overview
                   {% if stores.discovered == true or site.data.view-controls.player-view == false %}
                     {{ stores.content | markdownify }}
                   {% endif %}
+                  {% if stores.items[0] %}
+                    <h5>Items</h5>
+                    <ul class="list-group">
+                    {% for item in stores.items %}
+                      <li class="item-box{% if item.purchased == true %} purchased{% endif %}">
+                        <h6>{{ item.title }}</h6>
+                        <strong>{{ item.price }}</strong>
+                        <div>
+                          {{ item.description | markdownify }}
+                        </div>
+                      </li>
+                    {% endfor %}
+                    </ul>
+                  {% endif %}
                 </div>
             {% assign loopNumber = loopNumber | plus: 1 %}
           {% endif %}

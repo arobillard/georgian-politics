@@ -15,7 +15,11 @@ sections:
   - title: Notable Landmarks
     content:
       - title: Statue of Nocea
+        discovered: true
         content: In the centre of The Circle is a 60' high, marble statue of the Goddess Nocea. Nocea is standing slightly hunched with her face in her hands as if crying. She wears a flowing dress featuring patterns of waves, the moon, stars, sea creatures, and ships.
+      - title: The Coastal Trust
+        discovered: true
+        content: This massive bank is the headquarters of The Coastal Trust, which is a massive network of banks that serve numerous cities in Creag Mhòr. Located at the intersection of The Drain and Scholar's Row, the white marble building is the largest in all of the Market district. In a courtyard infront of the building is the Merchant's Fortune Fountain. It is tradition before confirming a large trade or business deal to throw a gold piece or two into the fountain for good luck. All the money collected is donated to [Healing Waters](../district-of-the-divine/#healing-waters).
 player-notes: false
 #  individual:
 #    - pc: Steve
