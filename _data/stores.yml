@@ -278,11 +278,9 @@ stores:
     district-ref: 1
     type-ref: 1
     owner: Xuleery (female white teifling, glowing blue eyes)
-    discovered: true
+    discovered: false
     content: >-
-      - Magic Items
-        - [ ] Items
-      - Custom enchanting
+      Xuleery and the team of enchanters at Beacon of Might are considered the best in the city. They keep a rotating catologue of items in stock at all times as well as provide requested enchanting services.
     items:
       - title: Ammunition +1
         # discovered: true
