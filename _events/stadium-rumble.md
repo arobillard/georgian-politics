@@ -49,6 +49,4 @@ sections:
             > The people's servant,
             >
             > Propova
-
-
 ---

@@ -181,10 +181,12 @@
       &:not(:last-child) {
         margin-bottom: 1.3rem; 
       }
-      &.purchased {
+      &.purchased,
+      &.sold-out {
         position: relative;
       }
-      &.purchased::after {
+      &.purchased::after,
+      &.sold-out::after {
         content: 'Purchased';
         position: absolute;
         width: calc(100% + 1.3rem);
@@ -206,8 +208,13 @@
         transition:
           opacity $transition;
       }
-      &.purchased:hover::after {
-        opacity: 0;
+      &.sold-out::after {
+        content: 'Sold Out';
+        background-color: $color-primary;
+      }
+      &.purchased:hover::after,
+      &.sold-out:hover::after {
+        opacity: .1;
       }
       h6 {
         flex-grow: 2; 

@@ -34,38 +34,79 @@ stores:
     discovered: false
     content: >-
       - Sells items needed for spell components
+
       - Sells ingredients for potions
-      - Sells basics potions:
-          - 50gp: Basic Healing Potion 2d4 + 2
-              - Has max 3 in stock at a time
-          - 50gp: Antitoxin
-              - Has max 3 in stock at a time
+
       - Does NOT sell potion recipes or train in potion making
+
       - Can do some custom potion orders of low level potions.
+    items:
+      - title: Potion of Healing
+        discovered: true
+        price: 60gp
+        description: Heals 4d4 + 2 hit points.
+        # purchased: true
+      - title: Antitoxin
+        discovered: true
+        price: 60gp
+        description: A standard Antitoxin
+        # purchased: true
+      - title: Potion of Greater Healing
+        discovered: true
+        price: 175gp
+        description: Heals 4d4 + 4 hit points.
+        # purchased: true
+      - title: Potion of Hill Giant Strength
+        discovered: true
+        price: 200gp
+        description: Increases Strength Ability score to 21 for 1 hour.
+        # purchased: true
   - title: The Sun's Glory
     city-ref: 0
     district-ref: 3
     type-ref: 1
     owner: Donosi (Female Brass Dragonborn)
-    discovered: false
+    # discovered: true
     content: >-
-      - Magic Items
-          - [ ] Bag of Holding - 750gp
-          - [ ] Cloak of Protection +1 - 1000gp
-          - [ ] Sending Stones - 500gp
-          - [ ] Skriveno's Magic Sealer
-      - Potions
-          - [ ] 2 Greater healing potions (4d4 + 4) - 250gp
-          - [ ] Potion of Hill Giant Strength - 500gp
-          - [ ] Potion of Speed - 3000gp
+      The Sun's Glory features a team of skilled enchanters led by Donosi. They have a rotating list of items for general sale and are able to take specific requests and orders.
+#       - Potions
+#           - [ ] 2 Greater healing potions (4d4 + 4) - 250gp
+#           - [ ] Potion of Hill Giant Strength - 500gp
+#           - [ ] Potion of Speed - 3000gp
     items:
       - title: Bag of Holding
-        price: 750gp
+        discovered: true
+        price: 500gp
         description: A classic Bag of Holding.
         # purchased: true
       - title: Cloak of Protection +1
+        discovered: true
         price: 1000gp
-        description: This cloack improves AC by 1.
+        description: This cloak improves AC by 1.
+        # purchased: true
+      - title: Sleep Darts x5
+        # soldOut: true
+        discovered: true
+        price: 200gp
+        description: Non-damaging sleep darts. DC 12 Constitution check or target falls asleep for 1d20 minutes.
+        # purchased: true
+      - title: Sending Stones
+        discovered: true
+        price: 500gp
+        description: >-
+          Sending stones come in pairs, with each smooth stone carved to match the other so the pairing is easily recognized. While you touch one stone, you can use an action to cast the sending spell from it. The target is the bearer of the other stone. If no creature bears the other stone, you know that fact as soon as you use the stone and don’t cast the spell.
+
+          
+          Once sending is cast through the stones, they can’t be used again until the next dawn. If one of the stones in a pair is destroyed, the other one becomes nonmagical.
+        # purchased: true
+      - title: Skriveno's Sneaky Sealer
+        # discovered: true
+        price: 150gp
+        description: >-
+          When inserted into a keyhole or lock, this device becomes invisible and magically enhances the lock, making it harder to pick. Anyone who fails at picking a lock sealed by Skriveno's Sneaky Sealer and must succeed a Constitution ST or take 3d6 force damage or half as much on a success.
+
+
+          The device is only capable of discharging once per day, however continues to enhance the lock after discharging. Upon discharge after a failed lock pick, there is a 25% chance that the device will break and fully jam the lock.
         # purchased: true
   - title: The Glutton's Gallery
     city-ref: 0
@@ -211,11 +252,27 @@ stores:
     discovered: false
     content: >-
       - Sells items needed for spell components
+
       - Sells ingredients for potions
-      - Sells higher end potions:
-        - [ ] To be updated
+
+      - Sells higher end potions
+
       - Has advanced books on potion making
-      - Can do some custom potion orders.
+
+      - Can do custom potion orders.
+    items:
+      - title: Potion of Growth
+        # discovered: true
+        price: 175gp
+        description: >-
+           When you drink this potion, you gain the "enlarge" effect of the <em>enlarge/reduce</em> spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.
+        # purchased: true
+      - title: Potion of Invisibility
+        # discovered: true
+        price: 5000gp
+        description: >-
+           This potion's container looks empty but feels as though it holds liquid.  When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell.
+        # purchased: true
   - title: Beacon of Might
     city-ref: 0
     district-ref: 1
@@ -226,6 +283,43 @@ stores:
       - Magic Items
         - [ ] Items
       - Custom enchanting
+    items:
+      - title: Ammunition +1
+        # discovered: true
+        price: 25gp/ea
+        description: >-
+          For a cost of 25gp per unit, a +1 enchantment can be added to any type of projectile ammunition. The original ammunition must be supplied by the customer.
+
+
+          The process takes 1 day produce 5 units. For  price of 35gp per unit, 10 units can be produced per day.
+        # purchased: true
+      - title: Circlet of Blasting
+        # discovered: true
+        price: 500gp
+        description: While wearing this circlet, you can use an action to cast the <em>scorching ray</em> spell with it. When you make the spell's attacks, you do so with an attack bonus of +5. The circlet can't be used this way again until the next dawn.
+        # purchased: true
+      - title: Gem of Brightness
+        # discovered: true
+        price: 400gp
+        description: >-
+          This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:</p
+
+
+          - The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.
+
+          - The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+          - The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.
+
+
+          When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.
+        # purchased: true
+      - title: Ring of Feather Fall
+        # discovered: true
+        price: 3000gp
+        attunement: true
+        description: When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.
+        # purchased: true
   - title: Maximus' Steed
     city-ref: 0
     district-ref: 1
@@ -360,7 +454,7 @@ stores:
       A brothel known for its short term stayss and attempted discretion.
   - title: Quality Mixes
     city-ref: 0
-    district-ref: 3
+    district-ref: 6
     type-ref: 0
     owner: Reula (female blue tiefling)
     discovered: false

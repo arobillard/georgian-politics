@@ -115,17 +115,20 @@ layout: content-overview
                   {% if stores.discovered == true or site.data.view-controls.player-view == false %}
                     {{ stores.content | markdownify }}
                   {% endif %}
-                  {% if stores.items[0] %}
+                  {% if stores.items[0] and stores.discovered == true or site.data.view-controls.player-view == false %}
                     <h5>Items</h5>
                     <ul class="list-group">
                     {% for item in stores.items %}
-                      <li class="item-box{% if item.purchased == true %} purchased{% endif %}">
-                        <h6>{{ item.title }}</h6>
+                      {% if item.discovered == true or site.data.view-controls.player-view == false %}
+                      <li class="item-box{% if item.purchased == true %} purchased{% endif %}{% if item.soldOut == true %} sold-out{% endif %}">
+                        <h6 class="text-secondary">{{ item.title }}</h6>
                         <strong>{{ item.price }}</strong>
+                        {% if item.attunement == true %}<em class="block w-1 push-1-2">Requires attunement</em>{% endif %}
                         <div>
                           {{ item.description | markdownify }}
                         </div>
                       </li>
+                      {% endif %}
                     {% endfor %}
                     </ul>
                   {% endif %}
