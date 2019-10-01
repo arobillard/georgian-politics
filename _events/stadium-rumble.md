@@ -19,7 +19,7 @@ sections:
         - Has never seen the Aghara before
         - Concerned they may be dangerous
 
-      - Talk with Maxwell Brood
+      - Talk with [Maxwell Brood](../../npcs/maxwell-brood)
         - Arrives looking for Morokei
         - Wants to make sure he is still able to fight
         - asks about the Market Incident
@@ -41,7 +41,7 @@ sections:
 
       - Find note from Aghara
         - After the fight PCs discover a note in their staging room that reads:
-        
+
             > My fellow citizens and warriors for the people. I worry that we may have gotten off on the wrong foot. I truly want what is best for this city, and from what I have heard, so do you. I would love to meet you and have a better chance to discuss our dreams for the city.
             >
             > On Sequitur of this Tenday at 11 in the evening, throw a gold piece into the Merchant's Fortune Fountain. One of my Aghara agents will meet and escort you to my safehouse where we can discuss how we can save this city together.
