@@ -6,7 +6,7 @@ faction: null
 family: false
 district-ref: 4
 city-ref: 0
-discovered: false
+discovered: true
 sections:
   - title: Introduction
     content: Maxwell wworks for the stadium. He is part agent for the fighters, part marketer for the stadium, and part business man. Although he does not own the stadium (it is owned by the city), he is essential in its success.

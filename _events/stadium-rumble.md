@@ -49,4 +49,12 @@ sections:
             > The people's servant,
             >
             > Propova
+      
+      - Prepare for meeting?
+
+      - Aghara meeting
+        - Led from fountain through back streets and eventually to a warehouse
+        - Meet and talk with Propova
+        - Propova vanishes
+      
 ---
