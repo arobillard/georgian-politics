@@ -36,6 +36,22 @@ sections:
       - Fight in the stadium
         - Huge turn out, seats are full and there are numerous extra people standing
         - Appears they have been over hyping it as quite the todo
+        Early fights:
+          - Two young barbarians
+            - Human Atala +6
+            - Half Orc Henk +2
+          - Archery Contest
+            - 4 contestents
+              - Erdan, Elf M +5
+              - Shump, HalfOrc M +3
+              - Zolis, Human F + 4
+              - Kallista, Tiefling Red +2
+          - Junior Gladiators
+            - Demonstrating formations and a mock battle with wooden weapons
+          - Joust
+            - Enna, Elf F +4
+            - Storn, Half Orc +3
+
         - Participants can be provided with gear for the event, but must give it back afterwards.
         - Seeming cast on all members to give them a uniformed designed look
 
