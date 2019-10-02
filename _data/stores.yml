@@ -365,7 +365,7 @@ stores:
     district-ref: 4
     type-ref: 2
     owner: Gene (male Gnome)
-    discovered: false
+    discovered: true
     content: >-
       - Mid level bar
   - title: The Resolute Watchman
