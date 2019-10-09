@@ -1,4 +1,4 @@
-<a class="card-item-preview{% if include.purchased == true %} purchased{% endif %} island-1-2" href="{{ include.url }}">
+<a class="card-item-preview{% if include.purchased == true %} purchased{% endif %} island-1-2" href="{{site.baseurl}}{{ include.url }}">
   {% if include.type == 'store' %}
     {% if include.img %}
     <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ include.img }}')"></div>
