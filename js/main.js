@@ -17,12 +17,15 @@ $(document).ready(function(){
   });
 });
 
+var navWrap = document.getElementById('nav');
+
+navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
+
 // Nav Open
 
 $('.menu-tog').on('click', function(stop) {
   stop.preventDefault();
   if ($('.masthead').hasClass('open')) {
-    console.log('open');
     $('.tog-top').css('transform', 'translateY(-50%)');
     $('.tog-bottom').css('transform', 'translateY(50%)');
     $('.nav').css('transform', 'translateX(-100%)')
@@ -35,7 +38,6 @@ $('.menu-tog').on('click', function(stop) {
       $('.tog-bottom').css('transform', 'none');
     }, 150);
   } else {
-    console.log('closed');
     $('.tog-top').css('top', '50%');
     $('.tog-top').css('transform', 'translateY(-50%)');
     $('.tog-bottom').css('bottom', '50%');
