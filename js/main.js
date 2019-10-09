@@ -17,10 +17,6 @@ $(document).ready(function(){
   });
 });
 
-var navWrap = document.getElementById('nav');
-
-navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
-
 // Nav Open
 
 $('.menu-tog').on('click', function(stop) {
@@ -233,6 +229,10 @@ function mediaQuery(maxM) {
       console.log(element)
        element.addEventListener('click', closePageNav);
     });
+
+    var navWrap = document.getElementById('nav');
+
+    navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
   }
 }
 
