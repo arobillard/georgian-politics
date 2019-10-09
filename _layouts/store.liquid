@@ -43,7 +43,7 @@ layout: content
         {% for items in site.items %}
           {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}
             <li class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
-              <a class="card-item-info content-fill unit-content-distribute" href="{{ items.url }}">
+              <a class="card-item-info content-fill unit-content-distribute" href="{{site.baseurl}}{{ items.url }}">
                 <header class="island-1-2">
                   {% if items.img %}
                   <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ items.img }}')"></div>
