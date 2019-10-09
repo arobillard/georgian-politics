@@ -233,6 +233,7 @@ function mediaQuery(maxM) {
     var navWrap = document.getElementById('nav');
 
     navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
+    navWrap.style.top = dropTop + 'px';
   }
 }
 
