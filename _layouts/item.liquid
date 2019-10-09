@@ -1,0 +1,43 @@
+---
+layout: content
+---
+<section id="item-info" class="item-info pad-b">
+  <div class="wrapper grid island-1-2">
+    <div class="unit [ xs-1 m-1-3 ] island-1-2">
+      {% if page.img %}
+      <div class="embed embed-1by1 item-image" style="background-image: url('{{site.baseurl}}{{ page.img }}');">
+        <img class="embed-item hidden" src="{{site.baseurl}}{{ page.img }}" alt="{{ page.imgAlt }}">
+      </div>
+      {% else %}
+      <div class="img-placeholder">
+        <i class="icon i-full">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
+        </i>
+        <span class="icon-label hidden">Item Chest</span>
+      </div>
+      {% endif %}
+    </div>
+    <div class="unit [ xs-1 m-2-3 ] island-1-2">
+      <h1 class="push-0">{{ page.title }}</h1>
+      <p class="italic classification pad-b">{{ page.classification }}</p>
+      {{ content }}
+      {% capture availabilityCheck %}{% for stores in site.stores %}{% for inventory in stores.inventory %}{% if inventory.item == page.title %}1{% break %}{% endif %}{% endfor %}{% endfor %}{% endcapture %}
+      <div id="availability" class="availability">
+        <p>Available at: {% unless availabilityCheck != "" %}<span>N/A</span>{% endunless %}</p>
+        {% if availabilityCheck != "" %}
+        <ul class="list-group-inline">
+          {% for stores in site.stores %}
+            {% for inventory in stores.inventory %}
+              {% if inventory.item == page.title and stores.discovered == true %}
+                <li>
+                  <a href="{{site.baseurl}}{{ stores.url }}">{{ stores.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

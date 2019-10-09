@@ -1,13 +1,12 @@
 <header class="masthead">
-  <div class="wrapper gutter-1-2">
-    <a class="inline-block logo-wrap" href="{{site.baseurl}}/">
-    {% if page.url == '/' %}
-      <h1 class="tera push-0 gutter-1-2">Georgian Politics</h1>
-    {% else %}
-      <strong class="tera block gutter-1-2 font-secondary">Georgian Politics</strong>
-    {% endif %}
+  <div class="wrapper gutter pad-t-1-2 pad-b-1-2">
+    {% if page.url == '/' %}<h1 class="logo-wrap push-0">{% endif %}
+    <a class="logo" href="{{site.baseurl}}/" aria-label="Georgian Politics">
+      {% include patterns/logo.liquid %}
     </a>
-    {% include utilities/nav.liquid navClass='nav' %}
+    {% if page.url == '/' %}</h1>{% endif %}
+    {% include patterns/navigation/nav.liquid navClass="mega" id="nav" %}
+    {% include patterns/navigation/nav-icon.liquid %}
     <a class="menu-tog m-0" href="#">
       <span class="tog-top"></span>
       <span class="tog-middle"></span>

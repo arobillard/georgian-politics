@@ -1,0 +1,112 @@
+.page-nav-wrap {
+  .page-nav-title, #page-nav-list {
+    border-bottom: 1px solid $color-grey;
+  }
+  li {
+    margin-bottom: .325rem;
+  }
+  a {
+    color: $color-grey-dark;
+    text-decoration: none;
+    @include hov() {
+      color: $color-primary;
+    }
+  }
+  .level-1 {
+    font-weight: 600;
+  }
+  .level-2 {
+    padding-left: .65rem;
+  }
+  &.snapped {
+    position: fixed;
+  }
+  .page-nav-toggle {
+    display: none;
+  }
+  @include max(37.9999) {
+    background-color: $color-primary;
+    position: fixed;
+    z-index: 200;
+    width: 3.5rem;
+    height: 3.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: $shadow;
+    transition:
+      width $transition,
+      height $transition,
+      bottom $transition,
+      right $transition,
+      transform $transition,
+      box-shadow $transition,
+      border-radius $transition;
+    strong {
+      font-size: 1.383rem;
+      line-height: 1.95rem;
+      margin-bottom: .65rem;
+    }
+    li {
+      margin-bottom: .65rem;
+    }
+    .level-1, .to-top {
+      font-size: 1.2962rem;
+      line-height: 1.95rem;
+    }
+    .level-2 {
+      font-size: 1.2148rem;
+      line-height: 1.625rem;
+    }
+    @include hov() {
+      box-shadow: $shadow-hover;
+      cursor: pointer;
+    }
+    .page-nav-links {
+      padding: 2.6rem 1.3rem;
+      display: none;
+      opacity: 0;
+      transition:
+        opacity $transition;
+      strong, a {
+        color: #fff;
+      }
+    }
+    .page-nav-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // transform: translate(50%, -50%);
+      color: #fff;
+      transition:
+        top $transition,
+        right $transition;
+      .closer {
+        display: none;
+      }
+      &:hover, &:focus {
+        color: #fff;
+        outline: 0;
+      }
+    }
+    &.open {
+      width: calc(100vw - 2.6rem);
+      height: calc(50vh - 1.3rem);
+      border-radius: $border-radius;
+      .page-nav-toggle {
+        .opener {
+          display: none;
+        }
+        .closer {
+          display: block;
+        }
+      }
+    }
+  }
+}

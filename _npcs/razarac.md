@@ -1,10 +1,17 @@
 ---
-layout: content-page
+layout: npc
 title: Razarač
-npc: 2
-faction: 3
-family: false
-district-ref: 1
-city-ref: 0
+img: /images/npcs/placeholder.png
+codename:
+  title: Razarač
+  discovered: false
+characterSheet:
+  url:
+  discovered: false
+faction:
+  title: Pijavka
+  url: /factions/pijavka/
+  discovered: false
 discovered: false
 ---
+Razarač is a mystery.

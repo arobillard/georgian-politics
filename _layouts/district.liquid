@@ -1,0 +1,61 @@
+---
+layout: content
+---
+<div class="grid wrapper pad-t pad-b island-1-2">
+  <div class="unit [ xs-1 m-1-3 ] island-1-2">
+    {% include patterns/navigation/page-nav.liquid %}
+  </div>
+  <div class="unit [ xs-1 m-2-3 ]">
+    <section id="about" class="">
+      <div class="island-1-2">
+        {{ content }}
+      </div>
+    </section>
+    {% capture landmarkCheck %}{% for landmark in site.locations %}{% if landmark.district == page.title and landmark.layout == 'landmark' and landmark.discovered == true or landmark.layout == 'landmark' and landmark.district == page.title and site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
+    {% if landmarkCheck != '' %}
+    <section>
+      <div class="island-1-2">
+        <h2 id="notable-landmarks">Notable Landmarks</h2>
+        {% for landmark in site.locations %}
+        {% if landmark.layout == 'landmark' and landmark.district == page.title and landmark.discovered == true or landmark.layout == 'landmark' and landmark.district == page.title and site.data.view-controls.dm-view == true %}
+        <div>
+          <a href="{{site.baseurl}}{{landmark.url}}"><h3 id="{{ landmark.title | downcase | replace: " ", "-" }}">{{ landmark.title }}</h3></a>
+          {{ landmark.content | markdownify }}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+    {% capture storeCheck %}{% for store in site.stores %}{% if store.district == page.title %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
+    {% if storeCheck != '' %}
+    <section class="pad-t-2 pad-b">
+      <h2 id="stores" class="gutter-1-2">Stores</h2>
+      <ol id="item-list" class="grid grid-stretch filter-grid list-group pad-t-1-2 pad-b-1-2 all">
+        {% for store in site.stores %}
+        {% if store.discovered == true and store.district == page.title or site.data.view-controls.dm-view == true and store.loopExclude != true and store.district == page.title %}
+        <li class="unit [ xs-1 m-1-2 ] island-1-2 {{ store.type }}">
+          {% include patterns/cards/preview-list-item.liquid type="store" img=store.img url=store.url title=store.title %}
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+    {% capture resCheck %}{% for npc in site.npcs %}{% if npc.location.title == page.title and npc.location.discovered == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
+    {% if resCheck != '' %}
+    <section class="pad-t-2 pad-b-2">
+      <h2 id="residents" class="gutter">Residents</h2>
+      <ol id="resident-list" class="grid grid-stretch filter-grid list-group pad-t-1-2 pad-b-1-2 all">
+        {% for npc in site.npcs %}
+        {% if npc.discovered == true and npc.location.title == page.title and npc.location.discovered == true or site.data.view-controls.dm-view == true and npc.loopExclude != true and npc.location.title == page.title %}
+        <li class="unit [ xs-1 m-1-2 ] island-1-2 {% if npc.faction.discovered == true or site.data.view-controls.dm-view == true %}{{ npc.faction.title | downcase | replace: " ", "-" }}{% endif %}{% if npc.faction.discovered != true %} unaligned{% endif %}">
+          {% include patterns/cards/preview-list-item.liquid img=npc.img url=npc.url title=npc.title %}
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+  </div>
+</div>

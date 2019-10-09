@@ -1,0 +1,36 @@
+.item-info {
+  .item-image {
+    @include bgBasic();
+    border: 1px solid $color-grey;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+  }
+  .img-placeholder {
+    .i-full {
+      width: 100%;
+      height: 100%;
+      padding-top: 100%;
+    }
+  }
+  .classification {
+    border-bottom: 1px solid $color-grey;
+  }
+  .availability {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      font-weight: 600;
+      margin-right: .65rem;
+      span {
+        font-weight: 400;
+      }
+    }
+    li:not(:last-child) a::after {
+      content: ',';
+      color: $color-grey-dark;
+      @include hov() {
+        color: $color-grey-dark;
+      }
+    }
+  }
+}

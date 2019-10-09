@@ -866,7 +866,7 @@ select {
 }
 
 [type="checkbox"]:focus + label::before {
-  outline: 3px solid #000;
+  outline: 3px solid $color-primary-50;
   z-index: 1000;
 }
 
@@ -1028,7 +1028,7 @@ button,
   display: inline-block;
   margin: 0;
   overflow: visible;
-  padding: .375em 1em .42em;
+  padding: .375em 1.75em .42em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1037,8 +1037,8 @@ button,
   border: 3px solid $color-primary;
   color: #fff;
   text-decoration: none;
-  text-transform: none;
-  font-family: $font-secondary;
+  // text-transform: uppercase;
+  font-weight: 600;
   transition:
     color $transition,
     background-color $transition,
@@ -1047,6 +1047,10 @@ button,
   &:not(.btn-ghost) {
     box-shadow: $shadow;
   }
+}
+
+.btn-thin {
+  padding: .275em 1em .32em;
 }
 
 button::-moz-focus-inner {
@@ -1068,22 +1072,22 @@ button:hover,
   }
 }
 
-button[disabled] {
+button[disabled], .btn-disabled {
   cursor: default;
 }
-
-.btn-light, .btn--light {
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
-  color: #000;
+.btn.btn-selected,
+.btn-secondary, .btn--secondary {
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+  color: #fff;
 }
 
-.btn-light:focus,
-.btn-light:hover,
-.btn--light:focus,
-.btn--light:hover {
-  background-color: #666;
-  border-color: #666;
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn--secondary:focus,
+.btn--secondary:hover {
+  background-color: $color-secondary-dark;
+  border-color: $color-secondary-dark;
   color: #fff;
 }
 
@@ -1098,9 +1102,25 @@ button[disabled] {
 .btn-ghost:hover,
 .btn--ghost:focus,
 .btn--ghost:hover {
-  background-color: #e2e2e2;
-  border-color: #000;
-  color: #000;
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: #fff;
+}
+
+.btn-ghost.btn-secondary,
+.btn--ghost.btn-secondary {
+  background-color: transparent;
+  border-color: $color-secondary;
+  color: $color-secondary;
+}
+
+.btn-ghost.btn-secondary:focus,
+.btn-ghost.btn-secondary:hover,
+.btn--ghost.btn-secondary:focus,
+.btn--ghost.btn-secondary:hover {
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+  color: #fff;
 }
 
 .btn-link {
@@ -1130,7 +1150,7 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 3px solid #000;
+  outline: 3px solid $color-primary-50;
   outline-offset: 0;
 }
 

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% if page.layout == "store" or page.layout == "content" or page.layout == "district" or page.layout == "faction" %}{% include patterns/banners/header.liquid headline=page.title byline=page.desc img=page.img %}{% endif %}
+<div class="wrapper">
+  {% include patterns/breadcrumbs.liquid %}
+</div>
+{{ content }}

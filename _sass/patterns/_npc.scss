@@ -1,0 +1,46 @@
+.npc-info {
+  .npc-image {
+    @include bgBasic();
+    border: 1px solid $color-grey;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+  }
+  .img-placeholder {
+    .i-full {
+      width: 100%;
+      height: 100%;
+      padding-top: 100%;
+    }
+  }
+  .dnd-beyond-link-wrap {
+    position: relative;
+    display: inline-block;
+    padding-right: 2.65rem;
+    .dnd-beyond-link {
+      color: #fff;
+      background-color: $color-primary;
+      padding: .325rem;
+      border-radius: $border-radius;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      @include hov() {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}
+
+.npc-details {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color-grey;
+  div {
+    width: 50%;
+    dt {
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+}

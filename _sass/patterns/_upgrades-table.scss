@@ -20,7 +20,7 @@
   }
   th:nth-child(2), td:nth-child(2) {
     text-align: center;
-    background-color: darken($color-tertiary, 2.5%)
+    background-color: lighten($color-primary, 67%);
   }
   tbody {
     tr:last-child th, tr:last-child td {
@@ -30,7 +30,7 @@
       padding: 1.3rem;
     }
   }
-  @include mq(max, $mqM) {
+  @include max(37.999) {
     tr {
       width: 32rem;
     }
@@ -45,7 +45,7 @@
   }
 }
 
-@include mq(max, $mqM) {
+@include max(37.999) {
   .upgrades-table-wrap {
     max-width: 100%;
     overflow-x: scroll;

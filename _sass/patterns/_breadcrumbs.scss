@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    a {
+      color: $color-grey-dark;
+      text-decoration: none;
+      @include hov() {
+        color: $color-primary;
+      }
+    }
+    &:not(:last-child) {
+      padding-right: 1.3rem;
+      position: relative;
+      text-transform: capitalize;
+      ::after {
+        content: ' ';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: .65rem;
+        background-color: $color-grey;
+        transform: rotate(30deg);
+      }
+    }
+    &:last-child {
+      font-weight: 800;
+      color: $color-primary;
+    }
+  }
+}

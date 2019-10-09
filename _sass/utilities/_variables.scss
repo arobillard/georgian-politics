@@ -1,17 +1,17 @@
 // Styles
-$font-primary: 'Open Sans', sans-serif;
-$font-secondary: 'Marcellus SC', serif;
+$font-primary: Montserrat, sans-serif;
 $transition: .25s ease-in-out;
 $transition-quick: .15s ease-in-out;
 $border-radius: 5px;
-$shadow: 0 3px 6px rgba(0, 0, 0, .15);
-$shadow-hover: 0 3px 12px rgba(0, 0, 0, .25);
+$shadow: 0 1px 3px rgba(0, 0, 0, .15);
+$shadow-hover: 0 3px 6px rgba(0, 0, 0, .15);
 
 // Colors
-$color-primary: #b52424;
-$color-primary-dark: darken($color-primary, 20%);
+$color-primary: #17853D;
+$color-primary-dark: darken($color-primary, 10%);
 $color-primary-light: lighten($color-primary, 20%);
-$color-secondary: #00691E;
+$color-primary-50: rgba($color-primary, .5);
+$color-secondary: #0DB8A9;
 $color-secondary-dark: darken($color-secondary, 20%);
 $color-secondary-light: lighten($color-secondary, 20%);
 $color-tertiary: #f6e9dc;
@@ -20,22 +20,3 @@ $color-tertiary-light: lighten($color-tertiary, 10%);
 $color-grey: #ccc;
 $color-grey-dark: #444;
 $color-grey-light: #f2f2f2;
-
-
-// .theme-bright {
-//   --color-primary: #34c972;
-//   --color-primary-dark: #20884b;
-//   --color-secondary: #3472c9;
-//   --color-secondary-dark: #204b88;
-//   --color-tertiary: #c93472;
-//   --color-tertiary-dark: #88204b;
-// }
-//
-// .theme-dark {
-//   --color-primary: #222;
-//   --color-primary-dark: #000;
-//   --color-secondary: #ccc;
-//   --color-secondary-dark: #999;
-//   --color-tertiary: #e39e29;
-//   --color-tertiary-dark: #a77219;
-// }

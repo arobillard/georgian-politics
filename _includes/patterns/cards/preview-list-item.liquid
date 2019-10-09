@@ -1,0 +1,27 @@
+<a class="card-item-preview{% if include.purchased == true %} purchased{% endif %} island-1-2" href="{{ include.url }}">
+  {% if include.type == 'store' %}
+    {% if include.img %}
+    <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ include.img }}')"></div>
+    {% else %}
+<div class="img-preview" style="background-image: url('{{site.baseurl}}/images/stores/placeholder.jpg')"></div>
+    {% endif %}
+  {% else %}
+    {% if include.img %}
+    <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ include.img }}')"></div>
+    {% else %}
+    <div class="img-preview-placeholder">
+      <i class="icon i-1-1-2">
+        <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
+      </i>
+      <span class="icon-label hidden">Item Chest</span>
+    </div>
+    {% endif %}
+  {% endif %}
+  <p class="push-0">{{ include.title }}</p>
+  <div class="icon-wrap">
+    <i class="icon i-1">
+      <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+    </i>
+    <span class="icon-label hidden">Right indicator</span>
+  </div>
+</a>

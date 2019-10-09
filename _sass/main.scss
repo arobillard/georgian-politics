@@ -1,20 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap');
-@import 'utilities/variables';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,800,800i&display=swap');
+@import 'utilities/variables'; //
 @import 'utilities/mixins';
 @import 'modules/modules';
 @import 'modules/grid';
 @import 'modules/type';
 @import 'modules/colors';
-@import 'utilities/typography';
+@import 'styles/typography';
 @import 'patterns/nav';
 @import 'patterns/footer';
+@import 'patterns/breadcrumbs';
+@import 'patterns/item';
+@import 'patterns/npc';
 @import 'patterns/card';
-@import 'patterns/hero';
-@import 'patterns/stat-block';
+@import 'patterns/filter';
+@import 'patterns/banner';
+@import 'patterns/page-nav';
 @import 'patterns/upgrades-table';
-@import 'content-page';
 
-html {
-  background-color: $color-tertiary;
+.page-list-icons {
+  a {
+    text-decoration: none;
+  }
+}
+
+.introduction {
+  .split-img::after {
+    background-image: url('../images/districts/the-market.jpg');
+  }
+}
+
+.split-img-text {
+  .split-text-content {
+    padding: 2.6rem 1.3rem;
+  }
+  @include max(37.999) {
+    .split-img {
+      padding-top: 100%;
+      background-image: url('../images/districts/the-market.jpg');
+      @include bgBasic();
+    }
+  }
+  @include min(38) {
+    .split-img {
+      position: relative;
+      &::after {
+        content: ' ';
+        @include bgBasic();
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+    }
+    .split-text-content {
+      padding: 2.6rem;
+    }
+  }
+  @include min(60) {
+    .split-img::after {
+      width: 50vw;
+    }
+    .split-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .split-text-content {
+        max-width: 36em;
+        padding: 3.9rem 2.6rem;
+      }
+    }
+  }
 }

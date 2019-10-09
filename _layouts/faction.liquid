@@ -1,0 +1,49 @@
+---
+layout: content
+---
+<section id="item-info" class="item-info pad-b">
+  <div class="wrapper grid island-1-2">
+    <div class="unit [ xs-1 m-1-3 ] island-1-2">
+      {% if page.symbol %}
+      <div class="embed embed-1by1 item-image" style="background-image: url('{{site.baseurl}}{{ page.symbol }}');">
+        <img class="embed-item hidden" src="{{site.baseurl}}{{ page.symbol }}" alt="{{ page.imgAlt }}">
+      </div>
+      {% else %}
+      <div class="img-placeholder">
+        <i class="icon i-full">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
+        </i>
+        <span class="icon-label hidden">Item Chest</span>
+      </div>
+      {% endif %}
+    </div>
+    <div class="unit [ xs-1 m-2-3 ]">
+      <section class="island-1-2">
+        {{ content }}
+      </section>
+      {% if site.data.view-controls.dm-view == true %}
+      <div class="secrets gutter-1-2">
+        <strong class="text-upper text-secondary block exa">Secrets</strong>
+        {{ page.secrets | markdownify }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% capture resCheck %}{% for npc in site.npcs %}{% if npc.faction.title == page.title and npc.faction.discovered == true or npc.faction.title == page.title and site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
+{% if resCheck != '' %}
+<section class="pad-t-2 pad-b-2">
+  <div class="wrapper">
+    <h2 id="known-members" class="gutter">Known Members</h2>
+    <ol id="member-list" class="grid grid-stretch island-1-2 list-group">
+      {% for npc in site.npcs %}
+      {% if npc.faction.title == page.title and npc.faction.discovered == true or site.data.view-controls.dm-view ==true and npc.faction.title == page.title %}
+      <li class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% include patterns/cards/preview-list-item.liquid img=npc.img url=npc.url title=npc.title %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}

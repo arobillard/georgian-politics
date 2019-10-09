@@ -1,0 +1,35 @@
+---
+layout: content
+title: Locations
+img: /images/banner-home.jpg
+permalink: /locations/
+loopExclude: true
+---
+<section id="districts" class="pad-t-2 pad-b-2">
+  <div class="wrapper">
+    <h2 class="gutter">Districts</h2>
+    <div class="grid island-1-2">
+      {% for district in site.locations %}
+      {% if district.layout == 'district' %}
+      <div class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% include patterns/cards/preview-list-item.liquid img=district.img url=district.url title=district.title %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="landmarks" class="pad-t-2 pad-b-2">
+  <div class="wrapper">
+    <h2 class="gutter">Landmarks</h2>
+    <div class="grid island-1-2">
+      {% for landmark in site.locations %}
+      {% if landmark.layout == 'landmark' and landmark.discovered == true or landmark.layout == 'landmark' and site.data.view-controls.dm-view == true %}
+      <div class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% include patterns/cards/preview-list-item.liquid img=landmark.img url=landmark.url title=landmark.title %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

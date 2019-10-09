@@ -1,0 +1,80 @@
+---
+layout: content
+---
+<section id="about" class="pad-t-2 pad-b">
+  <div class="wrapper">
+    <div class="gutter">
+      <h2 class="push-0">About {{ page.title }}</h2>
+    </div>
+    <div class="grid island-1-2">
+      <div class="unit [ xs-1 m-1-3 ] island-1-2">
+        <div class="card island">
+          <dl class="store-info push-0">
+            <dt class="bold text-primary">Category:</dt>
+            <dd class="push-1-2">{{ page.type | capitalize }}</dd>
+            <dt class="bold text-primary">Location:</dt>
+            <dd class="push-1-2">
+              <a href="{{site.baseurl}}/locations/{{ page.district | downcase | replace: " ", "-" }}/">{{ page.district }}</a>
+            </dd>
+            <dt class="bold text-primary">Owner:</dt>
+            <dd class="push-1-2">
+              {% if page.ownerURL %}<a href="{{site.baseurl}}{{ page.ownerURL }}">{% endif %}
+                {{ page.owner }}
+              {% if page.ownerURL %}</a>{% endif %}
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="unit [ xs-1 m-2-3 ] island-1-2">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>
+{% capture itemCheck %}{% for inventory in page.inventory %}{% for items in site.items %}{% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% break %}{% endfor %}{% endcapture %}
+{% if itemCheck == '1' %}
+<section id="items" class="pad-t pad-b-2">
+  <div class="wrapper">
+    <div class="gutter">
+      <h2 class="push-0">Items</h2>
+    </div>
+    <ul class="list-group grid grid-stretch island-1-2">
+      {% for inventory in page.inventory %}
+        {% for items in site.items %}
+          {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}
+            <li class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
+              <a class="card-item-info content-fill unit-content-distribute" href="{{ items.url }}">
+                <header class="island-1-2">
+                  {% if items.img %}
+                  <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ items.img }}')"></div>
+                  {% else %}
+                  <div class="img-preview-placeholder">
+                    <i class="icon i-1-1-2">
+                      <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
+                    </i>
+                    <span class="icon-label hidden">Item Chest</span>
+                  </div>
+                  {% endif %}
+                  <div>
+                    <h3 class="mega push-0">{{ items.title }}</h3>
+                    <small class="block italic truncate">{{ items.classification }}</small>
+                  </div>
+                </header>
+                <div class="gutter-1-2 pad-t pad-b content-fill unit-content-distribute">
+                  <div class="item-info">
+                    <p><span class="label">Price:</span> {% if inventory.price %}{{ inventory.price }}{% else %}{{ items.price }}{% endif %}</p>
+                    <p><span class="label">Quantity:</span> {{ inventory.quantity }}</p>
+                  </div>
+                  <div class="description pad-t content-fill">
+                    {{ items.content | truncate: 200 | markdownify }}
+                  </div>
+                </div>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

@@ -1,14 +1,59 @@
 .footer {
   background-color: $color-grey-dark;
   color: $color-grey;
+  text-align: center;
+  .logo {
+    display: inline-block;
+    width: 100%;
+    max-width: 7.5rem;
+    transition:
+      opacity $transition;
+    @include hov() {
+      color: $color-grey;
+      opacity: .7;
+    }
+    #politics {
+      fill: $color-secondary;
+    }
+    #bear {
+      fill: $color-primary;
+    }
+  }
   a {
     color: $color-grey;
     text-decoration: none;
+    font-weight: 600;
     &:hover, &:focus {
       color: $color-primary;
     }
   }
+  nav {
+    > ul {
+      margin: 0;
+      > li {
+        padding: .325rem 0;
+      }
+    }
+  }
+  .icon-list {
+    margin: 0;
+    > li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: .65rem;
+      }
+    }
+  }
   .sub-footer {
     background-color: darken($color-grey-dark, 10%);
+  }
+  @include min($mqM) {
+    text-align: left;
+    .logo {
+      max-width: 10rem;
+    }
+    .unit:last-child {
+      text-align: right;
+    }
   }
 }

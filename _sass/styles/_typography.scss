@@ -1,0 +1,48 @@
+html {
+  font-family: $font-primary;
+  color: $color-grey-dark;
+}
+
+@if variable-exists(font-secondary) {
+  h1, h2, h3, h4, .font-secondary, thead th {
+    font-family: $font-secondary;
+  }
+}
+
+a, .link-mimic {
+  transition:
+    color $transition,
+    border-color $transition,
+    background-color $transition;
+  color: $color-primary;
+  text-decoration: underline;
+  &:hover, &:focus {
+    color: $color-secondary;
+  }
+}
+
+h2 {
+  color: $color-primary;
+  margin: 0;
+}
+
+h3 {
+  color: $color-secondary;
+  margin: 1.3rem 0 0;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h6 {
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+blockquote {
+  padding-left: .65rem;
+  margin-left: 1.3rem;
+  border-left: 2px solid $color-primary;
+  font-style: italic;
+}

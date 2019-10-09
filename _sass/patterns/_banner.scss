@@ -1,0 +1,32 @@
+.banner {
+  background-color: $color-primary;
+  @include bgBasic();
+  display: flex;
+  border-bottom: 5px solid $color-secondary;
+  box-shadow: $shadow;
+  p {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.banner-header {
+  @extend .banner;
+  height: 25rem;
+  align-items: flex-end;
+  p {
+    max-width: 36rem;
+  }
+}
+
+.banner-hero {
+  @extend .banner;
+  align-items: center;
+  height: 50vh;
+  max-height: 800px;
+  .banner-content {
+    text-align: center;
+    max-width: 45em;
+    margin: 0 auto;
+  }
+}

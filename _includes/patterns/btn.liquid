@@ -1,1 +1,1 @@
-<a class="btn{% if include.btnStyle %} {{ include.btnStyle }}{% endif %}" href="{{ include.btnURL }}"{% if include.external %} target="_blank"{% endif %}>{{ include.btnText }}</a>
+{% if include.btnLink %}<a class="btn{{ include.btnStyle | prepend: " " }}" href="{{ include.btnLink }}" {% if include.external == true %}target="_blank" {% endif %}>{% else %}<span class="btn btn-disabled{{ include.btnStyle | prepend: " " }}">{% endif %}{{ include.btnText}}{% if include.btnLink %}</a>{% else %}</span>{% endif %}

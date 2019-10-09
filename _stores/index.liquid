@@ -1,0 +1,58 @@
+---
+layout: content
+title: Stores
+img: /images/districts/the-market.jpg
+permalink: /stores/
+loopExclude: true
+filters:
+  - apothecaries
+  - artificers
+  - bars
+  - blacksmiths
+  - bookstores
+  - brothels
+  - clothing-stores
+  - food
+  - general-stores
+  - shipyards
+  - stables
+  - stalls
+  - tattoo-parlours
+---
+<section class="pad-b-2">
+  <div class="wrapper">
+    {% comment %}
+    <div class="filter island">
+      <h3 class="push-0">Filter:</h3>
+      <ol class="list-group-inline push-0">
+        <li>
+          <a class="btn btn-filter btn-thin btn-selected micro push-1-4" href="#all" data-filter="all">All</a>
+        </li>
+        {% for filter in page.filters %}
+        <li>
+          <a class="btn btn-filter btn-thin micro push-1-4" href="#{{ filter }}" data-filter="{{ filter }}">{{ filter | capitalize }}</a>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endcomment %}
+    <div class="filter island">
+      <h3 class="push-0">Filter:</h3>
+      <select id="filter" class="filter-select" name="filter">
+        <option value="all">All</option>
+        {% for filter in page.filters %}
+        <option value="{{ filter }}">{{ filter | capitalize | replace: "-", " " }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <ol id="item-list" class="grid grid-stretch filter-grid list-group island-1-2 all">
+      {% for store in site.stores %}
+      {% if store.discovered == true or site.data.view-controls.dm-view == true and store.loopExclude != true %}
+      <li class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2 {{ store.type }}">
+        {% include patterns/cards/preview-list-item.liquid type="store" img=store.img url=store.url title=store.title %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>

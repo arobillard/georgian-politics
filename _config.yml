@@ -6,7 +6,16 @@ collections:
   locations:
     output: true
     permalink: /:collection/:path/
+  stores:
+    output: true
+    permalink: /:collection/:path/
+  items:
+    output: true
+    permalink: /:collection/:path/
   factions:
+    output: true
+    permalink: /:collection/:path/
+  families:
     output: true
     permalink: /:collection/:path/
   events:

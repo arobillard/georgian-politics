@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="max-length">
+  {% for i in (1..6) %}
+  <h{{i}}>Heading {{i}}</h{{i}}>
+  {% endfor %}
+  <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Provident ea modi consectetur autem, reiciendis eos rem. Sed culpa, non illo praesentium odio rerum ex odit nemo similique? Quis, esse saepe.</p>
+  <div class="push-1-4">
+    {% include patterns/btn.liquid btnLink="#" btnText="Basic Button" %}
+    {% include patterns/btn.liquid btnLink="#" btnText="Basic Button" btnStyle="btn-secondary" %}
+  </div>
+  <div>
+    {% include patterns/btn.liquid btnLink="#" btnText="Basic Button" btnStyle="btn-ghost" %}
+    {% include patterns/btn.liquid btnLink="#" btnText="Basic Button" btnStyle="btn-ghost btn-secondary" %}
+  </div>
+</div>
