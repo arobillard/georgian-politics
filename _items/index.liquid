@@ -43,7 +43,7 @@ filters:
       {% for item in site.items %}
         {% if item.discovered == true or site.data.view-controls.dm-view == true and item.loopExclude != true %}
           <li class="unit [ xs-1 s-1-2 m-1-3 ] unit-content-distribute island-1-2{{ item.type | prepend: " " }}">
-            <a class="card-item-preview{% if item.purchased == true %} purchased{% endif %} island-1-2" href="{{ item.url }}">
+            <a class="card-item-preview{% if item.purchased == true %} purchased{% endif %} island-1-2" href="{{site.baseurl}}{{ item.url }}">
               {% if item.img %}
               <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ item.img }}')"></div>
               {% else %}
