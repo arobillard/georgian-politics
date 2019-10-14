@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .masthead {
   position: fixed;
   top: 0;
@@ -100,8 +104,24 @@
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+      &:focus {
+        outline-color: rgba(255, 255, 255, .5);
+      }
       // font-size: 1.68rem;
       // line-height: 2.275rem;
+      &.current {
+        // color: $color-secondary;
+        position: relative;
+        &::after {
+          content: ' ';
+          position: absolute;
+          width: 3rem;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+        }
+      }
     }
     .nav {
       transition:
@@ -206,20 +226,21 @@
       }
       .nav {
         width: 21.6666666667em;
-        // > ul {
-        //   @include hov() {
-        //     > li > a {
-        //       opacity: .65;
-        //     }
-        //   }
-        //   > li > a {
-        //     transition:
-        //       opacity $transition;
-        //     @include hov() {
-        //       opacity: 1;
-        //     }
-        //   }
-        // }
+        a {
+          transition:
+            opacity $transition;
+        }
+      }
+      &:hover ul > li > a,
+      .subnav-level-one:hover > ol > li > a,
+      .subnav-level-two:hover > ol > li > a {
+        opacity: .65;
+        &.highlighted {
+          opacity: 1;
+        }
+        @include hov() {
+          opacity: 1;
+        }
       }
       .subnav-level-one::before {
         content: ' ';
