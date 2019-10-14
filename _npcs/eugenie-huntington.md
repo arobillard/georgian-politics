@@ -23,7 +23,7 @@ location:
 discovered: true
 secrets: |-
   ## Council Member
-  Eugenie is a council member of the [Council of the Bruins](../../factions/council-of-the-bruins) representing [The Pastures](../../locations/port-george/destricts/the-pastures).
+  Eugenie is a council member of the [Council of the Bruins](../../factions/council-of-the-bruins) representing [The Pastures](../../locations/the-pastures/) under the codename *The Scarecrow*.
 ---
 ## Description
 Eugenie is a human woman in her mid-twenties. She is of average height and is very athletic. She has shoulder length, straight, light brown hair, and bright green eyes (a common trait of the Huntington family). She wear clothes of fine make, which usually are focused more on functionality rather than fashion.

@@ -3,7 +3,7 @@ layout: npc
 title: Razarač
 img: /images/npcs/placeholder.png
 codename:
-  title: Razarač
+  title: Hyperion Welsh
   discovered: false
 characterSheet:
   url:

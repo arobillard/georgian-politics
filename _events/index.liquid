@@ -2,6 +2,7 @@
 layout: content
 title: Events
 permalink: /events/
+loopExclude: true
 ---
 {% assign districtLink = site.baseurl | append: "/locations/port-george/districts" %}
 <div class="wrapper">
@@ -29,24 +30,14 @@ permalink: /events/
   </section>
   <section id="events-list">
     <div class="gutter"><h2>Events</h2></div>
-    <ol class="grid grid-stretch list-group island-1-2">
-      {% for events in site.events %}
-      {% unless events.url == page.url %}
-      {% if events.url contains 'events' %}
-      <li class="unit [ xs-1 m-1-2 ] island-1-2">
-        <a class="card-preview" href="{{ events.url }}">
-          <div class="card-preview-img" {% if events.img %}style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('{{events.img}}')"{% endif %}>
-            <h3 class="giga push-0">{{ events.title }}</h3>
-          </div>
-          <div class="card-preview-content">
-            {{ events.sections[0].content | markdownify }}
-            <span class="link-mimic">Learn more.</span>
-          </div>
-        </a>
-      </li>
+    <div class="grid island-1-2">
+      {% for event in site.events %}
+      {% if event.loopExclude != true %}
+      <div class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% include patterns/cards/preview-list-item.liquid title=event.title img=event.img url=event.url %}
+      </div>
       {% endif %}
-      {% endunless %}
       {% endfor %}
-    </ol>
+    </div>
   </section>
 </div>

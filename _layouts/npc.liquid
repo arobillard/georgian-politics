@@ -39,19 +39,6 @@ layout: content
         {% if page.codename.discovered == true or site.data.view-controls.dm-view == true %}<p class="italic">{{ page.codename.title }}</p>{% endif %}
       </div>
       <dl class="npc-details">
-        {% comment %}{% for info in page.info %}
-          {% if info.discovered == true or site.data.view-controls.dm-view == true %}
-          <div>
-            <dt>{{ info.type }}:</dt>
-            <dd>
-              {% if info.url %}<a href="{{site.baseurl}}{{ info.url }}">{% endif %}
-                {{ info.title  }}
-              {% if info.url %}</a>{% endif %}
-            </dd>
-          </div>
-          {% endif %}
-        {% endfor %}
-        {% endcomment %}
         {% assign info = "faction, family, store, location, class" | split: ", " %}
         {% for type in info %}
         {% assign data = page.[type] %}
@@ -71,7 +58,8 @@ layout: content
       </dl>
       <div class="npc-content">
         {{ content }}
-      {% if site.data.view-controls.dm-view == true %}
+      {% if site.data.view-controls.dm-view == true and page.secrets %}
+        <strong class="text-upper text-secondary block exa">Secrets</strong>
         {{ page.secrets | markdownify }}
       {% endif %}
       </div>

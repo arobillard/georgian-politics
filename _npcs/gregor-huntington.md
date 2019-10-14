@@ -14,7 +14,7 @@ location:
   title: The Pastures
   url: /locations/the-pastures/
   discovered: true
-discovered: true
+discovered: false
 secrets: |-
 ---
 ## Introduction

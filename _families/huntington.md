@@ -1,6 +1,7 @@
 ---
 layout: family
 title: Huntingtons
+img: /images/npcs/placeholder.png
 discovered: true
 district: The Pastures
 secrets: |-
@@ -10,5 +11,5 @@ The Huntingtons are relatively new to their money. With the agricultural boom an
 
 ## Relationships
 
-### Findren Estate
+### [Findren Estate](../findren/)
 The [Huntington Brewers](../../locations/huntington-brewers/) and the [Findren Winerys](../../locations/findren-winery/) are direct competitors and therefore there is a fair amount of tension between the families. Although there is no open hostility, there has been a number of aggressive and sneaky business practices on both sides that have caused some bad blood.

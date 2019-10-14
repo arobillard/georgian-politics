@@ -21,7 +21,7 @@ layout: content
       <section class="island-1-2">
         {{ content }}
       </section>
-      {% if site.data.view-controls.dm-view == true %}
+      {% if site.data.view-controls.dm-view == true and page.secrets %}
       <div class="secrets gutter-1-2">
         <strong class="text-upper text-secondary block exa">Secrets</strong>
         {{ page.secrets | markdownify }}

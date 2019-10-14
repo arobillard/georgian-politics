@@ -29,7 +29,7 @@
           {% for faction in site.factions %}
           {% if faction.loopExclude != true and faction.discovered == true or faction.loopExclude != true and site.data.view-controls.dm-view == true %}
           <li>
-            <a href="{{site.baseurl}}{{faction.url}}" data-subnav="sub-{{ faction.title | downcase | replace:"","-" }}">{{ faction.title }}</a>
+            <a href="{{site.baseurl}}{{faction.url}}">{{ faction.title }}</a>
           </li>
           {% endif %}
           {% endfor %}
@@ -58,7 +58,7 @@
           {% for family in site.families %}
           {% if family.loopExclude != true and family.discovered == true or family.loopExclude != true and site.data.view-controls.dm-view == true %}
           <li>
-            <a href="{{site.baseurl}}{{family.url}}" data-subnav="sub-{{ family.title | downcase | replace:"","-" }}">{{ family.title }}</a>
+            <a href="{{site.baseurl}}{{family.url}}">{{ family.title }}</a>
           </li>
           {% endif %}
           {% endfor %}
@@ -85,7 +85,7 @@
         <strong class="block subnav-heading text-fff pad-t push-2">Locations</strong>
         <ol class="list-group">
           <li class="has-subnav">
-            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#districts" data-subnav="sub-districts">Districts</a>
+            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#districts">Districts</a>
             <a class="child-opener-level-two" href="#sub-districts">
               <i class="icon i-1">
                 <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
@@ -112,7 +112,7 @@
             </div>
           </li>
           <li class="has-subnav">
-            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#landmarks" data-subnav="sub-landmarks">Landmarks</a>
+            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#landmarks">Landmarks</a>
             <a class="child-opener-level-two" href="#sub-landmarks">
               <i class="icon i-1">
                 <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
@@ -148,5 +148,36 @@
     <li>
       <a {% if page.url contains 'stores' %}class="current"{% endif %}href="{{site.baseurl}}/stores/">Stores</a>
     </li>
+    {% if site.data.view-controls.dm-view == true %}
+    <li class="has-subnav">
+      <a {% if page.url contains 'events' %}class="current"{% endif %}href="{{site.baseurl}}/events/">Events</a>
+      {% if include.id == 'nav' %}
+      <a class="child-opener-level-one" href="#sub-events">
+        <i class="icon i-1-1-4">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+        <span class="icon-label hidden">Open</span>
+      </a>
+      <div id="sub-events" class="gutter pad-t-2 pad-b-2 subnav-level-one">
+        <a class="back-button inline-block" href="#">
+          <i class="icon i-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+          </i>
+          <span class="icon-label">Back</span>
+        </a>
+        <strong class="block subnav-heading text-fff pad-t push-2">Events</strong>
+        <ol class="list-group">
+          {% for event in site.events %}
+          {% if event.loopExclude != true %}
+          <li>
+            <a href="{{site.baseurl}}{{event.url}}">{{ event.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </li>
+    {% endif %}
   </ul>
 </nav>

@@ -22,6 +22,9 @@ location:
 discovered: true
 secrets: |-
   Normally found hanging around The Market busking and interacting with the vendors and shoppers.
+
+  ## Council of the Bruins
+  Evander sits on the [Council of the Bruins](../../factions/council-of-the-bruins/) as the representative of [The Market](../../locations/the-market/) using the codename *The Salesman*.
 ---
 
 ## Description

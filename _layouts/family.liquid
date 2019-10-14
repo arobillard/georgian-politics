@@ -9,6 +9,12 @@ layout: content
     <section id="about" class="">
       <div class="island-1-2">
         {{ content }}
+        {% if site.data.view-controls.dm-view == true and page.secrets %}
+        <div class="secrets">
+          <strong class="text-upper text-secondary block exa">Secrets</strong>
+          {{ page.secrets | markdownify }}
+        </div>
+        {% endif %}
       </div>
     </section>
     {% capture propertyCheck %}{% for property in site.locations %}{% if property.layout == 'landmark' and property.family == page.title and property.discovered == true or property.layout == 'landmark' and property.family == "Findren Estate" and site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
