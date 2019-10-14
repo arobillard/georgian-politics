@@ -1,13 +1,141 @@
 <nav id="{{include.id}}" class="{{ include.navClass }}">
-  <ul class="list-group">
+  <ul class="list-group{% if include.id == 'nav' %} gutter pad-t-2 pad-b-2{% endif %}">
     <li>
       <a href="{{site.baseurl}}/items/">Items</a>
     </li>
-    <li>
+    <li class="has-subnav">
       <a href="{{site.baseurl}}/factions/">Factions</a>
+      {% if include.id == 'nav' %}
+      <a class="child-opener-level-one" href="#sub-factions">
+        <i class="icon i-1-1-4">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+        <span class="icon-label hidden">Open</span>
+      </a>
+      <div id="sub-factions" class="gutter pad-t-2 pad-b-2 subnav-level-one">
+        <a class="back-button back-sub-level-one" href="#">
+          <i class="icon i-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+          </i>
+          <span class="icon-label">Back</span>
+        </a>
+        <strong class="block subnav-heading text-fff pad-t push-2">Factions</strong>
+        <ol class="list-group">
+          {% for faction in site.factions %}
+          {% if faction.loopExclude != true and faction.discovered == true or faction.loopExclude != true and site.data.view-controls.dm-view == true %}
+          <li>
+            <a href="{{site.baseurl}}{{faction.url}}" data-subnav="sub-{{ faction.title | downcase | replace:"","-" }}">{{ faction.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
     </li>
-    <li>
+    <li class="has-subnav">
+      <a href="{{site.baseurl}}/families/">Families</a>
+      {% if include.id == 'nav' %}
+      <a class="child-opener-level-one" href="#sub-families">
+        <i class="icon i-1-1-4">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+        <span class="icon-label hidden">Open</span>
+      </a>
+      <div  id="sub-families" class="gutter pad-t-2 pad-b-2 subnav-level-one">
+        <a class="back-button back-sub-level-one" href="#">
+          <i class="icon i-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+          </i>
+          <span class="icon-label">Back</span>
+        </a>
+        <strong class="block subnav-heading text-fff pad-t push-2">Families</strong>
+        <ol class="list-group">
+          {% for family in site.families %}
+          {% if family.loopExclude != true and family.discovered == true or family.loopExclude != true and site.data.view-controls.dm-view == true %}
+          <li>
+            <a href="{{site.baseurl}}{{family.url}}" data-subnav="sub-{{ family.title | downcase | replace:"","-" }}">{{ family.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </li>
+    <li class="has-subnav">
       <a href="{{site.baseurl}}/locations/">Locations</a>
+      {% if include.id == 'nav' %}
+      <a class="child-opener-level-one" href="#sub-locations">
+        <i class="icon i-1-1-4">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+        <span class="icon-label hidden">Open</span>
+      </a>
+      <div  id="sub-locations" class="gutter pad-t-2 pad-b-2 subnav-level-one">
+        <a class="back-button back-sub-level-one" href="#">
+          <i class="icon i-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+          </i>
+          <span class="icon-label">Back</span>
+        </a>
+        <strong class="block subnav-heading text-fff pad-t push-2">Locations</strong>
+        <ol class="list-group">
+          <li class="has-subnav">
+            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#districts" data-subnav="sub-districts">Districts</a>
+            <a class="child-opener-level-two" href="#sub-districts">
+              <i class="icon i-1">
+                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+              </i>
+              <span class="icon-label hidden">Open</span>
+            </a>
+            <div id="sub-districts" class="gutter pad-t-2 pad-b-2 subnav-level-two">
+              <a class="back-button back-sub-level-two" href="#">
+                <i class="icon i-1">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+                </i>
+                <span class="icon-label">Back</span>
+              </a>
+              <strong class="block subnav-heading text-fff pad-t push-2">Districts</strong>
+              <ol class="list-group">
+                {% for district in site.locations %}
+                {% if district.loopExclude != true and district.layout == 'district' %}
+                <li>
+                  <a href="{{site.baseurl}}{{district.url}}">{{ district.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ol>
+            </div>
+          </li>
+          <li class="has-subnav">
+            <a class="has-child-level-two" href="{{site.baseurl}}/locations/#landmarks" data-subnav="sub-landmarks">Landmarks</a>
+            <a class="child-opener-level-two" href="#sub-landmarks">
+              <i class="icon i-1">
+                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+              </i>
+              <span class="icon-label hidden">Open</span>
+            </a>
+            <div id="sub-landmarks" class="gutter pad-t-2 pad-b-2 subnav-level-two">
+              <a class="back-button back-sub-level-two" href="#">
+                <i class="icon i-1">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+                </i>
+                <span class="icon-label">Back</span>
+              </a>
+              <strong class="block subnav-heading text-fff pad-t push-2">Landmarks</strong>
+              <ol class="list-group">
+                {% for district in site.locations %}
+                {% if district.loopExclude != true and district.layout == 'landmark' %}
+                <li>
+                  <a href="{{site.baseurl}}{{district.url}}">{{ district.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ol>
+            </div>
+          </li>
+        </ol>
+      </div>
+      {% endif %}
     </li>
     <li>
       <a href="{{site.baseurl}}/npcs/">NPCs</a>

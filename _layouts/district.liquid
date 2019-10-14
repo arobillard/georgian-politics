@@ -19,7 +19,7 @@ layout: content
         {% for landmark in site.locations %}
         {% if landmark.layout == 'landmark' and landmark.district == page.title and landmark.discovered == true or landmark.layout == 'landmark' and landmark.district == page.title and site.data.view-controls.dm-view == true %}
         <div>
-          <a href="{{site.baseurl}}{{landmark.url}}"><h3 id="{{ landmark.title | downcase | replace: " ", "-" }}">{{ landmark.title }}</h3></a>
+          <h3 id="{{ landmark.title | downcase | replace: " ", "-" }}"><a href="{{site.baseurl}}{{landmark.url}}">{{ landmark.title }}</a></h3>
           {{ landmark.content | markdownify }}
         </div>
         {% endif %}
@@ -45,7 +45,7 @@ layout: content
     {% capture resCheck %}{% for npc in site.npcs %}{% if npc.location.title == page.title and npc.location.discovered == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
     {% if resCheck != '' %}
     <section class="pad-t-2 pad-b-2">
-      <h2 id="residents" class="gutter">Residents</h2>
+      <h2 id="residents" class="gutter-1-2">Residents</h2>
       <ol id="resident-list" class="grid grid-stretch filter-grid list-group pad-t-1-2 pad-b-1-2 all">
         {% for npc in site.npcs %}
         {% if npc.discovered == true and npc.location.title == page.title and npc.location.discovered == true or site.data.view-controls.dm-view == true and npc.loopExclude != true and npc.location.title == page.title %}

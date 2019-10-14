@@ -25,14 +25,10 @@ var togTop = document.querySelector('.tog-top');
 var togMiddle = document.querySelector('.tog-middle');
 var togBottom = document.querySelector('.tog-bottom');
 var navWrap = document.querySelector('.nav-wrap');
-var childOpener = document.querySelectorAll('.child-opener-level-one, .child-opener-level-two');
-var backBtn = document.querySelectorAll('.back-button');
-// var levelTwoOpener = document.querySelectorAll('.child-opener-level-two');
+var levelOneOpener = document.querySelectorAll('.child-opener-level-one');
+var levelTwoOpener = document.querySelectorAll('.child-opener-level-two');
 var backBtnLevelOne = document.querySelectorAll('.back-sub-level-one');
 var backBtnLevelTwo = document.querySelectorAll('.back-sub-level-two');
-
-navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
-navWrap.style.top = dropTop + 'px';
 
 function toggleChange() {
   if (masthead.classList.contains('open')) {
@@ -63,115 +59,111 @@ function toggleChange() {
   }
 }
 
-function openChild(target) {
-  target.style.display = 'block';
-  setTimeout(function () {
-    target.classList.add('sub-open');
-  }, 150)
+navWrap.style.height = 'calc(100vh - ' + dropTop + 'px)';
+navWrap.style.top = dropTop + 'px';
+
+var openLevelOne = function() {
+  event.preventDefault();
+  var target = this.getAttribute('href').substr(1);
+  var openedSub = document.getElementById(target);
+
+  openedSub.classList.add('sub-opened');
+  setTimeout(function() {
+    navWrap.classList.add('sub-one-open');
+  }, 1);
 }
 
-function closeChild(target) {
-  target.classList.remove('sub-open');
-  setTimeout(function () {
-    target.removeAttribute('style');
-  }, 250)
+var openLevelTwo = function(clicked, timeShift) {
+  var target = clicked.getAttribute('href').substr(1);
+  var openedSub = document.getElementById(target);
+
+  openedSub.classList.add('sub-opened');
+  if (timeShift == true) {
+    setTimeout(function() {
+      navWrap.classList.remove('sub-one-open');
+      navWrap.classList.add('sub-two-open');
+    }, 250);
+  } else {
+    setTimeout(function() {
+      navWrap.classList.remove('sub-one-open');
+      navWrap.classList.add('sub-two-open');
+    }, 1);
+  }
 }
+
+var closeLevelOne = function() {
+  var target = document.querySelector('.subnav-level-one.sub-opened');
+  navWrap.classList.remove('sub-one-open');
+  setTimeout(function() {
+    target.classList.remove('sub-opened');
+  }, 250);
+}
+
+var closeLevelTwo = function() {
+  var target = document.querySelector('.subnav-level-two.sub-opened');
+  navWrap.classList.add('sub-one-open');
+  navWrap.classList.remove('sub-two-open');
+  setTimeout(function() {
+    target.classList.remove('sub-opened');
+  }, 250);
+}
+
+Array.from(levelOneOpener).forEach(function(element) {
+   element.addEventListener('click', openLevelOne);
+});
+
+Array.from(levelTwoOpener).forEach(function(element) {
+   element.addEventListener('click', function() {
+     event.preventDefault();
+     var clicked = this;
+     var levelTwoOpened = document.querySelector('.subnav-level-two.sub-opened');
+
+     if (levelTwoOpened) {
+       console.log('closing');
+       closeLevelTwo()
+       setTimeout(function() {
+         openLevelTwo(clicked, true);
+       }, 1);
+     } else {
+       openLevelTwo(clicked, false);
+       console.log('not closing');
+     }
+   });
+});
+
+Array.from(backBtnLevelOne).forEach(function(element) {
+   element.addEventListener('click', function() {
+     event.preventDefault();
+     closeLevelOne();
+   });
+});
+
+Array.from(backBtnLevelTwo).forEach(function(element) {
+   element.addEventListener('click', function() {
+     event.preventDefault();
+     closeLevelTwo();
+   });
+});
+
 
 menuTog.addEventListener('click', function() {
   event.preventDefault();
-  var subTwoOpen = document.querySelector('.subnav-level-two.sub-open');
-  var subOneOpen = document.querySelector('.subnav-level-one.sub-open');
-  if (subTwoOpen) {
-    console.log('Sub 2 open')
-    closeChild(subTwoOpen);
-    setTimeout(function () {
-      closeChild(subOneOpen);
-    }, 150)
-    setTimeout(function () {
+  if (navWrap.classList.contains('sub-one-open')) {
+    closeLevelOne();
+    setTimeout(function() {
       toggleChange();
-    }, 300)
-  } else if (subOneOpen && typeof subTwoOpen !== 'undefinded') {
-    console.log('Sub 1 open only')
-    closeChild(subOneOpen);
-    setTimeout(function () {
+    }, 150);
+  } else if (navWrap.classList.contains('sub-two-open')) {
+    closeLevelTwo();
+    setTimeout(function() {
+      closeLevelOne();
+    }, 150);
+    setTimeout(function() {
       toggleChange();
-    }, 150)
+    }, 300);
   } else {
     toggleChange();
   }
-});
-
-Array.from(childOpener).forEach(function(element) {
-   element.addEventListener('click', function() {
-     event.preventDefault();
-     var ref = this.getAttribute('href').substr(1);
-     var target = document.getElementById(ref);
-     var subTwoOpen = document.querySelector('.subnav-level-two.sub-open');
-     var subOneOpen = document.querySelector('.subnav-level-one.sub-open');
-     if (target.classList.contains('sub-open')) {
-       if (subTwoOpen) {
-         console.log('Sub 2 open')
-         closeChild(subTwoOpen);
-         setTimeout(function () {
-           closeChild(subOneOpen);
-         }, 150)
-       } else {
-         closeChild(target);
-       }
-     } else {
-       console.log('nothing open, running next checks')
-       if (this.classList.contains('child-opener-level-one')) {
-         console.log('level 1 clicked');
-         if (subTwoOpen) {
-           console.log('Sub 2 open')
-           closeChild(subTwoOpen);
-           setTimeout(function () {
-             closeChild(subOneOpen);
-           }, 150)
-           setTimeout(function () {
-             openChild(target);
-           }, 300)
-         } else if (subOneOpen && typeof subTwoOpen !== 'undefinded') {
-           console.log('Sub 1 open only')
-           closeChild(subOneOpen);
-           setTimeout(function () {
-             openChild(target);
-           }, 250)
-         } else {
-           openChild(target);
-         }
-       } else {
-         console.log('level 2 clicked');
-         if (subTwoOpen) {
-           console.log('Sub 2 open')
-           closeChild(subTwoOpen);
-           setTimeout(function () {
-             openChild(target);
-           }, 150)
-         } else {
-           openChild(target);
-         }
-       }
-     }
-   });
-});
-
-Array.from(backBtn).forEach(function(element) {
-   element.addEventListener('click', function() {
-     event.preventDefault();
-     var target = this.parentElement;
-     var subTwoOpen = document.querySelector('.subnav-level-two.sub-open');
-     var subOneOpen = document.querySelector('.subnav-level-one.sub-open');
-     if (subTwoOpen) {
-       console.log('Sub 2 open')
-       closeChild(subTwoOpen);
-       setTimeout(function () {
-         closeChild(target);
-       }, 150)
-     } else {
-       closeChild(target);
-     }
-   });
 });
 
 
@@ -232,38 +224,36 @@ if (pageNavList) {
 function minMediaQuery(minM) {
   if (minM.matches) { // If media query matches
 
-    if (document.getElementById('page-nav')) {
-      // Page Nav Snap
+    // Page Nav Snap
 
-      var pageNav = document.getElementById('page-nav');
+    var pageNav = document.getElementById('page-nav');
+    var position = window.pageYOffset;
+    var pageNavOffset = pageNav.offsetTop;
+    var pageNavSnap = pageNavOffset - dropTop - 20.8;
+
+    function addPageNavSnap() {
+      pageNav.style.width = pageNav.offsetWidth + 'px';
+      if (position >= pageNavSnap) {
+        pageNav.classList.add('snapped');
+        pageNav.style.top = (dropTop + 20.8) + 'px';
+      } else if (position < pageNavSnap) {
+        pageNav.classList.remove('snapped');
+      }
+    }
+
+    addPageNavSnap();
+
+    window.addEventListener("scroll", function () {
       var position = window.pageYOffset;
-      var pageNavOffset = pageNav.offsetTop;
-      var pageNavSnap = pageNavOffset - dropTop - 20.8;
 
-      function addPageNavSnap() {
-        pageNav.style.width = pageNav.offsetWidth + 'px';
-        if (position >= pageNavSnap) {
-          pageNav.classList.add('snapped');
-          pageNav.style.top = (dropTop + 20.8) + 'px';
-        } else if (position < pageNavSnap) {
-          pageNav.classList.remove('snapped');
-        }
+      if (position >= pageNavSnap) {
+        pageNav.classList.add('snapped');
+        pageNav.style.top = (dropTop + 20.8) + 'px';
+      } else if (position < pageNavSnap) {
+        pageNav.classList.remove('snapped');
       }
 
-      addPageNavSnap();
-
-      window.addEventListener("scroll", function () {
-        var position = window.pageYOffset;
-
-        if (position >= pageNavSnap) {
-          pageNav.classList.add('snapped');
-          pageNav.style.top = (dropTop + 20.8) + 'px';
-        } else if (position < pageNavSnap) {
-          pageNav.classList.remove('snapped');
-        }
-
-      });
-    }
+    });
 
   }
 }

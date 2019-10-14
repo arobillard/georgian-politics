@@ -1,0 +1,13 @@
+---
+layout: content
+title: Families
+permalink: /families/
+loopExclude: true
+---
+{% for family in site.families %}
+{% if family.loopExclude != true %}
+<h2>
+  <a href="{{site.baseurl}}{{family.url}}">{{ family.title }}</a>
+</h2>
+{% endif %}
+{% endfor %}

@@ -1,16 +1,18 @@
 <header class="masthead">
   <div class="wrapper gutter pad-t-1-2 pad-b-1-2">
+    <a class="menu-tog" href="#">
+      <span id="tog-top" class="tog-top"></span>
+      <span id="tog-middle" class="tog-middle"></span>
+      <span id="tog-bottom" class="tog-bottom"></span>
+    </a>
+    {% include patterns/navigation/nav-icon.liquid %}
     {% if page.url == '/' %}<h1 class="logo-wrap push-0">{% endif %}
     <a class="logo" href="{{site.baseurl}}/" aria-label="Georgian Politics">
       {% include patterns/logo.liquid %}
     </a>
     {% if page.url == '/' %}</h1>{% endif %}
-    {% include patterns/navigation/nav.liquid navClass="mega" id="nav" %}
-    {% include patterns/navigation/nav-icon.liquid %}
-    <a class="menu-tog m-0" href="#">
-      <span class="tog-top"></span>
-      <span class="tog-middle"></span>
-      <span class="tog-bottom"></span>
-    </a>
+    <div class="nav-wrap">
+      {% include patterns/navigation/nav.liquid id="nav" navClass="nav" %}
+    </div>
   </div>
 </header>

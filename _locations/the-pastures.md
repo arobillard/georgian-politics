@@ -5,7 +5,7 @@ img: /images/districts/the-pastures.jpg
 desc: Stretching as far as the eye can see are the hundreds of farms, providing food, drink, and more for the city.
 secrets: |-
   ## CoB Council Member
-  [The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntington Estate. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
+  [The Scarecrow](/factions/council-of-the-bruins/#the-scarecrow) aka [Eugenie Huntington](../../families/huntington/), eldest daughter of Hubert Huntington and heir to the Huntingtons. Eugenie is well versed in the affairs of the brewery and through the Huntington's dealings with the various farms is well connected and knowledgeable of the goings on across most of the Pastures.
   ## Crop Yield
   The variety of crops that the Pastures provide is beyond anything which most agricultural areas should be able to provide. The quantity is also well beyond average. Within the last 20 years the pastures have nearly doubled in size. Each years harvest has been more bountiful than the year before and the crops seem to grow without issue regardless of weather. Because of this food is abundant within Port George and the population is well fed. The Pastures also provide a huge amount of employment for the city. The large amount of growth in employment and food availability over the past two decades is believed to be directly causing the reduction in crime within the city and The Basin specifically.
 ---

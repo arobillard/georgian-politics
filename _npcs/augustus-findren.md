@@ -5,7 +5,7 @@ img: /images/npcs/placeholder.png
 family:
   title: Findren Estate
   url: /families/findren/
-  discovered: false
+  discovered: true
 location:
   title: The Pastures
   url: /locations/the-pastures/
