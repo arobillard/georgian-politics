@@ -20,7 +20,7 @@ location:
   title: City's Crest
   url: /locations/ctys-crest/
   discovered: false
-discovered: false
+discovered: true
 secrets: |-
   ## Spirituality
   Jacob is a devote follower of Torm, the god of courage and self-sacrifice. He is very clear and open about his faith in Torm, but does not push his religion on others beyond the occasional comment about how good Torm can make one's life.

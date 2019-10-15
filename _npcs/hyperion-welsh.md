@@ -20,7 +20,7 @@ location:
   title: City's Crest
   url: /locations/citys-crest/
   discovered: true
-discovered: false
+discovered: true
 inventory:
   - item: Cloak of Flame Shroud
 secrets: |-
