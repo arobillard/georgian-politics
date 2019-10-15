@@ -10,6 +10,28 @@ html {
   background-color: #fff;
   box-shadow: $shadow;
   z-index: 1000;
+  &.dm-view {
+    background-color: #c62b10;
+    .logo {
+      #georgian,
+      #politics,
+      #bear {
+        fill: #fff;
+      }
+    }
+    .menu-tog span {
+      background-color: #fff;
+    }
+    .icon-list a {
+      color: #fff;
+      transition:
+        opacity $transition;
+      &:hover, &:focus {
+        color: #fff;
+        opacity: .8;
+      }
+    }
+  }
   .wrapper {
     display: flex;
     align-items: center;
