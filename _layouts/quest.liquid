@@ -1,0 +1,37 @@
+---
+layout: content
+---
+<section id="about" class="pad-b">
+  <div class="wrapper">
+    <div class="grid island-1-2">
+      <div class="unit [ xs-1 m-1-3 ] island-1-2">
+        <div class="card island">
+          <dl class="store-info push-0">
+            <dt class="bold text-primary">Contact:</dt>
+            <dd class="push-1-2">{% if page.contactURL %}<a href="{{site.baseurl}}{{ page.contactURL }}">{% endif %}{{ page.contact }}{% if page.contactURL %}</a>{% endif %}</dd>
+            <dt class="bold text-primary">Location:</dt>
+            <dd class="push-1-2">
+              {% capture startLocLink %}{{ page.startLoc | replace: " ", "-" | replace: "'", "" | downcase }}{% endcapture %}
+              <a href="{{site.baseurl}}/locations/{{startLocLink}}">{{ page.startLoc }}</a>
+            </dd>
+            <dt class="bold text-primary">Status:</dt>
+            <dd class="push-1-2">{{ page.status | capitalize }}</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="unit [ xs-1 m-2-3 ] island-1-2">
+        {{ content }}
+        <div class="objectives">
+          <h2 id="objectives">Objectives</h2>
+          <ol class="gutter">
+            {% for task in page.objectives %}
+            {% if task.discovered == true or site.data.view-controls.dm-view == true %}
+            <li>{% if task.complete == true %}<s>{% endif %}{{task.text}}{% if task.complete == true %}</s>{% endif %}</li>
+            {% endif %}
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

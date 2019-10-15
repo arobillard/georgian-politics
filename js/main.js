@@ -145,13 +145,16 @@ Array.from(childOpener).forEach(function(element) {
      var topLevelHighlight = document.querySelector('.child-opener-level-one.highlighted');
      var firstLevelHighlight = document.querySelector('.child-opener-level-two.highlighted');
      if (target.classList.contains('sub-open')) {
-       if (subTwoOpen) {
+       if (subTwoOpen && !this.classList.contains('child-opener-level-two')) {
          closeChild(subTwoOpen);
+         removeHighlighted(firstLevelHighlight);
          setTimeout(function () {
+           removeHighlighted(topLevelHighlight);
            closeChild(subOneOpen);
          }, 150)
        } else {
          closeChild(target);
+         removeHighlighted(firstLevelHighlight);
        }
      } else {
        if (this.classList.contains('child-opener-level-one')) {

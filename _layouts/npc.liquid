@@ -66,3 +66,46 @@ layout: content
     </div>
   </div>
 </section>
+{% capture itemCheck %}{% for inventory in page.inventory %}{% for items in site.items %}{% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% break %}{% endfor %}{% endcapture %}
+{% if itemCheck != '' %}
+<section id="items" class="pad-t pad-b-2">
+  <div class="wrapper">
+    <div class="gutter">
+      <h2 class="push-0">Items</h2>
+    </div>
+    <ul class="list-group grid grid-stretch island-1-2">
+      {% for inventory in page.inventory %}
+        {% for items in site.items %}
+          {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}
+            <li class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
+              <a class="card-item-info content-fill unit-content-distribute" href="{{site.baseurl}}{{ items.url }}">
+                <header class="island-1-2">
+                  {% if items.img %}
+                  <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ items.img }}')"></div>
+                  {% else %}
+                  <div class="img-preview-placeholder">
+                    <i class="icon i-1-1-2">
+                      <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
+                    </i>
+                    <span class="icon-label hidden">Item Chest</span>
+                  </div>
+                  {% endif %}
+                  <div>
+                    <h3 class="mega push-0">{{ items.title }}</h3>
+                    <small class="block italic truncate">{{ items.classification }}</small>
+                  </div>
+                </header>
+                <div class="gutter-1-2 pad-t pad-b content-fill unit-content-distribute">
+                  <div class="description-borderless content-fill">
+                    {{ items.content | truncate: 200 | markdownify }}
+                  </div>
+                </div>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

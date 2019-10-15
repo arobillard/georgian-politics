@@ -1,11 +1,8 @@
 ---
 layout: content
 ---
-<section id="about" class="pad-t-2 pad-b">
+<section id="about" class="pad-b">
   <div class="wrapper">
-    <div class="gutter">
-      <h2 class="push-0">About {{ page.title }}</h2>
-    </div>
     <div class="grid island-1-2">
       <div class="unit [ xs-1 m-1-3 ] island-1-2">
         <div class="card island">
@@ -13,8 +10,8 @@ layout: content
             <dt class="bold text-primary">Category:</dt>
             <dd class="push-1-2">{{ page.type | capitalize }}</dd>
             <dt class="bold text-primary">Location:</dt>
-            <dd class="push-1-2">
-              <a href="{{site.baseurl}}/locations/{{ page.district | downcase | replace: " ", "-" }}/">{{ page.district }}</a>
+            <dd class="push-1-2">{% capture storeDistrict %}{{ page.district | downcase | replace: " ", "-" | replace: "'", "" }}{% endcapture %}
+              <a href="{{site.baseurl}}/locations/{{storeDistrict}}/">{{ page.district }}</a>
             </dd>
             <dt class="bold text-primary">Owner:</dt>
             <dd class="push-1-2">

@@ -5,18 +5,6 @@
   {% assign url_list = page.url | split: "/" %}
   {% assign count = url_list | size | minus: 1 %}
   {% for crumbs in (1..count) %}
-    <li>
-      {% unless crumbs == count %}<a href="{{site.baseurl}}/{% for url in (1..crumbs) %}{{url_list[url]}}/{% endfor %}">{% endunless %}
-        {% if url_list[crumbs] == "npcs" %}
-        NPCs
-        {% else %}
-        {% if crumbs == count %}
-        {{ page.title }}
-        {% else %}
-        {{ url_list[crumbs] | replace: "-", " " | capitalize }}
-        {% endif %}
-        {% endif %}
-      {% unless crumbs == count %}</a>{% endunless %}
-    </li>
+<li>{% unless crumbs == count %}<a href="{{site.baseurl}}/{% for url in (1..crumbs) %}{{url_list[url]}}/{% endfor %}">{% endunless %}{% if url_list[crumbs] == "npcs" %}NPCs{% else %}{% if crumbs == count %}{{ page.title }}{% else %}{{ url_list[crumbs] | replace: "-", " " | capitalize }}{% endif %}{% endif %}{% unless crumbs == count %}</a>{% endunless %}</li>
   {% endfor %}
 </ol>

@@ -27,3 +27,6 @@ collections:
   pcs:
     output: true
     permalink: /:collection/:path/
+  quests:
+    output: true
+    permalink: /:collection/:path/

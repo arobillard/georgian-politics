@@ -88,6 +88,7 @@
     }
     h3 {
       color: #fff;
+      margin: 0;
     }
   }
   .img-preview {
@@ -128,9 +129,44 @@
       margin: 0;
     }
   }
+  .description-borderless {
+    @extend .description;
+    border: 0;
+  }
 }
 
 .card-faction-preview {
   @extend .card;
   display: block;
+}
+
+.card-quest-log {
+  @extend .card;
+  @include min(38) {
+    min-height: 20rem;
+  }
+  h3 {
+    margin-top: 0;
+    padding: .65rem;
+    color: #fff;
+    background-color: $color-primary;
+    &.discovered {
+      background-color: adjust-hue($color-primary, 60deg)
+    }
+    &.active {
+      background-color: rgb(255, 222, 0);
+      color: $color-grey-dark;
+    }
+  }
+  ol {
+    margin: 0;
+    padding: .65rem .65rem 0;
+  }
+  li {
+    margin-bottom: .65rem;
+  }
+  // .unit:nth-child(2) {
+  //   border-left: 1px solid $color-grey;
+  //   border-right: 1px solid $color-grey;
+  // }
 }

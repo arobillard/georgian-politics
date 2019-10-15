@@ -21,6 +21,8 @@ location:
   url: /locations/citys-crest/
   discovered: true
 discovered: false
+inventory:
+  - item: Cloak of Flame Shroud
 secrets: |-
   ## Businesses
   Hyperion owns a number of different business and has made numerous partnerships with other Port George families. He owns numerous warehouses and shipping business, which many other businesses rely on to operate.
