@@ -1,7 +1,7 @@
 ---
 layout: item
 title: Sleep Darts
-discovered: false
+discovered: true
 price: 40gp
 type: weapon
 classification: Weapon, uncommon

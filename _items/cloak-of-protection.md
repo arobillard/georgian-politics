@@ -2,7 +2,7 @@
 layout: item
 title: Cloak of Protection +1
 img: /images/items/cloak-of-protection.jpeg
-discovered: false
+discovered: true
 price: 1000gp
 type: clothing
 classification: Wondrous Item, uncommon (requires attunement)

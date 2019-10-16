@@ -2,7 +2,7 @@
 layout: item
 title: Sending Stones
 img: /images/items/sending-stones.jpeg
-discovered: false
+discovered: true
 price: 500gp
 type: utility
 classification: Wondrous Item, uncommon

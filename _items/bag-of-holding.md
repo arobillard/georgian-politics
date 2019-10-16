@@ -2,7 +2,7 @@
 layout: item
 title: Bag of Holding
 img: /images/items/bag-of-holding.jpeg
-discovered: false
+discovered: true
 price: 500gp
 type: utility
 classification: Wondrous Item, uncommon
