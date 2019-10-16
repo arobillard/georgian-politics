@@ -11,7 +11,7 @@ inventory:
   - item: Cloak of Protection +1
     quantity: 1
   - item: Sleep Darts
-    quantity: 5
+    quantity: 3
   - item: Sending Stones
     quantity: 1
 discovered: true
