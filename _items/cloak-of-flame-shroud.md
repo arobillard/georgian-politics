@@ -1,7 +1,7 @@
 ---
 layout: item
 title: Cloak of Flame Shroud
-discovered: false
+discovered: true
 price: 1250gp
 type: clothing
 classification: Wondrous Item, rare (requires attunement)

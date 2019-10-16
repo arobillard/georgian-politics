@@ -1,7 +1,7 @@
 ---
 layout: item
 title: The Golden Compass
-discovered: false
+discovered: true
 price: 750gp
 type: utility
 classification: Wondrous Item, uncommon
