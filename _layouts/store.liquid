@@ -24,6 +24,10 @@ layout: content
       </div>
       <div class="unit [ xs-1 m-2-3 ] island-1-2">
         {{ content }}
+        {% if site.data.view-controls.dm-view == true and page.secrets %}
+          <strong class="text-upper text-secondary block exa">Secrets</strong>
+          {{ page.secrets | markdownify }}
+        {% endif %}
       </div>
     </div>
   </div>
