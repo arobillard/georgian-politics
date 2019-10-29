@@ -8,4 +8,4 @@ owner: Todd
 ownerURL: /npcs/todd/
 discovered: true
 ---
-Makes quality clothing for small races, Dwarf and under.
+A stand. It's got fruit on it. It's for sale.
