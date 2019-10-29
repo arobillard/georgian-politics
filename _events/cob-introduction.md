@@ -5,7 +5,7 @@ title: Council of the Bruins Introduction
 ## Town Criers
 - The City Guard is here to serve and protect the citizens of Port George. Please report any unusual and suspicious activity, specifically any involving masked individuals, to the nearest City Guard.
 - Increased attacks on caravan shipments through The Pastures. City Guard recommends traveling in large groups when possible.
-- The Midsummer Festival is approaching! Events spanning the final Tenday of Flamerule will include the Midsummer Harvest Fair, the Celebration of His Royal Highness King George VI's <mark>40th</mark> birthday and the <mark>16th</mark> birthday of Her Majesty Princess Grace, the Midsummer Celebration of Lights, and much more!
+- The Midsummer Festival is approaching! Events spanning the final Tenday of Flamerule will include the Midsummer Harvest Fair, the Celebration of His Royal Highness King George VI's 40th birthday and the 16th birthday of Her Majesty Princess Grace, the Midsummer Celebration of Lights, and much more!
 - Visit Hammer Spark for all of your weapon and armor needs. Now the official sponsor of Morokei, Champion of the Stadium and Hero of the Market!
 
 
