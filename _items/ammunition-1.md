@@ -1,7 +1,7 @@
 ---
 layout: item
 title: Ammunition +1
-discovered: false
+discovered: true
 price: 25gp/ea
 type: weapon
 classification: Weapon, Uncommon (any ammunition)

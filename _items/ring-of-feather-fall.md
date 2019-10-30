@@ -2,7 +2,7 @@
 layout: item
 title: Ring of Feather Fall
 img: /images/items/ring-of-feather-fall.jpeg
-discovered: false
+discovered: true
 price: 3000gp
 classification: Ring, Rare (requires attunement)
 type: ring

@@ -19,7 +19,7 @@ title: Council of the Bruins Introduction
 - most members scatter after fight
 - Double tap broach and their outfits shift back to normal street clothing.
 - They encourage you to leave before the Guard show up
-  - if PCs don't want to they'll bail and tell them to meet them at The Hunter's Tophy the following day and say to the orc barman Jay "I have some high quality goods that need to be sold, and am looking for a salesmen up to the task."
+  - if PCs don't want to they'll bail and tell them to meet them at The Hunter's Trophy the following day and say to the orc barman Jay "I have some high quality goods that need to be sold, and am looking for a salesmen up to the task."
 - Evander and Eugenie lead you to a back room in The Hunter's Trophy
 - Give overview of [Council of the Bruins]({{site.baseurl}}/factions/council-of-the-bruins/)
   - pull up left sleeve, rub underside of forearm three times and reveal CoB crest tattoos

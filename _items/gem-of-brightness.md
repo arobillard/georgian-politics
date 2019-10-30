@@ -2,7 +2,7 @@
 layout: item
 title: Gem of Brightness
 img: /images/items/gem-of-brightness.jpeg
-discovered: false
+discovered: true
 price: 400gp
 type: utility
 classification: Wondrous Item, uncommon

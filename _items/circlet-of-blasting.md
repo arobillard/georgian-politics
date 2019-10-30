@@ -2,7 +2,7 @@
 layout: item
 title: Circlet of Blasting
 img: /images/items/circlet-of-blasting.jpeg
-discovered: false
+discovered: true
 price: 500gp
 type: headwear
 classification: Wondrous Item, Uncommon
