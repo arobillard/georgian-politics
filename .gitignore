@@ -3,3 +3,4 @@ _archive
 pre-process
 .jekyll-cache
 .DS_Store
+_data/view-controls.yml
