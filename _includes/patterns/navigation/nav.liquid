@@ -102,7 +102,7 @@
               <strong class="block subnav-heading text-fff pad-t push-2">Districts</strong>
               <ol class="list-group">
                 {% for district in site.locations %}
-                {% if district.loopExclude != true and district.layout == 'district' and district.discovered == true or district.loopExclude != true and district.layout == 'district' and site.data.view-controls.dm-view == true %}
+                {% if district.loopExclude != true and district.layout == 'district' %}
                 <li>
                   <a href="{{site.baseurl}}{{district.url}}">{{ district.title }}</a>
                 </li>

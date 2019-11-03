@@ -7,7 +7,7 @@ codename:
   discovered: false
 faction:
   title: Aghara
-  discovered: false
+  discovered: true
   url: /factions/aghara/
 class:
   title: Monk
@@ -15,7 +15,7 @@ location:
   title: City's Crest
   url: /locations/citys-crest/
   discovered: false
-discovered: false
+discovered: true
 secrets: |-
   ## True Identity and Allegiance
   The Hand's true identity is [Eldran Welsh](../eldran-welsh) and he is a high level member of the [Pijavka](../../factions/pijavka/) gang. He is subtly controlling and manipulating Propova and the Aghara to accomplish the Pijavka's goals of destabilizing the city and creating wealth inequality that they can take advantage of.

@@ -4,17 +4,17 @@ title: Evander Montgomery
 img: /images/npcs/placeholder.png
 codename:
   title: The Salesman
-  discovered: false
+  discovered: true
 characterSheet:
   url: https://www.dndbeyond.com/profile/BaJaun/characters/1079361
   discovered: false
 faction:
   title: Council of the Bruins
   url: /factions/council-of-the-bruins/
-  discovered: false
+  discovered: true
 class:
   title: Bard
-  discovered: false
+  discovered: true
 location:
   title: The Market
   url: /locations/the-market/

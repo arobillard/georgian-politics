@@ -30,3 +30,6 @@ collections:
   quests:
     output: true
     permalink: /:collection/:path/
+  maps:
+    output: true
+    permalink: /:collection/:path/

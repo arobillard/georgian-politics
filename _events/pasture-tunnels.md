@@ -19,7 +19,7 @@ title: Pasture Tunnels
     - Her mother passed away suddenly on Requies and was too preoccupied to send word right away, has since done so.
   - **Kyran** (human male) - lives in The Basin. Has bounced around from farm to farm, but at the current produce farm he is employed by (Yulile farms) has been a good worker with no issues.
     - **Aghara member**, his residence has no evidence.
-  - **Niles** (dwarven female) - lives in The Basin. Frequent shift misser. Phoenix Farms assumes he is drunk in a gutter and will show up halfway through rotation.
+  - **Niles** (dwarven female) - lives in The Basin. Frequent shift misser. Phoenix Farms assumes she is drunk in a gutter and will show up halfway through rotation.
     - Does exactly that
   - **Lyneer** (half-elf female) - lives in The Basin. A pretty decent worker, relatively new to Avena Farms, been there a few months and has only missed one shift before.
     - **Aghara member**, evidence in residence in the form of a letter in Deep Speech featuring the Aghara mark and a few prototype hoods.

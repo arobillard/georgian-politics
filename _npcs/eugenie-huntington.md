@@ -4,14 +4,14 @@ title: Eugenie Huntington
 img: /images/npcs/placeholder.png
 codename:
   title: The Scarecrow
-  discovered: false
+  discovered: true
 characterSheet:
   url: '#'
   discovered: false
 faction:
   title: Council of the Bruins
   url: /factions/council-of-the-bruins/
-  discovered: false
+  discovered: true
 family:
   title: Huntingtons
   url: /families/huntington/

@@ -133,6 +133,35 @@ window.addEventListener('keydown', function(e) {
   }
 });
 
+var mainCloser = document.getElementById('main');
+
+mainCloser.addEventListener('click', function() {
+  if (masthead.classList.contains('open')) {
+    var subTwoOpen = document.querySelector('.subnav-level-two.sub-open');
+    var subOneOpen = document.querySelector('.subnav-level-one.sub-open');
+    var topLevelHighlight = document.querySelector('.child-opener-level-one.highlighted');
+    var firstLevelHighlight = document.querySelector('.child-opener-level-two.highlighted');
+    if (subTwoOpen) {
+      closeChild(subTwoOpen);
+      removeHighlighted(topLevelHighlight);
+      removeHighlighted(firstLevelHighlight);
+      setTimeout(function () {
+        closeChild(subOneOpen);
+      }, 150)
+      setTimeout(function () {
+        toggleChange();
+      }, 300)
+    } else if (subOneOpen && typeof subTwoOpen !== 'undefinded') {
+      closeChild(subOneOpen);
+      removeHighlighted(topLevelHighlight);
+      setTimeout(function () {
+        toggleChange();
+      }, 150)
+    } else {
+      toggleChange();
+    }
+  }
+});
 
 Array.from(childOpener).forEach(function(element) {
    element.addEventListener('click', function(event) {
