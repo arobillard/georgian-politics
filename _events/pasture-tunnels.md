@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Council of the Bruins Introduction
+title: Pasture Tunnels
 ---
 ## Town Criers
 - The City Guard is here to serve and protect the citizens of Port George. Please report any unusual and suspicious activity, specifically any involving masked individuals, to the nearest City Guard.
@@ -8,36 +8,7 @@ title: Council of the Bruins Introduction
 - The Midsummer Festival is approaching! Events spanning the final Tenday of Flamerule will include the Midsummer Harvest Fair, the Celebration of His Royal Highness King George VI's 40th birthday and the 16th birthday of Her Majesty Princess Grace, the Midsummer Celebration of Lights, and much more!
 - Visit Hammer Spark for all of your weapon and armor needs. Now the official sponsor of Morokei, Champion of the Stadium and Hero of the Market!
 
-
 ## Outline
-### End of Fight
-- CoB agents led by [Evander]({{site.baseurl}}/npcs/evander-montgomery/) & [Eugenie]({{site.baseurl}}/npcs/eugenie-huntington/) arrive
-  - Evander wears a mask with a large smile with golden engravings
-  - Eugenie wears a half mask that is decorated to look like it is made of straw, creating a visual of a scarecrow.
-
-### CoB Debrief
-- most members scatter after fight
-- Double tap broach and their outfits shift back to normal street clothing.
-- They encourage you to leave before the Guard show up
-  - if PCs don't want to they'll bail and tell them to meet them at The Hunter's Trophy the following day and say to the orc barman Jay "I have some high quality goods that need to be sold, and am looking for a salesmen up to the task."
-- Evander and Eugenie lead you to a back room in The Hunter's Trophy
-- Give overview of [Council of the Bruins]({{site.baseurl}}/factions/council-of-the-bruins/)
-  - pull up left sleeve, rub underside of forearm three times and reveal CoB crest tattoos
-  > We represent a secret society within Port George, known as the Council of the Bruins. We fight in secret to maintain balance within the city and help to insure it remains a peaceful and safe city.
-  >
-  > We are no city guard, nor agents of the King. We are completely independent and have representatives in all of the Districts to ensure everyone is treated fairly and everyones' needs are met.
-  >
-  > As we are sure you are aware, we have been keeping tabs on you since Evander first encountered you in the Market. We hope to find that our goals are aligned and that we might be able to work together to end these Aghara terrorists.
-
-- Mention they have been tracking the Aghara for a little while, but were caught unawares by the market attack.
-  > We knew there was some growing unrest in some of laborers and lower-income workers around the city, especially amongst the farmworkers. The combination of the fact that work is hard and the job stability and pay isn't always great and some of the farm owners and supervisors aren't the most empathetic bosses has led to some, to this point, minor conflicts.
-
-- They had seemed mostly small fry, sticking to attacks in The Pastures
-- Tonight is the closest they have gotten to discovering who the leaders are
-  - they have captured a few low level guys but they keep dying whenever they start giving up information
-- Looking to get any information that the group may have on the Aghara
-- If the PCs need to contact the CoB they can talk to the orc barman Jay and tell him "I have some high quality goods that need to be sold, and am looking for a salesmen up to the task", the code phrase will inform Jay to contact Evander right away.
-
 ### Farm Runners Check-In
 - The runners you sent on Initum return on Inter (4th day) with varying degrees of information.
 - There are hundreds of farms and only 15 dead/captured Aghara agents
@@ -85,8 +56,3 @@ title: Council of the Bruins Introduction
       > I have been chosen to participate in the first stage of the revolution! I cannot believe that in a few short weeks I will be one of the first to bring glorious freedom to this city!
 
     - Tion lives alone in a cheap, city-owned apartment alone. He is not well liked by his neighbours and frequently drank at [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) and would come home loud and drunk at all hours of the night.
-
-### The Sting
-- **CoB Help**
-  - CoB want to help set up a sting.
-  - They can provide a special cart that can be used to disguise the PCs and allow them to be bait.

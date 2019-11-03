@@ -5,8 +5,12 @@ layout: content
   <div class="unit [ xs-1 l-2-3 ]">
     <section id="about" class="">
       <div class="island-1-2">
+        {% if site.data.view-controls.dm-view == true %}
         <h1>{{ page.title }}</h1>
         {{ content }}
+        {% else %}
+        <h1>Sorry, DM's eyes only!</h1>
+        {% endif %}
       </div>
     </section>
   </div>
