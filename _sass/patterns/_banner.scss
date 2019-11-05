@@ -19,7 +19,8 @@
   }
 }
 
-.banner-hero {
+.banner-hero,
+.banner-town-crier {
   @extend .banner;
   align-items: center;
   height: 50vh;

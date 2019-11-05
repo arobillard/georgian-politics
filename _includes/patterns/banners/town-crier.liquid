@@ -1,0 +1,6 @@
+<section class="banner-town-crier" {% if include.img %}style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('{{site.baseurl}}{{include.img}}')"{% endif %}>
+  <div class="banner-content island">
+    {% if include.byline %}<p class="giga italic">"{{ include.byline }}"</p>{% endif %}
+    {% if include.cite %}<strong class="mega text-fff">- {{ include.cite }}</strong>{% endif %}
+  </div>
+</section>
