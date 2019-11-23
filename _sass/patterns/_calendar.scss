@@ -1,0 +1,105 @@
+.calendar {
+  @extend .pad-t-2;
+  @extend .pad-b-2;
+  @include max(69.999) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  &-tenday-titles,
+  &-tenday-days {
+    @include min(70) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+  }
+  @include max(69.999) {
+    &-tenday {
+      padding: .65rem;
+    }
+  }
+  &-tenday-title {
+    width: 10%;
+    background-color: $color-primary;
+    h5 {
+      color: #fff;
+      text-transform: none;
+      font-weight: 400;
+      margin: 0;
+      text-align: center;
+      @extend .kilo;
+    }
+  }
+  &-day {
+    border: 1px solid $color-grey;
+    @include max(69.999) {
+      margin-bottom: .65rem;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      .calendar-day-number {
+        border-bottom: 1px solid $color-grey;
+      }
+    }
+    .calendar-day-number {
+      margin-bottom: .65rem;
+    }
+    @include min(70) {
+      border-top: 0;
+      width: 10%;
+      min-height: 100px;
+    }
+    &.no-event {
+      @include max(69.999) {
+        display: none;
+      }
+    }
+  }
+  &-item {
+    @extend .milli;
+    @extend .island-1-4;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: lighten($color-secondary-light, 15%);
+    border: 1px solid $color-secondary-light;
+    box-shadow: $shadow;
+    &:not(:last-child) {
+      margin-bottom: .325rem;
+    }
+    &.aghara-event {
+      background-color: #bf5050;
+      border-color: #be1c1c;
+      color: #fff;
+    }
+    &.special-event {
+      background-color: #e8de59;
+      border-color: #e6d719;
+    }
+    &.cob-event {
+      background-color: lighten($color-primary-light, 15%);
+      border-color: $color-primary-light;
+    }
+  }
+  a.calendar-item {
+    @include hov() {
+      background-color: #e3a42b;
+      border-color: #df9709;
+      color: #fff;
+    }
+    &.aghara-event {
+      @include hov() {
+        background-color: #913c3c;
+        border-color: #851414;
+        color: #fff;
+      }
+    }
+    &.cob-event {
+      @include hov() {
+        background-color: $color-primary;
+        border-color: $color-primary-dark;
+        color: #fff;
+      }
+    }
+  }
+}

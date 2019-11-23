@@ -8,6 +8,10 @@ title: Pasture Tunnels
 - The Midsummer Festival is approaching! Events spanning the final Tenday of Flamerule will include the Midsummer Harvest Fair, the Celebration of His Royal Highness King George VI's 40th birthday and the 16th birthday of Her Majesty Princess Grace, the Midsummer Celebration of Lights, and much more!
 - Visit Hammer Spark for all of your weapon and armor needs. Now the official sponsor of Morokei, Champion of the Stadium and Hero of the Market!
 
+## Faction Goals and Actions
+### Aghara
+The Aghara is currently preparing for their attack on King George's birthday celebration.
+
 ## Outline
 ### Farm Runners Check-In
 - The runners you sent on Initum return on Inter (4th day) with varying degrees of information.

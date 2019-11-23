@@ -100,6 +100,11 @@ This room is 120x80ft and is well light and properly built with stone walls, flo
 
 The crates contain food, construction and mining supplies (stamped with a variety of businesses, they were likely stolen in small batches to avoid notice), basic weapons and arms.
 
+#### Items on Aghara Members in Warehouse
+- [Chillrend]({{site.baseurl}}/items/chillrend)
+- Leather Armour +1
+- 5d6gp worth of SP
+
 ### 3 - Teleportation Circle Room
 This room is also mostly filled with crates, boxes, and barrels, although much more neatly packed and organized intentionally ready to be shipped. The contents are similar as to the main warehouse.
 
@@ -116,7 +121,7 @@ The vault is sealed by a large metal door. It requires a DC 18 Thieves Tools che
 - Potion of Greater Healing
 
 ### 6 - Mage's Quarters
-This room features a desk, a large conference style table with chairs, a mostly empty bookcase, a comfortable bed, a dresser, and a chest. The bookcase contains a few general history books of the area, a book titled "An Argument for Freedom" by Elnullia, a few engineering and mining books, a few books on military strategy and a large number of books containing logs of items. An Investigation check of 15 reveals a hidden lever beneath a book that opens a secret door. The chest is mostly clothing of mid-level quality and a pouch of <span class="text-primary bold">50gp</span>. The table has the remains of a meal. On the desk is a log book and a half- written letter. The log book lists items they have stolen in small bunches from nearby farms, traveling caravans, and different shops from around the pastures. It outlines how they steal small amounts of goods from carts amidst the chaos of burning and attacking the wagons. Their goal seemed to be to mask the fact that they were stockpiling goods and make it seem like they were merely burning everything. It also also indicates that a collection of shipments that are destined for six different destinations are nearly ready to be shipped out. It lists the destinations as Pucina (Shoreline), Ducan (Market), Skola (Scholar's Row), Hram (Divine), Dvor (City's Crest), and Sud (Mid Court).
+This room features a desk, a large conference style table with chairs, a mostly empty bookcase, a comfortable bed, a dresser, and a chest. The bookcase contains a few general history books of the area, a book titled "An Argument for Freedom" by Elnullia, a few engineering and mining books, a few books on military strategy and a large number of books containing logs of items. An Investigation check of 15 reveals a hidden lever beneath a book that opens a secret door. The chest is mostly clothing of mid-level quality and a pouch of <span class="text-primary bold">50gp</span>. The table has the remains of a meal. On the desk is a log book and a half- written letter. The log book lists items they have stolen in small bunches from nearby farms, traveling caravans, and different shops from around the pastures. It outlines how they steal small amounts of goods from carts amidst the chaos of burning and attacking the wagons. Their goal seemed to be to mask the fact that they were stockpiling goods and make it seem like they were merely burning everything. It also also indicates that a collection of shipments that are destined for four different destinations are nearly ready to be shipped out. It lists the destinations as Pucina (Shoreline), Ducan (Market), Skola (Scholar's Row), and Sud (Mid Court).
 
 The half-written letter is written in <span class="text-primary bold">Deep Speech</span> and reads:
 
@@ -124,7 +129,7 @@ The half-written letter is written in <span class="text-primary bold">Deep Speec
 >
 > We are working on the final touches of the construction of the <mark>southwest</mark> Polje safehouse. It should be complete within the next few days and ready to serve its full capacity at that time.
 >
-> We are nearly ready for the next stage of the plan. This letter arrives with the final shipment of weapons and resources necessary for the attack. Once they are sent and I have completed final preparations here, I will meet...
+> We are nearly ready for the next stage of the plan. This letter arrives with the final shipment of weapons and resources necessary for the celebration. Once they are sent and I have completed final preparations here, I will meet...
 
 ### 7 - Laboratory
 This room features a large desk covered in books and research notes, numerous bookshelves, and an alchemical workbench covered in class tubes and vials, materials, and dangerous liquids. At the west end of the room is a deep red teleportation circle with an Aghara symbol at its centre. It works in the same way as the teleportation circle in the [Teleportation Circle Room](#3---teleportation-circle-room).
@@ -133,9 +138,9 @@ The research notes are written in *Deep Speech* and in a very difficult code. It
 
 There are 5 full corked vials on the alchemical workbench.
 - Bright green liquid: basic vial of acid
-- Clear liquid: highly potent vial of acid. Has no effect on non-organic matter. Causes 1d10 acid damage per round until an action is taken to clean off the acid. Causes permanent scaring and failed death saving throws if still in contact with skin.
+- Clear liquid: highly potent vial of acid. Has no effect on non-organic matter. Causes 1d10 acid damage per round until an action is taken to clean off the acid. Causes permanent scaring and failed death saving throws if still in contact with skin while unconscious.
 - Opaque black liquid: smoke bomb. Creates a 10ft radius of magical darkness centered around point where the vial impacts and breaks.
-- Bright blue liquid: creeping fire. On impact, creates fire in a 5ft radius. Each round the radius grows by 5ft regardless of whether there are flammable materials. Can only be put out by a dispell magic spell or by smothering with copious amounts of non-flammable materials.
+- Bright blue liquid: creeping fire. On impact, creates blue magical fire in a 5ft radius. Each round the radius grows by 5ft regardless of whether there are flammable materials. Can only be put out by a dispell magic spell or by smothering with copious amounts of non-flammable materials.
 - Muddy brown liquid: failed experiment.
 
 ### 8 - Mess Hall
