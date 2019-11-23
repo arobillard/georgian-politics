@@ -1,5 +1,5 @@
 port: 4002
-permalinks: pretty
+permalink: pretty
 sass:
     style: expanded
 collections:
