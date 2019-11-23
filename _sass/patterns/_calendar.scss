@@ -13,6 +13,12 @@
       align-items: stretch;
     }
   }
+  &-tenday-titles {
+    display: none;
+    @include min(70) {
+      display: flex;
+    }
+  }
   @include max(69.999) {
     &-tenday {
       padding: .65rem;
@@ -28,6 +34,11 @@
       margin: 0;
       text-align: center;
       @extend .kilo;
+    }
+  }
+  &-tenday-days-title {
+    @include min(70) {
+      display: none;
     }
   }
   &-day {
