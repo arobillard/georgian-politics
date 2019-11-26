@@ -12,6 +12,16 @@ title: Pasture Tunnels
 ### Aghara
 The Aghara is currently preparing for their attack on King George's birthday celebration.
 
+### CoB
+The CoB is continuing to gather more information and trying to locate the Aghara and any hideouts they have. If the PCs inform them of the location of the Aghara Pastures safehouse, the Scarecrow will rush off to it with a contingent of agents as soon as possible to gather more information and insure it is shut down.
+
+If the PCs bring the information of the Pastures hideout to them first, they will extend the offer to join the CoB officially.
+
+### Guards
+Have spent more time interrogating the prisoners from the Propova meeting. Have gained very little information beyond the fact that The Bloody Dagger keeps coming up. They plan on raiding the bar.
+
+The runners have returned with a [list of names](../runner-info.txt) of people who missed their shifts in the Pastures. They can send out guards to investigate or can hand it off to PCs.
+
 ## Outline
 ### Farm Runners Check-In
 - The runners you sent on Initum return on Inter (4th day) with varying degrees of information.

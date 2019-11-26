@@ -23,4 +23,14 @@
       <span class="icon-label hidden">Calendar</span>
     </a>
   </li>
+  {% if site.data.view-controls.dm-view == true %}
+  <li>
+    <a class="icon-link" href="{{site.baseurl}}/dm-notes/">
+      <i class="icon i-1-1-4">
+        <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#settings" /></svg>
+      </i>
+      <span class="icon-label hidden">DM Notes</span>
+    </a>
+  </li>
+  {% endif %}
 </ul>

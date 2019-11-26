@@ -33,3 +33,6 @@ collections:
   maps:
     output: true
     permalink: /:collection/:path/
+  dm-notes:
+    output: true
+    permalink: /:collection/:path/

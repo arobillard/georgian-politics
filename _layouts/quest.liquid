@@ -7,9 +7,13 @@ layout: content
       <div class="unit [ xs-1 m-1-3 ] island-1-2">
         <div class="card island">
           <dl class="store-info push-0">
+            {% if page.faction %}
+            <dt class="bold text-primary">Faction:</dt>
+            <dd class="push-1-2"><a href="{{site.baseurl}}/factions/{{ page.faction | downcase | replace: " ", "-" }}">{{ page.faction }}</a></dd>
+            {% endif %}
             <dt class="bold text-primary">Contact:</dt>
             <dd class="push-1-2">{% if page.contactURL %}<a href="{{site.baseurl}}{{ page.contactURL }}">{% endif %}{{ page.contact }}{% if page.contactURL %}</a>{% endif %}</dd>
-            <dt class="bold text-primary">Location:</dt>
+            <dt class="bold text-primary">Start Location:</dt>
             <dd class="push-1-2">
               {% capture startLocLink %}{{ page.startLoc | replace: " ", "-" | replace: "'", "" | downcase }}{% endcapture %}
               <a href="{{site.baseurl}}/locations/{{startLocLink}}">{{ page.startLoc }}</a>
@@ -21,6 +25,7 @@ layout: content
       </div>
       <div class="unit [ xs-1 m-2-3 ] island-1-2">
         {{ content }}
+        {% comment %}
         <div class="objectives">
           <h2 id="objectives">Objectives</h2>
           <ol class="gutter">
@@ -31,6 +36,7 @@ layout: content
             {% endfor %}
           </ol>
         </div>
+        {% endcomment %}
       </div>
     </div>
   </div>

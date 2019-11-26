@@ -4,6 +4,7 @@ title: The Golden Compass
 discovered: true
 price: 750gp
 type: utility
+purchased: true
 classification: Wondrous Item, uncommon
 ---
 The Golden Compass is a small golden sphere about an inch in diameter. As a bonus action, the holder can twist the sphere along the centre seem and divide it into two pieces. Each half features a compass needle which magically points towards the other piece.

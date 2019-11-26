@@ -47,3 +47,20 @@ layout: content
   </div>
 </section>
 {% endif %}
+{% capture questCheck %}{% for quest in site.quests %}{% if quest.faction == page.title and quest.discovered == true or quest.faction == page.title and site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% endcapture %}
+{% if questCheck != '' %}
+<section class="pad-t-2 pad-b-2">
+  <div class="wrapper">
+    <h2 id="known-members" class="gutter">Quests</h2>
+    <ol id="member-list" class="grid grid-stretch island-1-2 list-group">
+      {% for quest in site.quests %}
+      {% if quest.faction == page.title and quest.discovered == true or site.data.view-controls.dm-view ==true and quest.faction == page.title %}
+      <li class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% include patterns/cards/preview-list-item.liquid img=quest.img url=quest.url title=quest.title %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}

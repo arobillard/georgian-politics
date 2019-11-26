@@ -4,9 +4,9 @@ title: Belt of Beloth the Wise
 discovered: false
 price: Price on request
 type: clothing
-classification: Wondrous Item, Very rare, (requires attunement by a wizard or cleric)
+classification: Wondrous Item, Very rare, (requires attunement)
 secrets: |-
-  The total cap of the belt is 30 spell levels. DC to increase the capacity is 22. On a Nat1 the gem of the corresponding School of Magic is destroyed and the power limit is reduced by the spell level of the spell that the wearer attempted to store.
+  The total cap of the belt is 30 spell levels. DC to increase the capacity is 20 + (spell level cap / 5) - 1 rounded up. On a Nat1 the gem of the corresponding School of Magic is destroyed and the power limit is reduced by the spell level of the spell that the wearer attempted to store.
 ---
 This belt is made of tightly woven blue and black leather strands. It looks like an ordinary belt until a strap is pulled along the edge of the belt which reveals eight different colour gems embedded into the length of the belt.
 

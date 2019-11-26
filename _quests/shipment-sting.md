@@ -5,6 +5,7 @@ img: /images/districts/the-pastures.jpg
 startLoc: Mid Court
 contact: Captain Lionel Deep
 contactURL: /npcs/captain-lionel-deep/
+discovered: false
 status: undiscovered
 objectives:
   - text: Find a farmer willing to help set up a sting.
