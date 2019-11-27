@@ -2,7 +2,7 @@
 layout: item
 title: Chillrend
 img: /images/items/chillrend.jpg
-discovered: false
+discovered: true
 price: n/a
 type: weapon
 classification: Weapon, rare (requires attunement)
