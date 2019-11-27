@@ -1,7 +1,7 @@
 ---
 layout: item
 title: Belt of Beloth the Wise
-discovered: false
+discovered: true
 price: Price on request
 type: clothing
 classification: Wondrous Item, Very rare, (requires attunement)
