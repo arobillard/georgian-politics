@@ -11,9 +11,11 @@ A large arcane university which takes up a almost half of the district on the no
 - Delwee (female elf), head of enchanting services
 - Letwoon (male halfing) head of research
 - Unklel (female half orc) head of admissions
+- Illian (female half elf) head of alchemist
 
 #### Students:
 - Kengi (male half-elf) enchanter
 - Ed (gender fluid dwarf) enchanter
 - Wesnah (female tiefling) research
 - Nothem (male human) studying abjuration
+- Jule (male dwarf) studying alchemy
