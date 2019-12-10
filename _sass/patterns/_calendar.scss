@@ -94,9 +94,16 @@
   }
   a.calendar-item {
     @include hov() {
-      background-color: #e3a42b;
-      border-color: #df9709;
+      background-color: $color-secondary;
+      border-color: $color-secondary-dark;
       color: #fff;
+    }
+    &.special-event {
+      @include hov() {
+        background-color: #e3a42b;
+        border-color: #df9709;
+        color: #fff;
+      }
     }
     &.aghara-event {
       @include hov() {
