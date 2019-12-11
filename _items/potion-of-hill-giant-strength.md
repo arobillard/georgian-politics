@@ -2,7 +2,7 @@
 layout: item
 title: Potion of Hill Giant Strength
 discovered: true
-price: 200gp
+price: 250gp
 type: potion
 classification: Potion, uncommon
 ---
