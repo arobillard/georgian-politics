@@ -9,11 +9,11 @@ owner: Milfan (Male Halfing)
 discovered: true
 inventory:
   - item: Potion of Healing
-    quantity: 3
-  - item: Antitoxin
-    quantity: 2
-  - item: Potion of Greater Healing
     quantity: 1
+  - item: Antitoxin
+    quantity: 0
+  - item: Potion of Greater Healing
+    quantity: 0
   - item: Potion of Hill Giant Strength
     quantity: 1
 ---

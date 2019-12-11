@@ -5,5 +5,6 @@ discovered: true
 price: 250gp
 type: potion
 classification: Potion, uncommon
+purchased: true
 ---
 Increases Strength Ability score to 21 for 1 hour.

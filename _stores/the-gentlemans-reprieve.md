@@ -3,7 +3,7 @@ layout: store
 title: The Gentleman's Reprieve
 city-ref: 0
 district: The Basin
-type: bar
+type: bars
 owner: Crush (male human)
 discovered: true
 secrets: |-

@@ -10,7 +10,7 @@ inventory:
   - item: Antitoxin
     quantity: 3
   - item: Potion of Healing
-    quantity: 3
+    quantity: 0
   - item: Potion of Growth
     quantity: 1
   - item: Potion of Invisibility
