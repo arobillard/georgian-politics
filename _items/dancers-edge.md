@@ -1,7 +1,7 @@
 ---
 layout: item
 title: Dancer's Edge
-discovered: false
+discovered: true
 price: n/a
 type: weapon
 classification: Weapon, rare (requires attunement)
