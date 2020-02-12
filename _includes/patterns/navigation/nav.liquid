@@ -230,6 +230,35 @@
       </div>
       {% endif %}
     </li>
+    <li class="has-subnav">
+      <a {% if page.url contains 'maps' %}class="current"{% endif %}href="{{site.baseurl}}/maps/">Maps</a>
+      {% if include.id == 'nav' %}
+      <a class="child-opener-level-one" href="#sub-maps">
+        <i class="icon i-1-1-4">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+        <span class="icon-label hidden">Open</span>
+      </a>
+      <div id="sub-maps" class="gutter pad-t pad-b subnav-level-one">
+        <a class="back-button inline-block" href="#">
+          <i class="icon i-1">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+          </i>
+          <span class="icon-label">Back</span>
+        </a>
+        <strong class="block subnav-heading text-fff pad-t push-2">Maps</strong>
+        <ol class="list-group">
+          {% for map in site.maps %}
+          {% if map.loopExclude != true %}
+          <li>
+            <a href="{{site.baseurl}}{{map.url}}">{{ map.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </li>
     {% endif %}
   </ul>
 </nav>
