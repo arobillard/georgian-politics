@@ -18,7 +18,7 @@ family:
   discovered: true
 location:
   title: City's Crest
-  url: /locations/ctys-crest/
+  url: /locations/citys-crest/
   discovered: false
 discovered: true
 secrets: |-

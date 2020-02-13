@@ -20,7 +20,7 @@ layout: content
         {% if landmark.layout == 'landmark' and landmark.district == page.title and landmark.discovered == true or landmark.layout == 'landmark' and landmark.district == page.title and site.data.view-controls.dm-view == true %}
         <div>
           <h3 id="{{ landmark.title | downcase | replace: " ", "-" }}"><a href="{{site.baseurl}}{{landmark.url}}">{{ landmark.title }}</a></h3>
-          {{ landmark.content | markdownify }}
+          {{ landmark.content | markdownify | truncate: 100 }}
         </div>
         {% endif %}
         {% endfor %}
