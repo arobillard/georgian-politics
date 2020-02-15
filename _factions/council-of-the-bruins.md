@@ -41,13 +41,13 @@ secrets: |-
   All members of the Council of the Bruins do not use their real names when gathered in Protector sanctuaries, they refer to each other by their classification.
 
   ## Members
-  - **The Informant**:
+  - **The Informant**: Eleanor Drogues
   - **The Nobleman**: Jacob Grisdale
-  - **The Squire**:
+  - **The Squire**: Kendra Kine
   - **The Beggar**: Gullnark Tull
   - **The Salesman**: Evander Montgomery
   - **The Acolyte**: Revia
-  - **The Professor**:
+  - **The Professor**: Jahllan Kaved
   - **The Seafarer**: Captain John Mercer
   - **The Scarecrow**: Eugenie Huntington
 
@@ -67,3 +67,16 @@ It is clear from early interactions with members of the Council of the Bruins th
 
 ## Goals
 The Council of the Bruins work to maintain balance within the city. They acknowledge that there will always be different classes of levels of wealth and power, but they aim to ensure that the established systems within the city allow every citizen, even the poorest of the poor, to be safe and well fed.
+
+## Structure
+There is a representative from each of the city's nine districts that sit on the Bruin's Council who govern the society. Each council member uses a codename that is assigned to their district and is passed down to their successor.
+
+ - **Castle Caan:** The Informant (Simple black half mask)
+ - **City's Crest:** The Nobleman (Ornate, gem encrusted masquerade mask)
+ - **Mid Court:** The Squire (Bear mask)
+ - **The Basin:** The Beggar (Black mask resembling a dog)
+ - **The Market:** The Salesman (Golden mask with a laughing face)
+ - **District of the Devine:** The Acolyte (Brown hood that casts permanent shadow on their face)
+ - **Scholar's Row:** The Professor (Wooden mask resembling an owl)
+ - **The Shoreline:** The Seafarer (Platinum blue mask with a point resembling a swordfish)
+ - **The Pastures:** The Scarecrow (Half mask made of unknown material resembling a straw scarecrow)
