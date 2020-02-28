@@ -6,7 +6,7 @@ discovered: false
 archive: |-
 ---
 ## Introduction
-This location serves as the main recruitment area for the [Aghara]({{site.baseurl/factions/aghara}}).  By being located beneath the [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) they have easy access to the main target audience for their recruitment.
+This location serves as the main recruitment area for the [Aghara]({{site.baseurl}}/factions/aghara).  By being located beneath the [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) they have easy access to the main target audience for their recruitment.
 
 
 ## Rooms

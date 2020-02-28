@@ -4,19 +4,19 @@ title: Query
 img: /images/npcs/placeholder.png
 codename:
   title: Query
-  discovered: false
+  discovered: true
 characterSheet:
   url: '#'
   discovered: false
 faction:
   title: Council of the Bruins
   url: /factions/council-of-the-bruins/
-  discovered: false
+  discovered: true
 location:
   title: Bruin Hall
   url: /locations/bruin-hall/
   discovered: true
-discovered: false
+discovered: true
 secrets: |-
 ---
 ## Introduction

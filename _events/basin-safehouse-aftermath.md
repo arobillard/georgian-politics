@@ -40,13 +40,20 @@ The stadium's monster shipment was attacked.The crew that was responsible for sa
   - Arrive in the meeting room
   - Witness Meeting
     - Chaired by The Seafarer
-    - The Scarecrow chastises the council for becoming to comfortable and complacent, calls for more action including more recruitment and heavier infiltration and recon to discover these other safehouses
+    - The Scarecrow chastises the council for becoming to comfortable and complacent
+    - Council asks for any information gathered to be presented, calls forth PCs
+    - Scarecrow calls for more action including more recruitment and heavier infiltration and recon to discover these other safehouses
     - Most council members agree, tunnel sweeps and information recalls ordered
   - Induction
     - Invited to become members in the rank of Influencer
     - Take the oath
     - Visit Query to receive their brand
     - Wait for further orders
+- Lost monsters
+  - Runner from the stadium
+  - investigate the area of the theft
+    - dead stadium guards, dead Aghara agents
+  - attack on the docks
 
 ## To Do
 - Basin Safehouse room explanations
