@@ -16,6 +16,7 @@ A large arcane university which takes up a almost half of the district on the no
 #### Students:
 - Kengi (male half-elf) enchanter
 - Ed (gender fluid dwarf) enchanter
+- Jed (male gnome) enchanter
 - Wesnah (female tiefling) research
 - Nothem (male human) studying abjuration
 - Jule (male dwarf) studying alchemy
