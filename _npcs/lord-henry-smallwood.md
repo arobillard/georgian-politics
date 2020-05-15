@@ -5,5 +5,6 @@ img: /images/npcs/placeholder.png
 family:
   title: Smallwoods
   discovered: true
-discovered: false
+  url: /families/smallwoods
+discovered: true
 ---

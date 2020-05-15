@@ -7,11 +7,13 @@ discovered: true
 ---
 A large arcane university which takes up a almost half of the district on the northern end of the district. The university trains students looking to excel at the arcane, conducts research, and provides enchanting at a discounted rate through [Academia's Apprentice Goods]({{site.baseurl}}/stores/academias-apprentice-goods/) (enchantments are created by students so results are mixed and destruction of items a very real possibility).
 
-#### Professors:
-- Delwee (female elf), head of enchanting services
-- Letwoon (male halfing) head of research
-- Unklel (female half orc) head of admissions
-- Illian (female half elf) head of alchemist
+#### Faculty:
+- [Delaney Lune]({{site.baseurl}}/npcs/delaney-lune) (female human), Arch-Mage
+- [Delwee]({{site.baseurl}}/npcs/delwee) (female elf), Head of Enchanting Services
+- [Letwoon]({{site.baseurl}}/npcs/letwoon) (male halfing) Head of Arcane Research
+- [Unklel]({{site.baseurl}}/npcs/unkel) (female half orc) Head of Admissions
+- [Illian]({{site.baseurl}}/npcs/illian) (female half elf) Head of Alchemy
+- [Jahllan]({{site.baseurl}}/npcs/jahllan-kaved) (female human) Head of Philosophy
 
 #### Students:
 - Kengi (male half-elf) enchanter
