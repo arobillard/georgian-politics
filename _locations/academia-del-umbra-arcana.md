@@ -11,7 +11,7 @@ A large arcane university which takes up a almost half of the district on the no
 - [Delaney Lune]({{site.baseurl}}/npcs/delaney-lune) (female human), Arch-Mage
 - [Delwee]({{site.baseurl}}/npcs/delwee) (female elf), Head of Enchanting Services
 - [Letwoon]({{site.baseurl}}/npcs/letwoon) (male halfing) Head of Arcane Research
-- [Unklel]({{site.baseurl}}/npcs/unkel) (female half orc) Head of Admissions
+- [Unkle]({{site.baseurl}}/npcs/unkle) (female half orc) Head of Admissions
 - [Illian]({{site.baseurl}}/npcs/illian) (female half elf) Head of Alchemy
 - [Jahllan]({{site.baseurl}}/npcs/jahllan-kaved) (female human) Head of Philosophy
 

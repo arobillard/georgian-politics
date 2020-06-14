@@ -16,7 +16,7 @@ The Aghara is currently preparing for their attack on King George's birthday cel
 The Scarecrow, The Salesman, and a collection of Protectors are participating in the raid of [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/). The other council members are gathering at the CoB headquarters for a meeting.
 
 ### Guards
-The Guard is currently raiding [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) along with the party. Some have stayed to lock down the bar, while the main force has gone down into the [Aghara]({{site.baseurl/factions/aghara}}) safehouse.
+The Guard is currently raiding [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) along with the party. Some have stayed to lock down the bar, while the main force has gone down into the [Aghara]({{site.baseurl}}/factions/aghara) safehouse.
 
 ## Outline
 - Enter into the safehouse

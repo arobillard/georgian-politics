@@ -1,111 +1,125 @@
 ---
 layout: content
 ---
-<section id="npc-info" class="npc-info pad-b">
+<section class="npc-info pad-b" id="npc-info">
   <div class="wrapper grid island-1-2">
     <div class="unit [ xs-1 m-1-3 ] island-1-2">
       {% if page.img %}
-      <div class="embed embed-1by1 npc-image" style="background-image: url('{{site.baseurl}}{{ page.img }}');">
-        <img class="embed-item hidden" src="{{site.baseurl}}{{ page.img }}" alt="{{ page.imgAlt }}">
-      </div>
+        <div class="embed embed-1by1 npc-image" style="background-image: url('{{site.baseurl}}{{ page.img }}');">
+          <img class="embed-item hidden" src="{{site.baseurl}}{{ page.img }}" alt="{{ page.imgAlt }}">
+        </div>
       {% else %}
-      <div class="img-placeholder">
-        <i class="icon i-full">
-          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
-        </i>
-        <span class="icon-label hidden">Item Chest</span>
-      </div>
+        <div class="img-placeholder">
+          <i class="icon i-full">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest"/></svg>
+          </i>
+          <span class="icon-label hidden">Item Chest</span>
+        </div>
       {% endif %}
     </div>
     <div class="unit [ xs-1 m-2-3 ] island-1-2">
       <div class="npc-intro {% unless page.codename.discovered == true or site.data.view-controls.dm-view == true %} pad-b{% endunless %}">
         {% if page.characterSheet %}
-        {% if page.characterSheet.discovered == true or site.data.view-controls.dm-view == true %}
-        <div class="dnd-beyond-link-wrap">
+          {% if page.characterSheet.discovered == true or site.data.view-controls.dm-view == true %}
+            <div class="dnd-beyond-link-wrap">
+            {% endif %}
+          {% endif %}
+          <h1 class="push-0">{{ page.title }}</h1>
+          {% if page.characterSheet %}
+            {% if page.characterSheet.discovered == true or site.data.view-controls.dm-view == true %}
+              <a class="dnd-beyond-link" href="{{ page.characterSheet.url }}" target="_blank">
+                <i class="icon i-1">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#dnd-beyond"/></svg>
+                </i>
+                <span class="icon-label hidden">DnD Beyond link</span>
+              </a>
+            </div>
+          {% endif %}
         {% endif %}
+        {% if page.codename.discovered == true or site.data.view-controls.dm-view == true %}
+          <p class="italic">{{ page.codename.title }}</p>
         {% endif %}
-        <h1 class="push-0">{{ page.title }}</h1>
-        {% if page.characterSheet %}
-        {% if page.characterSheet.discovered == true or site.data.view-controls.dm-view == true %}
-        <a class="dnd-beyond-link" href="{{ page.characterSheet.url }}" target="_blank">
-          <i class="icon i-1">
-            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#dnd-beyond" /></svg>
-          </i>
-          <span class="icon-label hidden">DnD Beyond link</span>
-        </a>
-        </div>
-        {% endif %}
-        {% endif %}
-        {% if page.codename.discovered == true or site.data.view-controls.dm-view == true %}<p class="italic">{{ page.codename.title }}</p>{% endif %}
       </div>
       <dl class="npc-details">
         {% assign info = "faction, family, store, location, class" | split: ", " %}
         {% for type in info %}
-        {% assign data = page.[type] %}
-        {% if data %}
-        {% if data.discovered == true or site.data.view-controls.dm-view == true %}
-          <div>
-            <dt>{{ type | capitalize }}:</dt>
-            <dd>
-              {% if data.url %}<a href="{{site.baseurl}}{{ data.url }}">{% endif %}
-                {{ data.title  }}
-              {% if data.url %}</a>{% endif %}
-            </dd>
-          </div>
+          {% assign data = page[type] %}
+          {% if data %}
+            {% if data.discovered == true or site.data.view-controls.dm-view == true %}
+              <div>
+                <dt>{{ type | capitalize }}:</dt>
+                <dd>
+                  {% if data.url %}
+                    <a href="{{site.baseurl}}{{ data.url }}">
+                    {% endif %}
+                    {{ data.title  }}
+                    {% if data.url %}
+                    </a>
+                  {% endif %}
+                </dd>
+              </div>
+            {% endif %}
           {% endif %}
-        {% endif %}
         {% endfor %}
       </dl>
       <div class="npc-content">
         {{ content }}
-      {% if site.data.view-controls.dm-view == true and page.secrets %}
-        <strong class="text-upper text-secondary block exa">Secrets</strong>
-        {{ page.secrets | markdownify }}
-      {% endif %}
+        {% if site.data.view-controls.dm-view == true and page.secrets %}
+          <strong class="text-upper text-secondary block exa">Secrets</strong>
+          {{ page.secrets | markdownify }}
+        {% endif %}
       </div>
     </div>
   </div>
 </section>
-{% capture itemCheck %}{% for inventory in page.inventory %}{% for items in site.items %}{% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}1{% break %}{% endif %}{% endfor %}{% break %}{% endfor %}{% endcapture %}
+{% capture itemCheck %}
+  {% for inventory in page.inventory %}
+    {% for items in site.items %}
+      {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}1{% break %}
+      {% endif %}
+    {% endfor %}
+    {% break %}
+  {% endfor %}
+{% endcapture %}
 {% if itemCheck != '' %}
-<section id="items" class="pad-t pad-b-2">
-  <div class="wrapper">
-    <div class="gutter">
-      <h2 class="push-0">Items</h2>
-    </div>
-    <ul class="list-group grid grid-stretch island-1-2">
-      {% for inventory in page.inventory %}
-        {% for items in site.items %}
-          {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}
-            <li class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
-              <a class="card-item-info content-fill unit-content-distribute" href="{{site.baseurl}}{{ items.url }}">
-                <header class="island-1-2">
-                  {% if items.img %}
-                  <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ items.img }}')"></div>
-                  {% else %}
-                  <div class="img-preview-placeholder">
-                    <i class="icon i-1-1-2">
-                      <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest" /></svg>
-                    </i>
-                    <span class="icon-label hidden">Item Chest</span>
+  <section class="pad-t pad-b-2" id="items">
+    <div class="wrapper">
+      <div class="gutter">
+        <h2 class="push-0">Items</h2>
+      </div>
+      <ul class="list-group grid grid-stretch island-1-2">
+        {% for inventory in page.inventory %}
+          {% for items in site.items %}
+            {% if items.title == inventory.item and items.discovered == true or site.data.view-controls.dm-view == true %}
+              <li class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
+                <a class="card-item-info content-fill unit-content-distribute" href="{{site.baseurl}}{{ items.url }}">
+                  <header class="island-1-2">
+                    {% if items.img %}
+                      <div class="img-preview" style="background-image: url('{{site.baseurl}}{{ items.img }}')"></div>
+                    {% else %}
+                      <div class="img-preview-placeholder">
+                        <i class="icon i-1-1-2">
+                          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#chest"/></svg>
+                        </i>
+                        <span class="icon-label hidden">Item Chest</span>
+                      </div>
+                    {% endif %}
+                    <div>
+                      <h3 class="mega push-0">{{ items.title }}</h3>
+                      <small class="block italic truncate">{{ items.classification }}</small>
+                    </div>
+                  </header>
+                  <div class="gutter-1-2 pad-t pad-b content-fill unit-content-distribute">
+                    <div class="description-borderless content-fill">
+                      {{ items.content | truncate: 200 | markdownify }}
+                    </div>
                   </div>
-                  {% endif %}
-                  <div>
-                    <h3 class="mega push-0">{{ items.title }}</h3>
-                    <small class="block italic truncate">{{ items.classification }}</small>
-                  </div>
-                </header>
-                <div class="gutter-1-2 pad-t pad-b content-fill unit-content-distribute">
-                  <div class="description-borderless content-fill">
-                    {{ items.content | truncate: 200 | markdownify }}
-                  </div>
-                </div>
-              </a>
-            </li>
-          {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+      </ul>
+    </div>
+  </section>
 {% endif %}

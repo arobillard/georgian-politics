@@ -7,4 +7,4 @@ faction:
   discovered: true
 discovered: true
 ---
-Unkle is the Head of Admissions at the [Academia del Umbra Arcana]({{site.baseurl}}/locations/acadeia-del-umbra-arcana)
+Unkle is the Head of Admissions at the [Academia del Umbra Arcana]({{site.baseurl}}/locations/academia-del-umbra-arcana)

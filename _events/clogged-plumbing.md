@@ -18,7 +18,7 @@ After losing two safehouses, the Aghara are looking to distract the guard and PC
 The Seafarer is working with the PCs to handle the Stadium issue at the docs. The Nobleman is conducting a sweep of the tunnels. The rest are information gathering and attempting to locate the other Aghara safehouses and confirm their next steps.
 
 ### Guards
-The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl/factions/aghara}}) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
+The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl}}/factions/aghara) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
 
 ### Stadium
 The stadium's monster shipment was attacked.The crew that was responsible for safely bringing in a number of dangerous monsters for the upcoming Midsummer Harvest Festival Games were attacked and killed and the monsters are missing.

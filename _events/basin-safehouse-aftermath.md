@@ -20,7 +20,7 @@ The Scarecrow, The Salesman, and a collection of Protectors are participating in
 The Scarecrow and The Salesman are prepared to induct the PCs into the CoB.
 
 ### Guards
-The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl/factions/aghara}}) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
+The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl}}/factions/aghara) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
 
 ### Stadium
 The stadium's monster shipment was attacked.The crew that was responsible for safely bringing in a number of dangerous monsters for the upcoming Midsummer Harvest Festival Games were attacked and killed and the monsters are missing.

@@ -644,31 +644,31 @@ svg.img-flex {
   max-height: 46em;
 }
 
-ul {
-  list-style-type: none;
-}
+// ul {
+//   list-style-type: none;
+// }
 
-ul > li::before {
-  content: "·";
-  float: left;
-  margin-left: -1.6em;
-  width: 1.3em;
-  text-align: right;
-}
+// ul > li::before {
+//   content: "·";
+//   float: left;
+//   margin-left: -1.6em;
+//   width: 1.3em;
+//   text-align: right;
+// }
 
-ol {
-  counter-reset: ol-simple-numbers;
-  list-style-type: none;
-}
+// ol {
+//   counter-reset: ol-simple-numbers;
+//   list-style-type: none;
+// }
 
-ol > li::before {
-  float: left;
-  margin-left: -1.6em;
-  width: 1.3em;
-  counter-increment: ol-simple-numbers;
-  content: counter(ol-simple-numbers);
-  text-align: right;
-}
+// ol > li::before {
+//   float: left;
+//   margin-left: -1.6em;
+//   width: 1.3em;
+//   counter-increment: ol-simple-numbers;
+//   content: counter(ol-simple-numbers);
+//   text-align: right;
+// }
 
 .list-group > li::before,
 .list-group-inline > li::before,

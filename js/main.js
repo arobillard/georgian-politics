@@ -264,7 +264,7 @@ maxM.addListener(mediaQuery) // Attach listener function on state changes
 
 var filterBtn = document.getElementsByClassName('btn-filter');
 var itemList = document.getElementById('item-list');
-const filterList = ['all', 'armour', 'clothing', 'headwear', 'potion', 'ring', 'utility', 'weapon', 'apothecaries', 'artificers', 'bars', 'blacksmiths', 'bookstores', 'brothels', 'clothing-stores', 'food', 'general-stores', 'shipyards', 'stables', 'stalls', 'tattoo-parlours', 'aghara', 'council-of-the-bruins', 'pijavka', 'port-george-city-guard', 'port-george-stadium', 'unaligned'];
+const filterList = ['all', 'armour', 'clothing', 'headwear', 'potion', 'ring', 'utility', 'weapon', 'apothecaries', 'artificers', 'bars', 'blacksmiths', 'bookstores', 'brothels', 'clothing-stores', 'food', 'general-stores', 'shipyards', 'stables', 'stalls', 'tattoo-parlours', 'aghara', 'council-of-the-bruins', 'pijavka', 'port-george-city-guard', 'port-george-stadium', 'unaligned', 'academia-del-umbra-arcana'];
 var filter = document.getElementById('filter');
 
 if (filter) {

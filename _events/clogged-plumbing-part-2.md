@@ -16,7 +16,7 @@ The Aghara is currently preparing for their attack on King George's birthday cel
 The Nobleman is conducting a sweep of the tunnels. The rest are information gathering and attempting to locate the other Aghara safehouses and confirm their next steps.
 
 ### Guards
-The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl/factions/aghara}}) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
+The Guard is currently locking down [The Bloody Dagger]({{site.baseurl}}/stores/the-bloody-dagger/) as well as the [Aghara]({{site.baseurl}}/factions/aghara) safehouse below it. They plan on tearing it apart and examining every piece of it to try and find any information about the Aghara, their plans, and any links to the other safehouses.
 
 ### Stadium
 Recovering from Aghara sabotage and prepping for games.
