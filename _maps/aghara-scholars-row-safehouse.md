@@ -52,7 +52,7 @@ There are voices in the room.
 #### Aghara Storage Room
 
 #### Scavaging Workshop
-There are four workbenches in this room. The workbenches are covered in broken statues. Beside each work station is a barrel filled withwasted bits of broken statues. In the centre of the room is a box filled with small pieces of metal, twisted pieces of metal wire
+There are four workbenches in this room. The workbenches are covered in broken statues. Beside each work station is a barrel filled withwasted bits of broken statues. In the centre of the room is a box filled with small pieces of metal and twisted pieces of metal wire, all of which is vibrant platinum.
 
 ### Manor Ground Floor 
 
