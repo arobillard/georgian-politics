@@ -1,22 +1,26 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .page-nav-wrap {
-  .page-nav-title, #page-nav-list {
-    border-bottom: 1px solid $color-grey;
+  .page-nav-title,
+  #page-nav-list {
+    border-bottom: 1px solid v.$color-grey;
   }
   li {
-    margin-bottom: .325rem;
+    margin-bottom: 0.325rem;
   }
   a {
-    color: $color-grey-dark;
+    color: v.$color-grey-dark;
     text-decoration: none;
-    @include hov() {
-      color: $color-primary;
+    @include m.hov() {
+      color: v.$color-primary;
     }
   }
   .level-1 {
     font-weight: 600;
   }
   .level-2 {
-    padding-left: .65rem;
+    padding-left: 0.65rem;
   }
   &.snapped {
     position: fixed;
@@ -24,8 +28,8 @@
   .page-nav-toggle {
     display: none;
   }
-  @include max(37.9999) {
-    background-color: $color-primary;
+  @include m.max(37.9999) {
+    background-color: v.$color-primary;
     position: fixed;
     z-index: 200;
     width: 3.5rem;
@@ -34,24 +38,20 @@
     right: 1rem;
     overflow: hidden;
     border-radius: 28px;
-    box-shadow: $shadow;
-    transition:
-      width $transition,
-      height $transition,
-      bottom $transition,
-      right $transition,
-      transform $transition,
-      box-shadow $transition,
-      border-radius $transition;
+    box-shadow: v.$shadow;
+    transition: width v.$transition, height v.$transition, bottom v.$transition,
+      right v.$transition, transform v.$transition, box-shadow v.$transition,
+      border-radius v.$transition;
     strong {
       font-size: 1.383rem;
       line-height: 1.95rem;
-      margin-bottom: .65rem;
+      margin-bottom: 0.65rem;
     }
     li {
-      margin-bottom: .65rem;
+      margin-bottom: 0.65rem;
     }
-    .level-1, .to-top {
+    .level-1,
+    .to-top {
       font-size: 1.2962rem;
       line-height: 1.95rem;
     }
@@ -59,17 +59,17 @@
       font-size: 1.2148rem;
       line-height: 1.625rem;
     }
-    @include hov() {
-      box-shadow: $shadow-hover;
+    @include m.hov() {
+      box-shadow: v.$shadow-hover;
       cursor: pointer;
     }
     .page-nav-links {
       padding: 2.6rem 1.3rem;
       display: none;
       opacity: 0;
-      transition:
-        opacity $transition;
-      strong, a {
+      transition: opacity v.$transition;
+      strong,
+      a {
         color: #fff;
       }
     }
@@ -84,13 +84,12 @@
       justify-content: center;
       // transform: translate(50%, -50%);
       color: #fff;
-      transition:
-        top $transition,
-        right $transition;
+      transition: top v.$transition, right v.$transition;
       .closer {
         display: none;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: #fff;
         outline: 0;
       }
@@ -98,7 +97,7 @@
     &.open {
       width: calc(100vw - 2.6rem);
       height: calc(50vh - 1.3rem);
-      border-radius: $border-radius;
+      border-radius: v.$border-radius;
       .page-nav-toggle {
         .opener {
           display: none;

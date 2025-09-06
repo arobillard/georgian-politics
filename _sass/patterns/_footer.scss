@@ -1,37 +1,41 @@
+@use "sass:color";
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .footer {
-  background-color: $color-grey-dark;
-  color: $color-grey;
+  background-color: v.$color-grey-dark;
+  color: v.$color-grey;
   text-align: center;
   .logo {
     display: inline-block;
     width: 100%;
     max-width: 7.5rem;
-    transition:
-      opacity $transition;
-    @include hov() {
-      color: $color-grey;
-      opacity: .7;
+    transition: opacity v.$transition;
+    @include m.hov() {
+      color: v.$color-grey;
+      opacity: 0.7;
     }
     #politics {
-      fill: $color-secondary;
+      fill: v.$color-secondary;
     }
     #bear {
-      fill: $color-primary;
+      fill: v.$color-primary;
     }
   }
   a {
-    color: $color-grey;
+    color: v.$color-grey;
     text-decoration: none;
     font-weight: 600;
-    &:hover, &:focus {
-      color: $color-primary;
+    &:hover,
+    &:focus {
+      color: v.$color-primary;
     }
   }
   nav {
     > ul {
       margin: 0;
       > li {
-        padding: .325rem 0;
+        padding: 0.325rem 0;
       }
     }
   }
@@ -40,14 +44,14 @@
     > li {
       display: inline-block;
       &:not(:last-child) {
-        margin-right: .65rem;
+        margin-right: 0.65rem;
       }
     }
   }
   .sub-footer {
-    background-color: darken($color-grey-dark, 10%);
+    background-color: color.adjust(v.$color-grey-dark, $blackness: 10%);
   }
-  @include min($mqM) {
+  @include m.min(m.$mqM) {
     text-align: left;
     .logo {
       max-width: 10rem;

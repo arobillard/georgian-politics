@@ -1,14 +1,10 @@
+@use "../utilities/variables" as v;
+
 /*
  * Modulifier || Code released under the UNLICENSE
  * Code under other copyrights & licenses listed below.
  * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;hidden;positioning;nice-lists;forms;buttons;accessibility;print
  */
-
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
 
 html {
   box-sizing: border-box;
@@ -18,7 +14,9 @@ html {
   text-size-adjust: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -97,7 +95,8 @@ svg.img-flex {
   height: 100%;
 }
 
-.image-replacement, .ir {
+.image-replacement,
+.ir {
   overflow: hidden;
   direction: ltr;
   text-align: left;
@@ -105,7 +104,9 @@ svg.img-flex {
   white-space: nowrap;
 }
 
-.list-group, .list-group-inline, .list-group--inline {
+.list-group,
+.list-group-inline,
+.list-group--inline {
   padding-left: 0;
   list-style-type: none;
 }
@@ -156,55 +157,68 @@ svg.img-flex {
 .embed-map {
   padding-top: 64.7%;
 }
-.embed-1by1, .embed--1by1 {
+.embed-1by1,
+.embed--1by1 {
   padding-top: 100%; /* Square */
 }
 
-.embed-4by3, .embed--4by3 {
+.embed-4by3,
+.embed--4by3 {
   padding-top: 75%; /* Traditional TV/computer screens */
 }
 
-.embed-iso216, .embed--iso216 {
+.embed-iso216,
+.embed--iso216 {
   padding-top: 70.92%; /* A-standard paper sizes */
 }
 
-.embed-3by2, .embed--3by2 {
+.embed-3by2,
+.embed--3by2 {
   padding-top: 66.6%; /* Classic 35 mm film & most digital photos, landscape */
 }
 
-.embed-2by3, .embed--2by3 {
+.embed-2by3,
+.embed--2by3 {
   padding-top: 150%; /* Classic 35 mm film & most digital photos, portrait */
 }
 
-.embed-golden, .embed--golden {
+.embed-golden,
+.embed--golden {
   padding-top: 61.8%; /* The Golden Ratio */
 }
 
-.embed-16by9, .embed--16by9 {
+.embed-16by9,
+.embed--16by9 {
   padding-top: 56.25%; /* HD TV */
 }
 
-.embed-185by100, .embed--185by100 {
+.embed-185by100,
+.embed--185by100 {
   padding-top: 54.05%; /* Common widescreen cinema */
 }
 
-.embed-24by10, .embed--24by10 {
+.embed-24by10,
+.embed--24by10 {
   padding-top: 41.667%; /* Widescreen cinema: 2.4:1 */
 }
 
-.embed-3by1, .embed--3by1 {
+.embed-3by1,
+.embed--3by1 {
   padding-top: 33.3333%; /* Panorama photos */
 }
 
-.embed-4by1, .embed--4by1 {
+.embed-4by1,
+.embed--4by1 {
   padding-top: 25%; /* Polyvision */
 }
 
-.embed-5by1, .embed--5by1 {
+.embed-5by1,
+.embed--5by1 {
   padding-top: 20%; /* Really wide... */
 }
 
-.embed-item, .embed__item {
+.embed-item,
+.embed__item {
   min-height: 100%;
   left: 0;
   position: absolute;
@@ -216,19 +230,23 @@ svg.img-flex {
   overflow: hidden;
 }
 
-.media-img, .media__img {
+.media-img,
+.media__img {
   float: left;
 }
 
-.media-img-reversed, .media__img--reversed {
+.media-img-reversed,
+.media__img--reversed {
   float: right;
 }
 
-.media-img-stacked, .media__img--stacked {
+.media-img-stacked,
+.media__img--stacked {
   float: none;
 }
 
-.media-body, .media__body {
+.media-body,
+.media__body {
   overflow: hidden;
   min-width: 12em; /* Slightly less than 200px, responsiveness built in */
 }
@@ -241,57 +259,68 @@ svg.img-flex {
   vertical-align: middle;
 }
 
-.i-16, .i--16 {
+.i-16,
+.i--16 {
   height: 16px;
   width: 16px;
 }
 
-.i-18, .i--18 {
+.i-18,
+.i--18 {
   height: 18px;
   width: 18px;
 }
 
-.i-20, .i--20 {
+.i-20,
+.i--20 {
   height: 20px;
   width: 20px;
 }
 
-.i-24, .i--24 {
+.i-24,
+.i--24 {
   height: 24px;
   width: 24px;
 }
 
-.i-32, .i--32 {
+.i-32,
+.i--32 {
   height: 32px;
   width: 32px;
 }
 
-.i-48, .i--48 {
+.i-48,
+.i--48 {
   height: 48px;
   width: 48px;
 }
 
-.i-64, .i--64 {
+.i-64,
+.i--64 {
   height: 64px;
   width: 64px;
 }
 
-.i-96, .i--96 {
+.i-96,
+.i--96 {
   height: 96px;
   width: 96px;
 }
 
-.i-128, .i--128 {
+.i-128,
+.i--128 {
   height: 128px;
   width: 128px;
 }
 
-.i-192, .i--192 {
+.i-192,
+.i--192 {
   height: 192px;
   width: 192px;
 }
 
-.i-256, .i--256 {
+.i-256,
+.i--256 {
   height: 256px;
   width: 256px;
 }
@@ -316,7 +345,8 @@ svg.img-flex {
   text-decoration: none;
 }
 
-[hidden], .hidden {
+[hidden],
+.hidden {
   /* stylelint-disable declaration-no-important */
   display: none !important;
   visibility: hidden !important;
@@ -335,7 +365,8 @@ svg.img-flex {
   clip-path: inset(50%);
 }
 
-.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
   height: auto;
   margin: 0;
   overflow: visible;
@@ -482,7 +513,8 @@ svg.img-flex {
   display: block;
 }
 
-.inline-block, .ib {
+.inline-block,
+.ib {
   display: inline-block;
 }
 
@@ -599,47 +631,57 @@ svg.img-flex {
   transform: translateY(-50%);
 }
 
-.pin-center, .pin-c {
+.pin-center,
+.pin-c {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.width-quarter, .w-1-4 {
+.width-quarter,
+.w-1-4 {
   width: 25%;
 }
 
-.width-half, .w-1-2 {
+.width-half,
+.w-1-2 {
   width: 50%;
 }
 
-.width-full, .w-1 {
+.width-full,
+.w-1 {
   width: 100%;
 }
 
-.height-quarter, .h-1-4 {
+.height-quarter,
+.h-1-4 {
   height: 25%;
 }
 
-.height-half, .h-1-2 {
+.height-half,
+.h-1-2 {
   height: 50%;
 }
 
-.height-full, .h-1 {
+.height-full,
+.h-1 {
   height: 100%;
 }
 
-.height-win-quarter, .h-w-1-4 {
+.height-win-quarter,
+.h-w-1-4 {
   height: 25vh;
   max-height: 46em;
 }
 
-.height-win-half, .h-w-1-2 {
+.height-win-half,
+.h-w-1-2 {
   height: 50vh;
   max-height: 46em;
 }
 
-.height-win-full, .h-w-1 {
+.height-win-full,
+.h-w-1 {
   height: 100vh;
   max-height: 46em;
 }
@@ -752,7 +794,7 @@ legend {
   color: inherit;
   display: table;
   max-width: 100%;
-  padding: 0 .3em 0 0;
+  padding: 0 0.3em 0 0;
   white-space: normal;
 
   border: 0;
@@ -766,7 +808,7 @@ optgroup {
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: .54;
+  opacity: 0.54;
 }
 
 ::-webkit-file-upload-button {
@@ -840,7 +882,7 @@ select {
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='none' stroke='%23000' stroke-miterlimit='10' stroke-width='70' d='M36.3 82.1l91.9 91.8 91.5-91.8'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: calc(100% - .4em) center;
+  background-position: calc(100% - 0.4em) center;
   background-size: 18px auto;
   background-color: #fff;
   border: 2px solid #666;
@@ -851,10 +893,10 @@ select {
   content: " ";
   display: inline-block;
   height: 1.8em;
-  margin-right: .3em;
+  margin-right: 0.3em;
   position: relative;
   vertical-align: middle;
-  top: -.1em;
+  top: -0.1em;
   width: 1.8em;
 
   background-color: #fff;
@@ -869,7 +911,7 @@ select {
 }
 
 [type="checkbox"]:focus + label::before {
-  outline: 3px solid $color-primary-50;
+  outline: 3px solid v.$color-primary-50;
   z-index: 1000;
 }
 
@@ -877,10 +919,10 @@ select {
   content: " ";
   display: inline-block;
   height: 1.8em;
-  margin-right: .3em;
+  margin-right: 0.3em;
   position: relative;
   vertical-align: middle;
-  top: -.1em;
+  top: -0.1em;
   width: 1.8em;
 
   background-color: #fff;
@@ -1031,29 +1073,26 @@ button,
   display: inline-block;
   margin: 0;
   overflow: visible;
-  padding: .375em 1.75em .42em;
+  padding: 0.375em 1.75em 0.42em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: $color-primary;
+  background-color: v.$color-primary;
   border-radius: 4px;
-  border: 3px solid $color-primary;
+  border: 3px solid v.$color-primary;
   color: #fff;
   text-decoration: none;
   // text-transform: uppercase;
   font-weight: 600;
-  transition:
-    color $transition,
-    background-color $transition,
-    border-color $transition,
-    box-shadow $transition;
+  transition: color v.$transition, background-color v.$transition,
+    border-color v.$transition, box-shadow v.$transition;
   &:not(.btn-ghost) {
-    box-shadow: $shadow;
+    box-shadow: v.$shadow;
   }
 }
 
 .btn-thin {
-  padding: .275em 1em .32em;
+  padding: 0.275em 1em 0.32em;
 }
 
 button::-moz-focus-inner {
@@ -1067,21 +1106,23 @@ button:focus,
 button:hover,
 .btn:focus,
 .btn:hover {
-  background-color: $color-primary-dark;
-  border-color: $color-primary-dark;
+  background-color: v.$color-primary-dark;
+  border-color: v.$color-primary-dark;
   color: #fff;
   &:not(.btn-ghost) {
-    box-shadow: $shadow-hover;
+    box-shadow: v.$shadow-hover;
   }
 }
 
-button[disabled], .btn-disabled {
+button[disabled],
+.btn-disabled {
   cursor: default;
 }
 .btn.btn-selected,
-.btn-secondary, .btn--secondary {
-  background-color: $color-secondary;
-  border-color: $color-secondary;
+.btn-secondary,
+.btn--secondary {
+  background-color: v.$color-secondary;
+  border-color: v.$color-secondary;
   color: #fff;
 }
 
@@ -1089,40 +1130,40 @@ button[disabled], .btn-disabled {
 .btn-secondary:hover,
 .btn--secondary:focus,
 .btn--secondary:hover {
-  background-color: $color-secondary-dark;
-  border-color: $color-secondary-dark;
+  background-color: v.$color-secondary-dark;
+  border-color: v.$color-secondary-dark;
   color: #fff;
 }
 
 .btn-ghost,
 .btn--ghost {
   background-color: transparent;
-  border-color: $color-primary;
-  color: $color-primary;
+  border-color: v.$color-primary;
+  color: v.$color-primary;
 }
 
 .btn-ghost:focus,
 .btn-ghost:hover,
 .btn--ghost:focus,
 .btn--ghost:hover {
-  background-color: $color-primary;
-  border-color: $color-primary;
+  background-color: v.$color-primary;
+  border-color: v.$color-primary;
   color: #fff;
 }
 
 .btn-ghost.btn-secondary,
 .btn--ghost.btn-secondary {
   background-color: transparent;
-  border-color: $color-secondary;
-  color: $color-secondary;
+  border-color: v.$color-secondary;
+  color: v.$color-secondary;
 }
 
 .btn-ghost.btn-secondary:focus,
 .btn-ghost.btn-secondary:hover,
 .btn--ghost.btn-secondary:focus,
 .btn--ghost.btn-secondary:hover {
-  background-color: $color-secondary;
-  border-color: $color-secondary;
+  background-color: v.$color-secondary;
+  border-color: v.$color-secondary;
   color: #fff;
 }
 
@@ -1141,7 +1182,8 @@ button[disabled], .btn-disabled {
   color: inherit;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   outline: none;
 }
 
@@ -1153,11 +1195,12 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 3px solid $color-primary-50;
+  outline: 3px solid v.$color-primary-50;
   outline-offset: 0;
 }
 
-a:focus, [tabindex="0"]:focus {
+a:focus,
+[tabindex="0"]:focus {
   outline-offset: 3px;
 }
 
@@ -1173,7 +1216,7 @@ a:focus, [tabindex="0"]:focus {
 
 .skip-links a,
 .skip-links button {
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   position: absolute;
   top: -10em;
   z-index: 10000; /* To make sure they're always on top */
@@ -1221,7 +1264,6 @@ a:focus, [tabindex="0"]:focus {
 }
 
 @media print {
-
   /* stylelint-disable declaration-no-important */
 
   .no-print {
@@ -1268,7 +1310,14 @@ a:focus, [tabindex="0"]:focus {
     page-break-inside: avoid;
   }
 
-  h1, h2, h3, h4, h5, h6, p, a {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
     orphans: 3;
     widows: 3;
   }
@@ -1316,7 +1365,11 @@ a:focus, [tabindex="0"]:focus {
 
   /* stylelint-disable declaration-no-important */
 
-  *, *::before, *::after, *::first-letter, *::first-line {
+  *,
+  *::before,
+  *::after,
+  *::first-letter,
+  *::first-line {
     background: none transparent !important;
     color: #000 !important;
     box-shadow: none !important;
@@ -1325,7 +1378,8 @@ a:focus, [tabindex="0"]:focus {
 
   /* stylelint-enable */
 
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: underline;
   }
 
@@ -1349,5 +1403,4 @@ a:focus, [tabindex="0"]:focus {
   }
 
   /* End HTML5 Boilerplate code */
-
 }

@@ -1,18 +1,20 @@
+@use "sass:color";
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .card {
   background-color: #fff;
-  border: 1px solid $color-grey;
-  border-radius: $border-radius;
-  box-shadow: $shadow;
+  border: 1px solid v.$color-grey;
+  border-radius: v.$border-radius;
+  box-shadow: v.$shadow;
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  color: $color-grey-dark;
-  transition:
-    color $transition,
-    box-shadow $transition;
-  @include hov() {
-    box-shadow: $shadow-hover;
-    color: $color-grey-dark;
+  color: v.$color-grey-dark;
+  transition: color v.$transition, box-shadow v.$transition;
+  @include m.hov() {
+    box-shadow: v.$shadow-hover;
+    color: v.$color-grey-dark;
   }
 }
 
@@ -24,29 +26,29 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50px;
-    border: 1px solid $color-grey;
-    margin-right: .65rem;
-    @include bgBasic();
+    border: 1px solid v.$color-grey;
+    margin-right: 0.65rem;
+    @include m.bgBasic();
   }
   .img-preview-placeholder {
     width: 3rem;
     height: 3rem;
-    margin-right: .65rem;
-    border: 1px solid $color-grey;
+    margin-right: 0.65rem;
+    border: 1px solid v.$color-grey;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $color-grey-dark;
+    color: v.$color-grey-dark;
   }
   p {
     flex-grow: 2;
     font-weight: 600;
-    padding-right: .65rem;
-    color: $color-primary;
+    padding-right: 0.65rem;
+    color: v.$color-primary;
   }
   .icon-wrap {
-    color: $color-grey;
+    color: v.$color-grey;
   }
 }
 
@@ -59,7 +61,7 @@
     // align-items: flex-end;
     // flex-wrap: wrap;
     // min-height: 5rem;
-    background-color: $color-primary;
+    background-color: v.$color-primary;
     color: #fff;
     div {
       width: calc(100% - 3.65rem);
@@ -73,21 +75,21 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50px;
-    border: 1px solid $color-grey;
-    margin-right: .65rem;
-    @include bgBasic();
+    border: 1px solid v.$color-grey;
+    margin-right: 0.65rem;
+    @include m.bgBasic();
   }
   .img-preview-placeholder {
     background-color: #fff;
-    border: 1px solid $color-grey;
+    border: 1px solid v.$color-grey;
     border-radius: 50px;
     width: 3rem;
     height: 3rem;
-    margin-right: .65rem;
+    margin-right: 0.65rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $color-grey-dark;
+    color: v.$color-grey-dark;
   }
   .item-info {
     display: flex;
@@ -96,13 +98,13 @@
       width: 50%;
       .label {
         font-weight: 600;
-        color: $color-primary;
+        color: v.$color-primary;
       }
     }
   }
 
   .description {
-    border-top: 1px solid $color-grey;
+    border-top: 1px solid v.$color-grey;
     :last-child {
       margin: 0;
     }
@@ -120,32 +122,32 @@
 
 .card-quest-log {
   @extend .card;
-  @include min(38) {
+  @include m.min(38) {
     min-height: 20rem;
   }
   h3 {
     margin-top: 0;
-    padding: .65rem;
+    padding: 0.65rem;
     color: #fff;
-    background-color: $color-primary;
+    background-color: v.$color-primary;
     &.discovered {
-      background-color: adjust-hue($color-primary, 60deg)
+      background-color: color.adjust(v.$color-primary, $hue: 60deg);
     }
     &.active {
       background-color: rgb(255, 222, 0);
-      color: $color-grey-dark;
+      color: v.$color-grey-dark;
     }
   }
   ol {
     margin: 0;
-    padding: .65rem .65rem 0;
+    padding: 0.65rem 0.65rem 0;
   }
   li {
-    margin-bottom: .65rem;
+    margin-bottom: 0.65rem;
   }
   // .unit:nth-child(2) {
-  //   border-left: 1px solid $color-grey;
-  //   border-right: 1px solid $color-grey;
+  //   border-left: 1px solid v.$color-grey;
+  //   border-right: 1px solid v.$color-grey;
   // }
 }
 
@@ -156,18 +158,17 @@
   height: 100%;
   top: 0;
   left: 0;
-  opacity: .9;
-  background-color: $color-primary;
+  opacity: 0.9;
+  background-color: v.$color-primary;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   text-transform: uppercase;
-  transition:
-    opacity $transition;
+  transition: opacity v.$transition;
 }
 .purchased:hover::after,
 .purchased:focus::after {
-  opacity: .1;
+  opacity: 0.1;
 }

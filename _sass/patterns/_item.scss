@@ -1,9 +1,12 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .item-info {
   .item-image {
-    @include bgBasic();
-    border: 1px solid $color-grey;
-    border-radius: $border-radius;
-    box-shadow: $shadow;
+    @include m.bgBasic();
+    border: 1px solid v.$color-grey;
+    border-radius: v.$border-radius;
+    box-shadow: v.$shadow;
   }
   .img-placeholder {
     .i-full {
@@ -13,23 +16,23 @@
     }
   }
   .classification {
-    border-bottom: 1px solid $color-grey;
+    border-bottom: 1px solid v.$color-grey;
   }
   .availability {
     display: flex;
     flex-wrap: wrap;
     p {
       font-weight: 600;
-      margin-right: .65rem;
+      margin-right: 0.65rem;
       span {
         font-weight: 400;
       }
     }
     li:not(:last-child) a::after {
-      content: ',';
-      color: $color-grey-dark;
-      @include hov() {
-        color: $color-grey-dark;
+      content: ",";
+      color: v.$color-grey-dark;
+      @include m.hov() {
+        color: v.$color-grey-dark;
       }
     }
   }

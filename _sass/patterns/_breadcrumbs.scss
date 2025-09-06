@@ -1,12 +1,15 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   li {
     a {
-      color: $color-grey-dark;
+      color: v.$color-grey-dark;
       text-decoration: none;
-      @include hov() {
-        color: $color-primary;
+      @include m.hov() {
+        color: v.$color-primary;
       }
     }
     &:not(:last-child) {
@@ -14,19 +17,19 @@
       position: relative;
       text-transform: capitalize;
       ::after {
-        content: ' ';
+        content: " ";
         position: absolute;
         width: 1px;
         height: 100%;
         top: 0;
-        right: .65rem;
-        background-color: $color-grey;
+        right: 0.65rem;
+        background-color: v.$color-grey;
         transform: rotate(30deg);
       }
     }
     &:last-child {
       font-weight: 800;
-      color: $color-primary;
+      color: v.$color-primary;
     }
   }
 }

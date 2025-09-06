@@ -1,0 +1,76 @@
+@use "utilities/variables";
+@use "utilities/mixins" as m;
+@use "modules/modules";
+@use "modules/grid";
+@use "modules/type";
+@use "modules/colors";
+@use "styles/typography";
+@use "patterns/nav";
+@use "patterns/footer";
+@use "patterns/breadcrumbs";
+@use "patterns/item";
+@use "patterns/npc";
+@use "patterns/card";
+@use "patterns/filter";
+@use "patterns/banner";
+@use "patterns/page-nav";
+@use "patterns/upgrades-table";
+@use "patterns/calendar";
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,800,800i&display=swap");
+
+.page-list-icons {
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.introduction {
+  .split-img::after {
+    background-image: url("../images/districts/the-market.jpg");
+  }
+}
+
+.split-img-text {
+  .split-text-content {
+    padding: 2.6rem 1.3rem;
+  }
+  @include m.max(37.999) {
+    .split-img {
+      padding-top: 100%;
+      background-image: url("../images/districts/the-market.jpg");
+      @include m.bgBasic();
+    }
+  }
+  @include m.min(38) {
+    .split-img {
+      position: relative;
+      &::after {
+        content: " ";
+        @include m.bgBasic();
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+    }
+    .split-text-content {
+      padding: 2.6rem;
+    }
+  }
+  @include m.min(60) {
+    .split-img::after {
+      width: 50vw;
+    }
+    .split-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .split-text-content {
+        max-width: 36em;
+        padding: 3.9rem 2.6rem;
+      }
+    }
+  }
+}

@@ -1,38 +1,46 @@
+@use "sass:meta";
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 html {
-  font-family: $font-primary;
-  color: $color-grey-dark;
+  font-family: v.$font-primary;
+  color: v.$color-grey-dark;
 }
 
-@if variable-exists(font-secondary) {
-  h1, h2, h3, h4, .font-secondary, thead th {
-    font-family: $font-secondary;
+@if meta.variable-exists(font-secondary) {
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-secondary,
+  thead th {
+    font-family: v.$font-secondary;
   }
 }
 
-a, .link-mimic {
-  transition:
-    color $transition,
-    border-color $transition,
-    background-color $transition;
-  color: $color-primary;
+a,
+.link-mimic {
+  transition: color v.$transition, border-color v.$transition,
+    background-color v.$transition;
+  color: v.$color-primary;
   text-decoration: underline;
-  &:hover, &:focus {
-    color: $color-secondary;
+  @include m.hov() {
+    color: v.$color-secondary;
   }
 }
 
 h2 {
-  color: $color-primary;
+  color: v.$color-primary;
   margin: 0;
 }
 
 h3 {
-  color: $color-secondary;
+  color: v.$color-secondary;
   margin: 1.3rem 0 0;
   a {
-    color: $color-secondary;
-    @include hov() {
-      color: $color-primary;
+    color: v.$color-secondary;
+    @include m.hov() {
+      color: v.$color-primary;
     }
   }
 }
@@ -42,13 +50,13 @@ h4 {
 }
 
 h6 {
-  color: $color-primary;
+  color: v.$color-primary;
   text-transform: uppercase;
 }
 
 blockquote {
-  padding-left: .65rem;
+  padding-left: 0.65rem;
   margin-left: 1.3rem;
-  border-left: 2px solid $color-primary;
+  border-left: 2px solid v.$color-primary;
   font-style: italic;
 }

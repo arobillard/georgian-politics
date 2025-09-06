@@ -1,9 +1,12 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .banner {
-  background-color: $color-primary;
-  @include bgBasic();
+  background-color: v.$color-primary;
+  @include m.bgBasic();
   display: flex;
-  border-bottom: 5px solid $color-secondary;
-  box-shadow: $shadow;
+  border-bottom: 5px solid v.$color-secondary;
+  box-shadow: v.$shadow;
   p {
     color: #fff;
     margin: 0;

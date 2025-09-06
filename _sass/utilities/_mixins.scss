@@ -4,41 +4,30 @@ $mqL: 60;
 $mqXL: 90;
 
 @mixin mq($minmax, $size...) {
-  @if $minmax == 'min' {
-
+  @if $minmax == "min" {
     @media only screen and (min-width: #{$size}em) {
-
       @content;
-
     }
-  } @elseif $minmax == 'minmax' {
+  } @else if $minmax == "minmax" {
     @media only screen and (min-width: #{nth($size, 1)}em) and (max-width: #{(nth($size, 2) - .001)}em) {
-
       @content;
-
     }
   } @else {
     @media only screen and (max-width: #{$newSize}em) {
-
       @content;
-
     }
   }
 }
 
 @mixin min($size) {
   @media only screen and (min-width: #{$size}em) {
-
     @content;
-
   }
 }
 
 @mixin max($size) {
   @media only screen and (max-width: #{$size}em) {
-
     @content;
-
   }
 }
 
@@ -49,9 +38,7 @@ $mqXL: 90;
 }
 
 @mixin hov() {
-  &:hover, &:focus {
-
+  &:where(:hover, :focus) {
     @content;
-
   }
 }

@@ -1,6 +1,12 @@
+@use "sass:color";
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .upgrades-table {
-  &, th, td {
-    border-color: $color-grey-dark;
+  &,
+  th,
+  td {
+    border-color: v.$color-grey-dark;
   }
   .title {
     width: 30%;
@@ -16,36 +22,40 @@
   }
 
   thead th {
-    padding: .65rem 1.3rem;
+    padding: 0.65rem 1.3rem;
   }
-  th:nth-child(2), td:nth-child(2) {
+  th:nth-child(2),
+  td:nth-child(2) {
     text-align: center;
-    background-color: lighten($color-primary, 67%);
+    background-color: color.adjust(v.$color-primary, $lightness: 67%);
   }
   tbody {
-    tr:last-child th, tr:last-child td {
+    tr:last-child th,
+    tr:last-child td {
       border: 0;
     }
-    th, td {
+    th,
+    td {
       padding: 1.3rem;
     }
   }
-  @include max(37.999) {
+  @include m.max(37.999) {
     tr {
       width: 32rem;
     }
     th {
-      padding: .65rem;
+      padding: 0.65rem;
     }
     tbody {
-      th, td {
-        padding: .65rem;
+      th,
+      td {
+        padding: 0.65rem;
       }
     }
   }
 }
 
-@include max(37.999) {
+@include m.max(37.999) {
   .upgrades-table-wrap {
     max-width: 100%;
     overflow-x: scroll;

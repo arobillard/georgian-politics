@@ -1,23 +1,27 @@
+@use "sass:color";
+
 // Styles
 $font-primary: Montserrat, sans-serif;
-$transition: .25s ease-in-out;
-$transition-quick: .15s ease-in-out;
+$transition: 0.25s ease-in-out;
+$transition-quick: 0.15s ease-in-out;
 $border-radius: 5px;
-$shadow: 0 1px 3px rgba(0, 0, 0, .15);
-$shadow-hover: 0 3px 6px rgba(0, 0, 0, .15);
+$shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+$shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.15);
 
 // Colors
-$color-primary: #17853D;
-$color-primary-dark: darken($color-primary, 5%);
-$color-primary-darker: darken($color-primary, 10%);
-$color-primary-light: lighten($color-primary, 20%);
-$color-primary-50: rgba($color-primary, .5);
-$color-secondary: #0DB8A9;
-$color-secondary-dark: darken($color-secondary, 20%);
-$color-secondary-light: lighten($color-secondary, 20%);
+$color-primary: #17853d;
+$color-primary-dark: color.adjust($color-primary, $blackness: 20%);
+$color-primary-darker: color.adjust($color-primary, $blackness: 30%);
+$color-primary-light: color.adjust($color-primary, $lightness: 20%);
+$color-primary-lighter: color.adjust($color-primary, $lightness: 40%);
+$color-primary-50: rgba($color-primary, 0.5);
+$color-secondary: #0db8a9;
+$color-secondary-dark: color.adjust($color-secondary, $blackness: 20%);
+$color-secondary-light: color.adjust($color-secondary, $lightness: 20%);
+$color-secondary-lighter: color.adjust($color-secondary, $lightness: 40%);
 $color-tertiary: #f6e9dc;
-$color-tertiary-dark: darken($color-tertiary, 20%);
-$color-tertiary-light: lighten($color-tertiary, 10%);
+$color-tertiary-dark: color.adjust($color-tertiary, $blackness: 20%);
+$color-tertiary-light: color.adjust($color-tertiary, $lightness: 10%);
 $color-grey: #ccc;
 $color-grey-dark: #444;
 $color-grey-light: #f2f2f2;

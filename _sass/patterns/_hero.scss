@@ -1,6 +1,9 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
 .hero {
-  background-color: $color-grey-dark;
-  @include bgBasic();
+  background-color: v.$color-grey-dark;
+  @include m.bgBasic();
   .wrapper {
     min-height: 75vh;
     display: flex;

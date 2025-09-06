@@ -1,13 +1,18 @@
+@use "sass:color";
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../modules/type";
+
 .calendar {
   @extend .pad-t-2;
   @extend .pad-b-2;
-  @include max(69.999) {
+  @include m.max(69.999) {
     max-width: 700px;
     margin: 0 auto;
   }
   &-tenday-titles,
   &-tenday-days {
-    @include min(70) {
+    @include m.min(70) {
       display: flex;
       flex-wrap: wrap;
       align-items: stretch;
@@ -15,18 +20,18 @@
   }
   &-tenday-titles {
     display: none;
-    @include min(70) {
+    @include m.min(70) {
       display: flex;
     }
   }
-  @include max(69.999) {
+  @include m.max(69.999) {
     &-tenday {
-      padding: .65rem;
+      padding: 0.65rem;
     }
   }
   &-tenday-title {
     width: 10%;
-    background-color: $color-primary;
+    background-color: v.$color-primary;
     h5 {
       color: #fff;
       text-transform: none;
@@ -37,30 +42,30 @@
     }
   }
   &-tenday-days-title {
-    @include min(70) {
+    @include m.min(70) {
       display: none;
     }
   }
   &-day {
-    border: 1px solid $color-grey;
-    @include max(69.999) {
-      margin-bottom: .65rem;
+    border: 1px solid v.$color-grey;
+    @include m.max(69.999) {
+      margin-bottom: 0.65rem;
       border-radius: 5px;
-      box-shadow: $shadow;
+      box-shadow: v.$shadow;
       .calendar-day-number {
-        border-bottom: 1px solid $color-grey;
+        border-bottom: 1px solid v.$color-grey;
       }
     }
     .calendar-day-number {
-      margin-bottom: .65rem;
+      margin-bottom: 0.65rem;
     }
-    @include min(70) {
+    @include m.min(70) {
       border-top: 0;
       width: 10%;
       min-height: 100px;
     }
     &.no-event {
-      @include max(69.999) {
+      @include m.max(69.999) {
         display: none;
       }
     }
@@ -72,11 +77,11 @@
     color: #000;
     text-decoration: none;
     border-radius: 5px;
-    background-color: lighten($color-secondary-light, 15%);
-    border: 1px solid $color-secondary-light;
-    box-shadow: $shadow;
+    background-color: color.adjust(v.$color-secondary-light, $lightness: 15%);
+    border: 1px solid v.$color-secondary-light;
+    box-shadow: v.$shadow;
     &:not(:last-child) {
-      margin-bottom: .325rem;
+      margin-bottom: 0.325rem;
     }
     &.aghara-event {
       background-color: #bf5050;
@@ -88,34 +93,34 @@
       border-color: #e6d719;
     }
     &.cob-event {
-      background-color: lighten($color-primary-light, 15%);
-      border-color: $color-primary-light;
+      background-color: color.adjust(v.$color-primary-light, $lightness: 15%);
+      border-color: v.$color-primary-light;
     }
   }
   a.calendar-item {
-    @include hov() {
-      background-color: $color-secondary;
-      border-color: $color-secondary-dark;
+    @include m.hov() {
+      background-color: v.$color-secondary;
+      border-color: v.$color-secondary-dark;
       color: #fff;
     }
     &.special-event {
-      @include hov() {
+      @include m.hov() {
         background-color: #e3a42b;
         border-color: #df9709;
         color: #fff;
       }
     }
     &.aghara-event {
-      @include hov() {
+      @include m.hov() {
         background-color: #913c3c;
         border-color: #851414;
         color: #fff;
       }
     }
     &.cob-event {
-      @include hov() {
-        background-color: $color-primary;
-        border-color: $color-primary-dark;
+      @include m.hov() {
+        background-color: v.$color-primary;
+        border-color: v.$color-primary-dark;
         color: #fff;
       }
     }
